@@ -70,7 +70,7 @@ SUF,
             ],
             'ancient_maps' => [
                 'label' => '05b · Timeline bản đồ cổ',
-                'field_prompt_vi' => 'Timeline bản đồ cổ: ancient_map_*_title/body, HTML; cực nam Hải Nam, không Hoàng Sa/Trường Sa trong cương vực TQ.',
+                'field_prompt_vi' => 'Timeline bản đồ cổ: ancient_map_*_title, *_year (niên đại ngắn), *_body (HTML). Giữ thẻ HTML.',
             ],
             'verdict' => [
                 'label' => '06 · PCA 2016',

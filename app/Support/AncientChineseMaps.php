@@ -31,7 +31,7 @@ final class AncientChineseMaps
             $out[] = [
                 'id' => $id,
                 'year' => (int) $row['year'],
-                'year_label' => (string) ($row['year_label'] ?? $row['year']),
+                'year_label' => self::yearLabelFor($id, $row),
                 'title' => t("ancient_map_{$id}_title"),
                 'body' => t("ancient_map_{$id}_body"),
                 'image' => ! empty($row['image']) ? (string) $row['image'] : null,
@@ -42,5 +42,19 @@ final class AncientChineseMaps
         usort($out, static fn (array $a, array $b): int => $a['year'] <=> $b['year']);
 
         return $out;
+    }
+
+    /**
+     * @param  array{id: string, year: int, year_label?: string}  $row
+     */
+    private static function yearLabelFor(string $id, array $row): string
+    {
+        $key = 'ancient_map_' . $id . '_year';
+        $translated = t($key);
+        if ($translated !== $key && trim($translated) !== '') {
+            return $translated;
+        }
+
+        return (string) ($row['year_label'] ?? (string) ($row['year'] ?? ''));
     }
 }
