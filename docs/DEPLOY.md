@@ -40,6 +40,28 @@ php artisan view:clear
 
 Tránh `php artisan optimize` / `config:cache` trên site đa ngôn ngữ `lang_ui` (xem hoangsa `docs/DEPLOY.md`).
 
+## Site luôn hiển thị tiếng Việt dù chọn ngôn ngữ khác
+
+**Triệu chứng:** `/ja`, `/en`, … vẫn ra chữ Việt (hoặc phần lớn là Việt).
+
+**Nguyên nhân thường gặp:**
+
+1. `config:cache` / `optimize` khiến `config('lang_ui')` chỉ còn `vi` — chạy `php artisan optimize:clear`.
+2. Master `vi` có thêm file `ancient_maps.php` mà locale khác chưa có — logic cũ loại hết locale hoặc `hasLocale` sai → fallback `vi` trong `t()`.
+3. Key `ancient_map_*` chỉ có ở `vi` — timeline bản đồ cổ fallback Việt cho đến khi dịch file `ancient_maps.php`.
+
+**Khắc phục:**
+
+```bash
+cd /var/www/html/ninedashline.dev
+php artisan optimize:clear
+php artisan config:clear
+php artisan view:clear
+php artisan lang-ui:status
+```
+
+Kỳ vọng: `contentLocales` ≈ 50, `hero_title_line1` của `en`/`ja` khác tiếng Việt.
+
 ## Quyền thư mục (aaPanel, user `www`)
 
 ```bash

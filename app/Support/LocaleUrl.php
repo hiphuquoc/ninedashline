@@ -70,7 +70,17 @@ final class LocaleUrl
      */
     public static function contentLocale(string $urlLocale): string
     {
-        return LangUi::hasLocale($urlLocale) ? $urlLocale : self::defaultCode();
+        $urlLocale = strtolower(trim($urlLocale));
+
+        if ($urlLocale === LangUi::MASTER_LOCALE || LangUi::hasLocale($urlLocale)) {
+            return $urlLocale;
+        }
+
+        if (count(LangUi::forLocale($urlLocale)) > 0) {
+            return $urlLocale;
+        }
+
+        return self::defaultCode();
     }
 
     /**

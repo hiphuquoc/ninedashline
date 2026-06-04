@@ -50,7 +50,7 @@ class LandingPageData
         return [
             'imgPlaceholder' => $landing['img_placeholder'],
             'ambientAudioUrl' => $landing['ambient_audio'] ?? '',
-            'locale' => $urlLocale,
+            'locale' => current_locale(),
             'localeDefault' => LocaleUrl::defaultCode(),
             'localeHomePaths' => LocaleUrl::homePathsMap(),
             'contentLocales' => LangUi::contentLocales(),

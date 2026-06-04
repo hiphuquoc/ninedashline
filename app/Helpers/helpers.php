@@ -27,36 +27,30 @@ if (!function_exists('current_locale')) {
 
 if (!function_exists('t')) {
     /**
-     * Dịch chuỗi UI từ config/lang_ui/{locale}/*.php (locale hiện tại → fallback).
+     * Dịch chuỗi UI từ config/lang_ui (locale hiện tại → fallback vi cho key thiếu).
      */
     function t(string $key, array $replace = []): string
     {
         $locale = current_locale();
         $fallback = (string) config('language.fallback_code', 'vi');
 
-        static $bundles = [];
-
-        if (! isset($bundles[$locale])) {
-            $bundles[$locale] = \App\Support\LangUi::forLocale($locale);
+        $value = config('lang_ui.' . $locale . '.' . $key);
+        if ($value === null) {
+            $value = config('lang_ui.' . $fallback . '.' . $key);
         }
-
-        $value = $bundles[$locale][$key] ?? null;
-
-        if ($value === null && $fallback !== $locale) {
-            if (! isset($bundles[$fallback])) {
-                $bundles[$fallback] = \App\Support\LangUi::forLocale($fallback);
+        if ($value === null) {
+            $bundle = \App\Support\LangUi::forLocale($locale);
+            $value = $bundle[$key] ?? null;
+            if ($value === null && $fallback !== $locale) {
+                $value = \App\Support\LangUi::forLocale($fallback)[$key] ?? null;
             }
-            $value = $bundles[$fallback][$key] ?? null;
         }
-
         if ($value === null) {
             return $key;
         }
-
         if (! is_string($value)) {
             $value = (string) $value;
         }
-
         if ($replace !== []) {
             $search = [];
             $replaceVals = [];

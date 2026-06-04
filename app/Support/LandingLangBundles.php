@@ -22,6 +22,7 @@ final class LandingLangBundles
             'dispute.php',
             'opposition.php',
             'witnesses.php',
+            'ancient_maps.php',
             'verdict.php',
             'sovereignty.php',
             'footer.php',
@@ -37,5 +38,25 @@ final class LandingLangBundles
     public static function stems(): array
     {
         return array_map(static fn (string $f): string => self::stem($f), self::files());
+    }
+
+    /**
+     * File chỉ bắt buộc ở master (vi) tạm thời — locale khác thiếu vẫn được coi "đủ bundle".
+     *
+     * @return list<string>
+     */
+    public static function optionalMasterOnlyStems(): array
+    {
+        return [
+            'ancient_maps',
+        ];
+    }
+
+    /**
+     * @return list<string>
+     */
+    public static function requiredStems(): array
+    {
+        return array_values(array_diff(self::stems(), self::optionalMasterOnlyStems()));
     }
 }

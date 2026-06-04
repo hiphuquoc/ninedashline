@@ -3,7 +3,7 @@
 namespace App\Support;
 
 /**
- * Gộp các file config/lang_ui/{locale}/*.php thành một mảng key → text (giống Hitour).
+ * Gộp các file config/lang_ui/{locale}/*.php thành một mảng key → text (giống Hitour / hoangsa.dev).
  */
 final class LangUi
 {
@@ -12,16 +12,14 @@ final class LangUi
 
     /**
      * File nội dung mới — đã có ở master (vi) nhưng CHƯA dịch sang locale khác.
-     * Số key của các file này được trừ khỏi baseline khi xét locale "đủ key"
-     * (tránh demote toàn bộ locale về default chỉ vì phần mới chưa dịch).
-     * Khi đã publish đủ bản dịch cho các file này, xóa hết mục trong mảng này.
+     * Số key của các file này được trừ khỏi baseline khi xét locale "đủ key".
      *
      * @var list<string>
      */
     private const PENDING_TRANSLATION_FILES = [];
 
     /**
-     * @return list<string> Locale có đủ key như vi (tự quét thư mục lang_ui).
+     * @return list<string> Locale có đủ file bundle (tự quét thư mục lang_ui).
      */
     public static function contentLocales(): array
     {
@@ -32,7 +30,6 @@ final class LangUi
 
         $master = self::forLocale(self::MASTER_LOCALE);
         $masterCount = count($master);
-        $minKeys = self::minKeysForLocale($masterCount);
         $locales = [self::MASTER_LOCALE];
 
         foreach (glob(config_path('lang_ui/*'), GLOB_ONLYDIR) ?: [] as $dir) {
@@ -75,7 +72,7 @@ final class LangUi
     {
         $locale = strtolower($locale);
         $dir = config_path('lang_ui/' . $locale);
-        if (!is_dir($dir)) {
+        if (! is_dir($dir)) {
             return [];
         }
 
@@ -86,26 +83,6 @@ final class LangUi
             $merged = array_merge($merged, $chunk);
         }
 
-        $contribConfig = $dir . '/chung_suc.php';
-        if (is_file($contribConfig)) {
-            /** @var array<string, string> $contrib */
-            $contrib = require $contribConfig;
-            $merged = array_merge($merged, $contrib);
-        } else {
-            $letterData = base_path('scripts/lang-data/contribute/' . $locale . '.php');
-            $pathsData = base_path('scripts/lang-data/contribute-paths/' . $locale . '.php');
-            if (is_file($letterData)) {
-                /** @var array<string, string> $letter */
-                $letter = require $letterData;
-                $merged = array_merge($merged, $letter);
-            }
-            if (is_file($pathsData)) {
-                /** @var array<string, string> $paths */
-                $paths = require $pathsData;
-                $merged = array_merge($merged, $paths);
-            }
-        }
-
         return $merged;
     }
 
@@ -113,7 +90,7 @@ final class LangUi
     {
         $locale = strtolower($locale);
 
-        if (!in_array($locale, self::contentLocales(), true)) {
+        if (! in_array($locale, self::contentLocales(), true)) {
             return false;
         }
 
@@ -123,9 +100,7 @@ final class LangUi
         }
 
         $translated = self::forLocale($locale);
-
-        // Trừ phần nội dung mới chưa dịch khỏi baseline để không demote cả locale.
-        $baseline = max(0, count($master) - self::pendingTranslationKeyCount());
+        $baseline = max(0, count($master) - self::pendingTranslationKeyCount() - self::optionalMasterOnlyKeyCount());
 
         return count($translated) >= self::minKeysForLocale($baseline);
     }
@@ -147,22 +122,53 @@ final class LangUi
         return $count;
     }
 
-    /** Đủ file bundle landing (cùng số file master). */
+    /** Key chỉ có trong file optional master (vd. ancient_maps chỉ vi). */
+    private static function optionalMasterOnlyKeyCount(): int
+    {
+        $dir = config_path('lang_ui/' . self::MASTER_LOCALE);
+        $count = 0;
+        foreach (LandingLangBundles::optionalMasterOnlyStems() as $stem) {
+            $file = $dir . '/' . $stem . '.php';
+            if (is_file($file)) {
+                /** @var array<string, string> $chunk */
+                $chunk = require $file;
+                $count += is_array($chunk) ? count($chunk) : 0;
+            }
+        }
+
+        return $count;
+    }
+
+    /** Đủ file bundle landing (theo LandingLangBundles, trừ optional master-only). */
     private static function localeDirLooksComplete(string $dir): bool
     {
-        $masterFiles = LandingLangBundles::files();
-        $masterCount = count($masterFiles);
-        if ($masterCount === 0) {
+        $have = self::phpStemsInDir($dir);
+        if ($have === []) {
             return false;
         }
 
-        foreach ($masterFiles as $file) {
-            if (! is_file($dir . '/' . $file)) {
+        foreach (LandingLangBundles::requiredStems() as $stem) {
+            if (! in_array($stem, $have, true)) {
                 return false;
             }
         }
 
         return true;
+    }
+
+    /**
+     * @return list<string>
+     */
+    private static function phpStemsInDir(string $dir): array
+    {
+        $stems = [];
+        foreach (glob(rtrim($dir, '/') . '/*.php') ?: [] as $file) {
+            $stems[] = basename($file, '.php');
+        }
+
+        sort($stems);
+
+        return $stems;
     }
 
     /** Cho phép lệch vài key (key tuỳ chọn) — tránh fallback cả locale về en. */

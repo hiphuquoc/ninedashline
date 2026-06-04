@@ -24,11 +24,39 @@ class AppServiceProvider extends ServiceProvider
     }
 
     /**
-     * Nạp lang_ui lúc runtime — không đưa vào config:cache.
+     * Nạp lang_ui lúc runtime — không đưa vào config:cache (50 locale × nghìn key).
      */
     private function bootLangUiBundles(): void
     {
-        // Luôn nạp runtime — không dùng config:cache cho lang_ui (50 locale × nghìn key).
-        config(['lang_ui' => LangUi::all()]);
+        $bundles = LangUi::all();
+        $existing = config('lang_ui');
+
+        if ($this->cachedLangUiLooksComplete($existing, $bundles)) {
+            return;
+        }
+
+        config(['lang_ui' => $bundles]);
+    }
+
+    /**
+     * @param  mixed  $existing
+     * @param  array<string, array<string, string>>  $bundles
+     */
+    private function cachedLangUiLooksComplete(mixed $existing, array $bundles): bool
+    {
+        if (! is_array($existing) || $bundles === []) {
+            return false;
+        }
+
+        foreach (array_keys($bundles) as $locale) {
+            if (! isset($existing[$locale]) || ! is_array($existing[$locale])) {
+                return false;
+            }
+            if (count($existing[$locale]) < max(20, (int) floor(count($bundles[$locale]) * 0.9))) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }

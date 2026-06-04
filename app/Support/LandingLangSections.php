@@ -29,7 +29,8 @@ final class LandingLangSections
             'origin' => ['label' => '02 · Nguồn gốc', 'anchor' => '#origin', 'bundles' => ['origin']],
             'dispute' => ['label' => '03 · Tranh cãi', 'anchor' => '#dispute', 'bundles' => ['dispute']],
             'opposition' => ['label' => '04 · Phản đối', 'anchor' => '#opposition', 'bundles' => ['opposition']],
-            'witnesses' => ['label' => '05 · Bản đồ cổ', 'anchor' => '#witnesses', 'bundles' => ['witnesses']],
+            'witnesses' => ['label' => '05 · Nhân chứng / khung section', 'anchor' => '#witnesses', 'bundles' => ['witnesses']],
+            'ancient_maps' => ['label' => '05b · Timeline bản đồ cổ', 'anchor' => '#witnesses', 'bundles' => ['ancient_maps']],
             'verdict' => ['label' => '06 · PCA 2016', 'anchor' => '#verdict', 'bundles' => ['verdict']],
             'sovereignty' => ['label' => '07 · Hoàng Sa – Trường Sa', 'anchor' => '#sovereignty', 'bundles' => ['sovereignty']],
             'footer' => ['label' => 'Footer', 'anchor' => '#footer', 'bundles' => ['footer']],
@@ -66,7 +67,7 @@ final class LandingLangSections
             'nav', 'common' => 'page',
             'meta', 'dispute', 'verdict', 'opposition' => 'document',
             'hero', 'sovereignty' => 'profile',
-            'what', 'origin', 'witnesses' => 'blog',
+            'what', 'origin', 'witnesses', 'ancient_maps' => 'blog',
             'footer' => 'blog',
             default => 'page',
         };

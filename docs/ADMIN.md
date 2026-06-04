@@ -27,7 +27,7 @@ php artisan view:clear
 
 ## Bundle landing
 
-`nav`, `meta`, `hero`, `common`, `what`, `origin`, `dispute`, `opposition`, `witnesses`, `verdict`, `sovereignty`, `footer` — xem `app/Support/LandingLangBundles.php`.
+`nav`, `meta`, `hero`, `common`, `what`, `origin`, `dispute`, `opposition`, `witnesses`, `verdict`, `sovereignty`, `footer` (+ `ancient_maps` chỉ master `vi` tạm thời) — xem `app/Support/LandingLangBundles.php`.
 
 ## AI dịch (tùy chọn)
 
