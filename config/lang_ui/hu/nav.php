@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'Eredet',
     'nav_rail_dispute' => 'Vita',
     'nav_rail_opposition' => 'Ellenzés',
-    'nav_rail_witnesses' => 'Régi térképek',
+    'nav_rail_witnesses' => 'Ősi térképek',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'Paracel-szigetek – Spratly-szigetek',
     'nav_sound_off' => 'Háttérzene bekapcsolása',

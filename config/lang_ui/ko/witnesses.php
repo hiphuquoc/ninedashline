@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => '고지도',
-    'witnesses_label' => '조용한 증인',
-    'witnesses_title' => '고지도의',
-    'witnesses_title_accent' => '그들 스스로',
-    'witnesses_lead' => '수세기 동안 중국의 정통 지도들은 모두 <em>하이난섬을 영토의 최남단</em>으로 기록해 왔습니다. 남중국해를 둘러싸는 U자선은 전혀 없었습니다. 확대경으로 남쪽 경계를 살펴보십시오.',
+    'witnesses_label' => '중국 고지도',
+    'witnesses_title' => '극남은 오직',
+    'witnesses_title_accent' => '하이난섬까지',
+    'witnesses_lead' => '중국인이 그린 고지도들은 시간순으로 살펴보면 모두 <em>하이난섬이 중국의 극남</em>임을 보여 주며, 파라셀 제도나 스프래틀리 제도는 포함되어 있지 않습니다. 자료는 <em>두 군도 파라셀 제도와 스프래틀리 제도에서의 베트남 국가 주권</em>(Trương Minh Dục, 2015)을 종합한 것입니다.',
     'witnesses_hint' => '⌖ 확대경으로 보기',
     'witnesses_map1_svg_hainan' => '하이난 海南',
     'witnesses_map1_svg_south' => '— 영토의 최남단 —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => '황조직성도 · 1904',
     'witnesses_map3_title' => '황조직성도지리전도',
     'witnesses_map3_body' => '청나라가 인쇄한 지도 — 중국 영토의 최남단이 하이난섬임을 분명히 표시하고 있습니다.',
-    'witnesses_quote' => '그들 조상의 문헌 자체에도 남중국해 9단선은 그려져 있지 않았습니다.',
+    'witnesses_quote' => '중국이 직접 공표한 지도에도 파라셀 제도 — 스프래틀리 제도는 자국 영토로 표시되어 있지 않았습니다.',
+    'witnesses_timeline_aria' => '중국 고지도 연대표',
+    'witnesses_year_aria' => '연대',
+    'lightbox_aria' => '확대 이미지 보기',
+    'lightbox_close' => '닫기',
+    'lightbox_prev' => '이전 이미지',
+    'lightbox_next' => '다음 이미지',
 ];

@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'witnesses_index' => 'Régi térképek',
-    'witnesses_label' => 'Néma tanúk',
-    'witnesses_title' => '<PRIVATE_PERSON>',
-    'witnesses_title_accent' => 'saját régi térképei',
-    'witnesses_lead' => 'Századokon át Kína hivatalos térképei az <em>Hainan-szigetet jelölték meg a terület legdélibb pontjaként</em> — a Dél-kínai-tengert körbezáró U-alakú vonal nélkül. Vegyük elő a nagyítót, és nézzük meg a déli határt.',
+    'witnesses_index' => 'Ősi térképek',
+    'witnesses_label' => 'Kínai ősi térképek',
+    'witnesses_title' => 'A legdélibb pont csak eddig ér',
+    'witnesses_title_accent' => 'Hainan-sziget',
+    'witnesses_lead' => 'A kínai szerzők által készített, időrendbe rendezett ősi térképek mind azt mutatják, hogy <em>Hainan-sziget volt Kína legdélibb pontja</em>, Hoàng Sa vagy Trường Sa nélkül. Az anyag összefoglalása a <em>Vietnam állami szuverenitása a Hoàng Sa- és Trường Sa-szigetcsoportok felett</em> című mű alapján készült (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Nagyítóval vizsgálni',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— a terület legdélibb pontja —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Konghvang cseng-tu csih-tuj · 1904',
     'witnesses_map3_title' => 'A Konghvang cseng-tu csih-tuj teljes földrajzi térképe',
     'witnesses_map3_body' => 'A Csing-dinasztia adta ki — világosan jelzi, hogy Kína területének legdélibb pontja Hainan szigete.',
-    'witnesses_quote' => 'Már az őseik saját dokumentumai sem rajzolták rá a Kilenc vonásos vonalat.',
+    'witnesses_quote' => 'Maguk a korábban Kína által közzétett térképek sem ábrázolták a Hoàng Sa — Trường Sa-szigeteket az ő területükként.',
+    'witnesses_timeline_aria' => 'A kínai ősi térképek idővonala',
+    'witnesses_year_aria' => 'Keltezés',
+    'lightbox_aria' => 'Nagyított kép megtekintése',
+    'lightbox_close' => 'Bezárás',
+    'lightbox_prev' => 'Előző kép',
+    'lightbox_next' => 'Következő kép',
 ];

@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'Pochodzenie',
     'nav_rail_dispute' => 'Spór',
     'nav_rail_opposition' => 'Sprzeciw',
-    'nav_rail_witnesses' => 'Stare mapy',
+    'nav_rail_witnesses' => 'Mapy historyczne',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'Wyspy Paracelskie – Wyspy Spratly',
     'nav_sound_off' => 'Włącz muzykę w tle',

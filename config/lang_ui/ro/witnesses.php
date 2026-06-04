@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'witnesses_index' => 'Hărți vechi',
-    'witnesses_label' => 'Martori tăcuți',
-    'witnesses_title' => 'Hărțile vechi ale',
-    'witnesses_title_accent' => 'lor înșiși',
-    'witnesses_lead' => 'De secole, hărțile oficiale ale Chinei au consemnat <em>insula Hainan ca punctul cel mai sudic</em> al teritoriului — fără nicio linie în formă de U care să cuprindă Marea Chinei de Sud. Să folosim lupa pentru a examina granița sudică.',
+    'witnesses_index' => 'Hărți antice',
+    'witnesses_label' => 'Hărți antice ale Chinei',
+    'witnesses_title' => 'Se întinde doar până la extremitatea sudică',
+    'witnesses_title_accent' => 'insula Hainan',
+    'witnesses_lead' => 'Hărțile antice realizate de autori chinezi — ordonate cronologic — arată toate că <em>insula Hainan este extremitatea sudică</em> a Chinei, fără Insulele Paracel sau Insulele Spratly. Materiale compilate după <em>Suveranitatea națională a Vietnamului asupra celor două arhipelaguri Hoàng Sa și Trường Sa</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Folosește lupa',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— punctul cel mai sudic al teritoriului —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Atlas geografic complet al prefecturilor sub administrație imperială · 1904',
     'witnesses_map3_title' => 'Atlas geografic complet al prefecturilor sub administrație imperială',
     'witnesses_map3_body' => 'Tipărit de dinastia Qing — indică în mod clar că punctul cel mai sudic al teritoriului Chinei este insula Hainan.',
-    'witnesses_quote' => 'Chiar documentele strămoșilor lor nu au desenat Linia celor nouă liniuțe.',
+    'witnesses_quote' => 'Chiar hărțile Chinei publicate odinioară nu au desenat Insulele Paracel — Insulele Spratly ca parte a teritoriului lor.',
+    'witnesses_timeline_aria' => 'Cronologia hărților antice chineze',
+    'witnesses_year_aria' => 'Datarea',
+    'lightbox_aria' => 'Vizualizează imaginea mărită',
+    'lightbox_close' => 'Închide',
+    'lightbox_prev' => 'Imaginea anterioară',
+    'lightbox_next' => 'Imaginea următoare',
 ];

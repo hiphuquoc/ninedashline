@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'Köken',
     'nav_rail_dispute' => 'Tartışma',
     'nav_rail_opposition' => 'İtiraz',
-    'nav_rail_witnesses' => 'Eski haritalar',
+    'nav_rail_witnesses' => 'Antik Haritalar',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'Paracel Adaları – Spratly Adaları',
     'nav_sound_off' => 'Arka plan müziğini aç',

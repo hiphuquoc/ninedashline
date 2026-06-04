@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'witnesses_index' => 'Senieji žemėlapiai',
-    'witnesses_label' => 'Tylieji liudytojai',
-    'witnesses_title' => 'Senieji žemėlapiai',
-    'witnesses_title_accent' => 'pačių jų',
-    'witnesses_lead' => 'Per daugelį šimtmečių oficialiuose Kinijos žemėlapiuose buvo nurodyta, kad <em>Hainano sala yra piečiausias</em> teritorijos taškas — jokios U formos linijos, apimančios Pietų Kinijos jūrą, nebuvo. Pasinaudokite didinamuoju stiklu ir įsižiūrėkite į pietinę ribą.',
+    'witnesses_index' => 'Senoviniai žemėlapiai',
+    'witnesses_label' => 'Senoviniai Kinijos žemėlapiai',
+    'witnesses_title' => 'Pietinė riba siekia tik',
+    'witnesses_title_accent' => 'Hainano salą',
+    'witnesses_lead' => 'Senoviniai žemėlapiai, kuriuos sudarė Kinijos autoriai ir kurie išdėstyti chronologine tvarka, visi rodo, kad <em>Hainano sala yra piečiausias Kinijos taškas</em>, o Paracelio salos ir Spratlio salos juose nevaizduojamos. Medžiaga parengta pagal leidinį <em>Vietnamo valstybės suverenitetas Paracelio salos ir Spratlio salos salynuose</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Naudoti didinamąjį stiklą',
     'witnesses_map1_svg_hainan' => 'Hainanas 海南',
     'witnesses_map1_svg_south' => '— piečiausias teritorijos taškas —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Imperatoriškosios dinastijos provincijų atlasas · 1904',
     'witnesses_map3_title' => 'Imperatoriškosios dinastijos provincijų geografijos išsamus atlasas',
     'witnesses_map3_body' => 'Išleistas Čingų dinastijos — aiškiai nurodo, kad piečiausias Kinijos teritorijos taškas yra Hainano sala.',
-    'witnesses_quote' => 'Būtent jų pačių protėvių dokumentuose Devynių brūkšnių linija nebuvo nubraižyta.',
+    'witnesses_quote' => 'Net pačios Kinijos paskelbtuose žemėlapiuose Paracelio salos ir Spratlio salos nebuvo pavaizduotos kaip jos teritorijos dalis.',
+    'witnesses_timeline_aria' => 'Senovinių Kinijos žemėlapių laiko juosta',
+    'witnesses_year_aria' => 'Laikotarpis',
+    'lightbox_aria' => 'Peržiūrėti padidintą vaizdą',
+    'lightbox_close' => 'Uždaryti',
+    'lightbox_prev' => 'Ankstesnis vaizdas',
+    'lightbox_next' => 'Kitas vaizdas',
 ];

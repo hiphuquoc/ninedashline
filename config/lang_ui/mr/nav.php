@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'उत्पत्ती',
     'nav_rail_dispute' => 'वाद',
     'nav_rail_opposition' => 'विरोध',
-    'nav_rail_witnesses' => 'प्राचीन नकाशे',
+    'nav_rail_witnesses' => 'पुरातन नकाशे',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'पॅरासेल द्वीपसमूह - स्प्रॅटली द्वीपसमूह',
     'nav_sound_off' => 'पार्श्वसंगीत सुरू करा',

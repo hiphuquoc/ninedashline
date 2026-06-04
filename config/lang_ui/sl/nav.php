@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'Izvor',
     'nav_rail_dispute' => 'Spor',
     'nav_rail_opposition' => 'Nasprotovanje',
-    'nav_rail_witnesses' => 'Stare zemljevidi',
+    'nav_rail_witnesses' => 'Stari zemljevidi',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'Paracelski otoki – Spratlyjevi otoki',
     'nav_sound_off' => 'Vklopi ozadno glasbo',

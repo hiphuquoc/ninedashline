@@ -14,8 +14,9 @@
 /.zed
 /auth.json
 /node_modules
-# public: build Vite + static commit lên git — xem public/.gitignore (bỏ qua hot, storage symlink)
-# storage: asset upload → storage/app/public (xem storage/app/public/.gitignore)
+# Symlink runtime — KHÔNG commit (ảnh thật: storage/app/public/, tạo link bằng storage:link / composer install)
+/public/storage
+# storage: asset upload → storage/app/public/ (xem storage/app/public/.gitignore)
 /storage/*.key
 /storage/pail
 /vendor

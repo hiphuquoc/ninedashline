@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => 'Antik Haritalar',
-    'witnesses_label' => 'Sessiz Tanıklar',
-    'witnesses_title' => 'Antik Haritaları',
-    'witnesses_title_accent' => 'bizzat onların',
-    'witnesses_lead' => 'Yüzyıllar boyunca Çin’in resmî haritaları <em>Hainan Adası’nı topraklarının en güney noktası</em> olarak kaydetmiştir — Güney Çin Denizi’ni bütünüyle saran U şeklinde bir çizgi yoktur. Gelin, güney sınırına büyüteçle bakalım.',
+    'witnesses_label' => 'Çin Antik Haritaları',
+    'witnesses_title' => 'En güney noktası yalnızca',
+    'witnesses_title_accent' => 'Hainan Adası\'na kadar',
+    'witnesses_lead' => 'Çinli yazarlar tarafından çizilen antik haritalar — kronolojik olarak sıralandığında — <em>Hainan Adası\'nın Çin\'in en güney noktası</em> olduğunu gösterir; Paracel Adaları ya da Spratly Adaları yer almaz. Derleme, <em>Vietnam\'ın Paracel Adaları ve Spratly Adaları üzerindeki ulusal egemenliği</em> (Trương Minh Dục, 2015) çalışmasına dayanmaktadır.',
     'witnesses_hint' => '⌖ Büyüteçle incele',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— toprakların en güney noktası —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'İmparatorluk Doğrudan Eyaletler Haritası · 1904',
     'witnesses_map3_title' => 'İmparatorluk Doğrudan Eyaletler Coğrafya Tam Haritası',
     'witnesses_map3_body' => 'Qing Hanedanı tarafından basılmıştır — Çin topraklarının en güney noktası olarak Hainan Adası’nı açıkça gösterir.',
-    'witnesses_quote' => 'Atalarının kendi belgeleri Dokuz Çizgi Hattı’nı hiç çizmiyordu.',
+    'witnesses_quote' => 'Çin\'in yayımladığı haritaların kendisi, Paracel Adaları ve Spratly Adaları\'nı kendi toprakları içinde göstermemiştir.',
+    'witnesses_timeline_aria' => 'Çin antik haritaları zaman çizelgesi',
+    'witnesses_year_aria' => 'Tarih',
+    'lightbox_aria' => 'Büyütülmüş görseli görüntüle',
+    'lightbox_close' => 'Kapat',
+    'lightbox_prev' => 'Önceki görsel',
+    'lightbox_next' => 'Sonraki görsel',
 ];

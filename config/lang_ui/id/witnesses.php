@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => 'Peta Kuno',
-    'witnesses_label' => 'Saksi Diam',
-    'witnesses_title' => 'Peta kuno dari',
-    'witnesses_title_accent' => 'mereka sendiri',
-    'witnesses_lead' => 'Selama berabad-abad, peta resmi Tiongkok selalu mencatat <em>pulau Hainan sebagai titik paling selatan</em> wilayahnya — tanpa garis berbentuk U yang melingkupi Laut Cina Selatan. Gunakan kaca pembesar untuk menelaah batas selatan.',
+    'witnesses_label' => 'Peta Kuno Tiongkok',
+    'witnesses_title' => 'Batas paling selatan hanya sampai',
+    'witnesses_title_accent' => 'Pulau Hainan',
+    'witnesses_lead' => 'Peta-peta kuno yang digambar oleh penulis Tiongkok — disusun secara kronologis — semuanya menunjukkan <em>Pulau Hainan sebagai titik paling selatan</em> Tiongkok, tanpa Kepulauan Paracel maupun Kepulauan Spratly. Materi disusun berdasarkan <em>Kedaulatan negara Vietnam di dua kepulauan Kepulauan Paracel dan Kepulauan Spratly</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Perbesar dengan kaca pembesar',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— titik paling selatan wilayah —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Huangchao zhixian ditu · 1904',
     'witnesses_map3_title' => 'Huangchao zhixian ditu',
     'witnesses_map3_body' => 'Dicetak oleh Dinasti Qing — dengan jelas menyebut titik paling selatan wilayah Tiongkok adalah pulau Hainan.',
-    'witnesses_quote' => 'Dokumen leluhur mereka sendiri tidak pernah menggambar Garis Sembilan Titik.',
+    'witnesses_quote' => 'Peta Tiongkok yang pernah diterbitkan sendiri tidak menggambar Kepulauan Paracel — Kepulauan Spratly sebagai wilayah mereka.',
+    'witnesses_timeline_aria' => 'Linimasa peta kuno Tiongkok',
+    'witnesses_year_aria' => 'Tahun',
+    'lightbox_aria' => 'Lihat gambar diperbesar',
+    'lightbox_close' => 'Tutup',
+    'lightbox_prev' => 'Gambar sebelumnya',
+    'lightbox_next' => 'Gambar berikutnya',
 ];

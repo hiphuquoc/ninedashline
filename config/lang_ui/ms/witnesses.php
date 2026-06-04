@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => 'Peta Kuno',
-    'witnesses_label' => 'Saksi Senyap',
-    'witnesses_title' => 'Peta kuno',
-    'witnesses_title_accent' => 'milik mereka sendiri',
-    'witnesses_lead' => 'Selama berabad-abad, peta rasmi China sentiasa mencatatkan <em>pulau Hainan sebagai titik paling selatan</em> wilayahnya — tanpa sebarang garisan berbentuk U yang merangkumi seluruh Laut China Selatan. Gunakan kanta pembesar untuk meneliti sempadan selatan.',
+    'witnesses_label' => 'Peta Kuno China',
+    'witnesses_title' => 'Hanya sampai ke selatan',
+    'witnesses_title_accent' => 'Pulau Hainan',
+    'witnesses_lead' => 'Peta-peta kuno yang dilukis oleh pengarang China — disusun mengikut masa — semuanya menunjukkan <em>Pulau Hainan sebagai titik paling selatan</em> China, tanpa Kepulauan Paracel atau Kepulauan Spratly. Bahan disusun berdasarkan <em>Kedaulatan negara Vietnam di dua kepulauan Hoàng Sa dan Trường Sa</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Kanta pembesar',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— titik paling selatan wilayah —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Qing dinasti langsung di bawah wilayah · 1904',
     'witnesses_map3_title' => 'Atlas geografi wilayah langsung di bawah Dinasti Qing',
     'witnesses_map3_body' => 'Dicetak oleh Dinasti Qing — dengan jelas menyatakan bahawa titik paling selatan wilayah China ialah Pulau Hainan.',
-    'witnesses_quote' => 'Dokumen daripada nenek moyang mereka sendiri tidak pernah melukis Garisan Sembilan Titik.',
+    'witnesses_quote' => 'Peta China yang pernah diterbitkan sendiri tidak melukis Kepulauan Paracel — Kepulauan Spratly sebagai sebahagian daripada wilayah mereka.',
+    'witnesses_timeline_aria' => 'Garis masa peta kuno China',
+    'witnesses_year_aria' => 'Tarikh',
+    'lightbox_aria' => 'Lihat imej diperbesarkan',
+    'lightbox_close' => 'Tutup',
+    'lightbox_prev' => 'Imej sebelumnya',
+    'lightbox_next' => 'Imej seterusnya',
 ];

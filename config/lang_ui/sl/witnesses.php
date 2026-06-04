@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'witnesses_index' => 'Stare zemljevidi',
-    'witnesses_label' => 'Neme priče',
-    'witnesses_title' => 'Stari zemljevidi',
-    'witnesses_title_accent' => 'sami po sebi',
-    'witnesses_lead' => 'Več stoletij so uradni zemljevidi Kitajske navajali <em>otok Hainan kot najjužnejšo točko</em> njenega ozemlja — brez črte v obliki črke U, ki bi obsegala celotno Južnokitajsko morje. Vzemimo povečevalno steklo in poglejmo južno mejo pobliže.',
+    'witnesses_index' => 'Stari zemljevidi',
+    'witnesses_label' => 'Stari kitajski zemljevidi',
+    'witnesses_title' => 'Najjužnejša meja sega le do',
+    'witnesses_title_accent' => 'otoka Hainan',
+    'witnesses_lead' => 'Stari zemljevidi, ki so jih narisali kitajski avtorji in so razvrščeni kronološko, vsi prikazujejo, da je <em>otok Hainan najjužnejša točka</em> Kitajske, brez Paracelskih otokov ali Spratlyjevih otokov. Gradivo je povzeto po delu <em>Državna suverenost Vietnama nad otoškima skupinama Paracelski otoki in Spratlyjevi otoki</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Povečevalno steklo',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— najjužnejša točka ozemlja —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Qingovska cesarska provinca · 1904',
     'witnesses_map3_title' => 'Popolni zemljevid geografije cesarske province',
     'witnesses_map3_body' => 'Tiskano v času dinastije Qing — izrecno navaja, da je najjužnejša točka ozemlja Kitajske otok Hainan.',
-    'witnesses_quote' => 'Že dokumenti njihovih prednikov niso narisali Linije devetih črt.',
+    'witnesses_quote' => 'Tudi zemljevidi, ki jih je Kitajska sama objavila, niso prikazovali Paracelskih otokov in Spratlyjevih otokov kot del svojega ozemlja.',
+    'witnesses_timeline_aria' => 'Časovnica starih kitajskih zemljevidov',
+    'witnesses_year_aria' => 'Obdobje',
+    'lightbox_aria' => 'Ogled povečane slike',
+    'lightbox_close' => 'Zapri',
+    'lightbox_prev' => 'Prejšnja slika',
+    'lightbox_next' => 'Naslednja slika',
 ];

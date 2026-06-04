@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => 'Vanhat kartat',
-    'witnesses_label' => 'Hiljaiset todistajat',
-    'witnesses_title' => 'Heidän omat',
-    'witnesses_title_accent' => 'vanhat karttansa',
-    'witnesses_lead' => 'Vuosisatojen ajan Kiinan viralliset kartat ovat osoittaneet <em>Hainanin saaren eteläisimmäksi pisteeksi</em> alueella — niissä ei ole ollut U:n muotoista viivaa, joka kiertäisi Etelä-Kiinan meren. Käytä suurennuslasia ja tarkastele etelärajaa.',
+    'witnesses_label' => 'Vanhat kiinalaiset kartat',
+    'witnesses_title' => 'Eteläisin raja ulottuu vain',
+    'witnesses_title_accent' => 'Hainanin saarelle',
+    'witnesses_lead' => 'Kiinalaisten tekijöiden laatimat vanhat kartat — aikajärjestykseen asetettuina — osoittavat kaikki, että <em>Hainanin saari on Kiinan eteläisin alue</em>, eikä niissä esiinny Paracelsaaret tai Spratlysaaret. Aineisto on koottu teoksesta <em>Vietnamin kansallinen suvereniteetti Paracelsaarilla ja Spratlysaarilla</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Käytä suurennuslasia',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— alueen eteläisin piste —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Qingin keisarillinen maakuntakartta · 1904',
     'witnesses_map3_title' => 'Qingin keisarillinen maakuntakartta',
     'witnesses_map3_body' => 'Qing-dynastian painama — siinä Kiinan alueen eteläisimmäksi pisteeksi on selvästi merkitty Hainanin saari.',
-    'witnesses_quote' => 'Heidän omat esi-isiensä asiakirjat eivät piirtäneet Yhdeksän viivan linjaa.',
+    'witnesses_quote' => 'Kiinan itse julkaisemat kartat eivät sisällyttäneet Paracelsaaria tai Spratlysaaria niiden alueeseen.',
+    'witnesses_timeline_aria' => 'Vanhojen kiinalaisten karttojen aikajana',
+    'witnesses_year_aria' => 'Ajoitus',
+    'lightbox_aria' => 'Näytä suurennettu kuva',
+    'lightbox_close' => 'Sulje',
+    'lightbox_prev' => 'Edellinen kuva',
+    'lightbox_next' => 'Seuraava kuva',
 ];

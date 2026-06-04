@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'Pinagmulan',
     'nav_rail_dispute' => 'Alitan',
     'nav_rail_opposition' => 'Pagtutol',
-    'nav_rail_witnesses' => 'Mga sinaunang mapa',
+    'nav_rail_witnesses' => 'Mga Sinaunang Mapa',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'Kapuluang Paracel – Kapuluang Spratly',
     'nav_sound_off' => 'I-on ang background music',

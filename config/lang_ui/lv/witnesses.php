@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => 'Senās kartes',
-    'witnesses_label' => 'Klusie liecinieki',
-    'witnesses_title' => 'Senās kartes no',
-    'witnesses_title_accent' => 'pašiem viņiem',
-    'witnesses_lead' => 'Gadsimtiem ilgi Ķīnas oficiālajās kartēs kā <em>teritorijas dienvidu galējais punkts</em> tika norādīta Hainaņas sala — nekādas U veida līnijas, kas aptvertu Dienvidķīnas jūru, nebija. Pielieciet palielināmo stiklu pie dienvidu robežas.',
+    'witnesses_label' => 'Senās Ķīnas kartes',
+    'witnesses_title' => 'Dienvidu galējā robeža sasniedz tikai',
+    'witnesses_title_accent' => 'Hainaņas salu',
+    'witnesses_lead' => 'Senās kartes, ko zīmējuši Ķīnas autori un kas sakārtotas hronoloģiskā secībā, visas parāda, ka <em>Hainaņas sala ir Ķīnas dienvidu galējais punkts</em>, un tajās nav attēlotas ne Paraselu salas, ne Spratlija salas. Materiāli apkopoti pēc darba <em>Vjetnamas valsts suverenitāte pār Paraselu salas un Spratlija salas arhipelāgiem</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Pielikt palielināmo stiklu',
     'witnesses_map1_svg_hainan' => 'Hainaņa 海南',
     'witnesses_map1_svg_south' => '— teritorijas dienvidu galējais punkts —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Imperiālā tiešo provincu ģeogrāfiskā karte · 1904',
     'witnesses_map3_title' => 'Imperiālā tiešo provincu ģeogrāfiskā pilna karte',
     'witnesses_map3_body' => 'Izdota Cjinu dinastijas laikā — skaidri norāda, ka Ķīnas teritorijas dienvidu galējais punkts ir Hainaņas sala.',
-    'witnesses_quote' => 'Pašu senču dokumenti neattēloja Deviņu svītru līniju.',
+    'witnesses_quote' => 'Pat pašas Ķīnas publicētajās kartēs Paraselu salas un Spratlija salas netika attēlotas kā tās teritorijas daļa.',
+    'witnesses_timeline_aria' => 'Senās Ķīnas karšu laika līnija',
+    'witnesses_year_aria' => 'Datējums',
+    'lightbox_aria' => 'Skatīt palielinātu attēlu',
+    'lightbox_close' => 'Aizvērt',
+    'lightbox_prev' => 'Iepriekšējais attēls',
+    'lightbox_next' => 'Nākamais attēls',
 ];

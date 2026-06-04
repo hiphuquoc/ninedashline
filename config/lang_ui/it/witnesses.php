@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'witnesses_index' => 'Mappe antiche',
-    'witnesses_label' => 'Testimoni silenziosi',
-    'witnesses_title' => 'Le mappe antiche di',
-    'witnesses_title_accent' => 'loro stessi',
-    'witnesses_lead' => 'Per secoli, le mappe ufficiali della Cina hanno sempre indicato <em>l’isola di Hainan come punto più meridionale</em> del territorio — senza alcuna linea a U che circondi il Mar Cinese Meridionale. Usiamo una lente d’ingrandimento per osservare il confine meridionale.',
+    'witnesses_index' => 'Carte antiche',
+    'witnesses_label' => 'Carte antiche cinesi',
+    'witnesses_title' => 'L’estremo meridionale arriva solo fino a',
+    'witnesses_title_accent' => 'isola di Hainan',
+    'witnesses_lead' => 'Le carte antiche disegnate da autori cinesi — ordinate in sequenza cronologica — mostrano tutte <em>l’isola di Hainan come limite meridionale estremo</em> della Cina, senza Isole Paracel né Isole Spratly. Materiale sintetizzato da <em>Sovranità nazionale del Vietnam sulle due arcipelaghi delle Isole Paracel e delle Isole Spratly</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Lente d’ingrandimento',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— limite meridionale del territorio —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Atlante geografico delle province sotto il dominio imperiale · 1904',
     'witnesses_map3_title' => 'Atlante geografico delle province sotto il dominio imperiale',
     'witnesses_map3_body' => 'Stampato sotto la dinastia Qing — indica chiaramente che il punto più meridionale del territorio cinese era l’isola di Hainan.',
-    'witnesses_quote' => 'Sono stati i documenti dei loro stessi antenati a non tracciare la Linea dei nove trattini.',
+    'witnesses_quote' => 'Le stesse carte della Cina pubblicate in passato non raffiguravano le Isole Paracel e le Isole Spratly come parte del loro territorio.',
+    'witnesses_timeline_aria' => 'Cronologia delle antiche carte cinesi',
+    'witnesses_year_aria' => 'Datazione',
+    'lightbox_aria' => 'Visualizza immagine ingrandita',
+    'lightbox_close' => 'Chiudi',
+    'lightbox_prev' => 'Immagine precedente',
+    'lightbox_next' => 'Immagine successiva',
 ];

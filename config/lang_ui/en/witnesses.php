@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'witnesses_index' => 'Historic Maps',
-    'witnesses_label' => 'Silent Witnesses',
-    'witnesses_title' => 'Historic Maps of',
-    'witnesses_title_accent' => 'Their Own Making',
-    'witnesses_lead' => 'For centuries, official Chinese maps consistently identified <em>Hainan Island as the southernmost point</em> of the country\'s territory — with no U-shaped line enclosing the South China Sea. Click any map to view it full size.',
+    'witnesses_index' => 'Ancient Maps',
+    'witnesses_label' => 'Ancient Maps of China',
+    'witnesses_title' => 'The southernmost point reaches only',
+    'witnesses_title_accent' => 'Hainan Island',
+    'witnesses_lead' => 'Ancient maps drawn by Chinese authors — arranged chronologically — all show <em>Hainan Island as the southernmost point</em> of China, with no Paracel Islands or Spratly Islands. Materials compiled from <em>Vietnam’s national sovereignty over the two archipelagos of Paracel Islands and Spratly Islands</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Examine with Magnifier',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— southernmost territorial limit —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Imperial Provinces Atlas · 1904',
     'witnesses_map3_title' => 'Complete Geographic Map of the Imperial Provinces',
     'witnesses_map3_body' => 'Printed by the Qing Dynasty — clearly identifying Hainan Island as the southernmost point of Chinese territory.',
-    'witnesses_quote' => 'The records of their own predecessors did not depict the Nine-Dash Line.',
+    'witnesses_quote' => 'Maps published by China itself have never placed the Paracel Islands - Spratly Islands within its territory.',
+    'witnesses_timeline_aria' => 'Chronological timeline of ancient Chinese maps',
+    'witnesses_year_aria' => 'Date',
+    'lightbox_aria' => 'View enlarged image',
+    'lightbox_close' => 'Close',
+    'lightbox_prev' => 'Previous image',
+    'lightbox_next' => 'Next image',
 ];

@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => 'Staré mapy',
-    'witnesses_label' => 'Tichí svedkovia',
-    'witnesses_title' => 'Staré mapy',
-    'witnesses_title_accent' => 'samé hovoria',
-    'witnesses_lead' => 'Po celé stáročia oficiálne mapy Číny uvádzali <em>ostrov Hainan ako najjužnejší bod</em> územia — bez akéhokoľvek U‑tvaru obklopujúceho Juhočínske more. Priblížte si južnú hranicu lupou.',
+    'witnesses_label' => 'Staré mapy Číny',
+    'witnesses_title' => 'Sahá len k najjužnejšiemu bodu',
+    'witnesses_title_accent' => 'ostrov Chaj-nan',
+    'witnesses_lead' => 'Staré mapy kreslené čínskymi autormi — usporiadané chronologicky — všetky ukazujú, že <em>ostrov Chaj-nan je najjužnejším bodom</em> Číny, bez Paracelských ostrovov či Spratlyho ostrovov. Súhrn materiálov podľa <em>Suverenita Vietnamu nad dvoma súostroviami Paracelské ostrovy a Spratlyho ostrovy</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Použiť lupu',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— najjužnejší bod územia —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Celková mapa zemepisu cisárskeho pravosprávneho systému · 1904',
     'witnesses_map3_title' => 'Celková mapa zemepisu cisárskeho pravosprávneho systému',
     'witnesses_map3_body' => 'Vydaná dynastiou Čching — jasne uvádza, že najjužnejším územím Číny je ostrov Hainan.',
-    'witnesses_quote' => 'Práve mapy ich predkov nevykresľovali Čiara deviatich čiarok.',
+    'witnesses_quote' => 'Práve samotné čínske mapy, ktoré boli kedysi zverejnené, nezobrazovali Paracelské ostrovy ani Spratlyho ostrovy ako súčasť ich územia.',
+    'witnesses_timeline_aria' => 'Časová os starých čínskych máp',
+    'witnesses_year_aria' => 'Datovanie',
+    'lightbox_aria' => 'Zobraziť zväčšený obrázok',
+    'lightbox_close' => 'Zavrieť',
+    'lightbox_prev' => 'Predchádzajúci obrázok',
+    'lightbox_next' => 'Nasledujúci obrázok',
 ];

@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'Походження',
     'nav_rail_dispute' => 'Суперечка',
     'nav_rail_opposition' => 'Заперечення',
-    'nav_rail_witnesses' => 'Старі карти',
+    'nav_rail_witnesses' => 'Стародавні мапи',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'Парасельські острови - Острови Спратлі',
     'nav_sound_off' => 'Увімкнути фонову музику',

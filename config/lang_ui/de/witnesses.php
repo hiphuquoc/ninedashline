@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'witnesses_index' => 'Alte Karten',
-    'witnesses_label' => 'Stumme Zeugen',
-    'witnesses_title' => 'Die alten Karten von',
-    'witnesses_title_accent' => 'ihnen selbst',
-    'witnesses_lead' => 'Über viele Jahrhunderte hinweg vermerkten die amtlichen Karten Chinas <em>die Insel Hainan als südlichsten Punkt</em> des Staatsgebiets — ohne eine U-förmige Linie, die das Südchinesische Meer umschließt. Verwenden Sie die Lupe, um die südliche Grenze zu betrachten.',
+    'witnesses_index' => 'Historische Karten',
+    'witnesses_label' => 'Historische Karten Chinas',
+    'witnesses_title' => 'Bis zum äußersten Süden reicht nur',
+    'witnesses_title_accent' => 'die Insel Hainan',
+    'witnesses_lead' => 'Die von chinesischen Autoren gezeichneten historischen Karten — chronologisch geordnet — zeigen alle <em>die Insel Hainan als den südlichsten Punkt</em> Chinas; weder die Paracel-Inseln noch die Spratly-Inseln sind enthalten. Die Zusammenstellung basiert auf <em>Nationalsovereänität Vietnams über die beiden Inselgruppen Paracel und Spratly</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Lupe einsetzen',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— südlichster Punkt des Staatsgebiets —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Großes Qing-Atlas · 1904',
     'witnesses_map3_title' => 'Geographischer Gesamtatlas der Großen Qing-Dynastie',
     'witnesses_map3_body' => 'Von der Qing-Dynastie gedruckt — er vermerkt ausdrücklich die Insel Hainan als südlichsten Punkt des Staatsgebiets Chinas.',
-    'witnesses_quote' => 'Die eigenen historischen Quellen haben die Neun-Striche-Linie nicht eingezeichnet.',
+    'witnesses_quote' => 'Gerade die von China selbst veröffentlichten Karten haben die Paracel-Inseln und Spratly-Inseln nie in ihr Hoheitsgebiet eingezeichnet.',
+    'witnesses_timeline_aria' => 'Zeitachse historischer chinesischer Karten',
+    'witnesses_year_aria' => 'Datierung',
+    'lightbox_aria' => 'Vergrößertes Bild ansehen',
+    'lightbox_close' => 'Schließen',
+    'lightbox_prev' => 'Vorheriges Bild',
+    'lightbox_next' => 'Nächstes Bild',
 ];

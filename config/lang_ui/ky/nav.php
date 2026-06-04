@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'Келип чыгышы',
     'nav_rail_dispute' => 'Талаш-тартыш',
     'nav_rail_opposition' => 'Каршы пикир',
-    'nav_rail_witnesses' => 'Эски карталар',
+    'nav_rail_witnesses' => 'Байыркы карталар',
     'nav_rail_verdict' => '2016 PCA',
     'nav_rail_sovereignty' => 'Парасел аралдары – Спратли аралдары',
     'nav_sound_off' => 'Коштоочу музыканы күйгүзүү',

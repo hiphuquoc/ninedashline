@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => '古地图',
-    'witnesses_label' => '沉默的见证者',
-    'witnesses_title' => '来自',
-    'witnesses_title_accent' => '他们自己的地图',
-    'witnesses_lead' => '数个世纪以来，中国官方地图均记载<em>海南岛是其领土最南端</em>，并不存在包围整个南海的U形线。请用放大镜观察其南部边界。',
+    'witnesses_label' => '中国古地图',
+    'witnesses_title' => '最南只到',
+    'witnesses_title_accent' => '海南岛',
+    'witnesses_lead' => '中国作者绘制的古地图——按时间顺序排列——都显示<em>海南岛是中国最南端</em>，不包含西沙群岛或南沙群岛。资料汇编依据《越南在西沙群岛和南沙群岛两群岛的国家主权》（张明育，2015）。',
     'witnesses_hint' => '⌖ 放大查看',
     'witnesses_map1_svg_hainan' => '海南 海南',
     'witnesses_map1_svg_south' => '— 领土最南端 —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => '皇朝直省 · 1904',
     'witnesses_map3_title' => '《皇朝直省地舆全图》',
     'witnesses_map3_body' => '由清朝刊印，明确标示中国领土最南端为海南岛。',
-    'witnesses_quote' => '连他们祖先留下的资料，也没有画出断续线。',
+    'witnesses_quote' => '连中国已公布的地图，也没有把西沙群岛——南沙群岛划入其领土。',
+    'witnesses_timeline_aria' => '中国古地图时间轴',
+    'witnesses_year_aria' => '年代',
+    'lightbox_aria' => '查看放大图片',
+    'lightbox_close' => '关闭',
+    'lightbox_prev' => '上一张',
+    'lightbox_next' => '下一张',
 ];

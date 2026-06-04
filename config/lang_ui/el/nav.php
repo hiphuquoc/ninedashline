@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'Προέλευση',
     'nav_rail_dispute' => 'Διαμάχη',
     'nav_rail_opposition' => 'Αντιδράσεις',
-    'nav_rail_witnesses' => 'Παλιοί χάρτες',
+    'nav_rail_witnesses' => 'Αρχαίοι χάρτες',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'Νησιά Παρασέλ - Νησιά Σπράτλι',
     'nav_sound_off' => 'Ενεργοποίηση μουσικής υπόκρουσης',

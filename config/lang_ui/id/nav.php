@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'Asal-usul',
     'nav_rail_dispute' => 'Sengketa',
     'nav_rail_opposition' => 'Penolakan',
-    'nav_rail_witnesses' => 'Peta kuno',
+    'nav_rail_witnesses' => 'Peta Kuno',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'Kepulauan Paracel - Kepulauan Spratly',
     'nav_sound_off' => 'Nyalakan musik latar',

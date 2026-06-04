@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'Origine',
     'nav_rail_dispute' => 'Controverse',
     'nav_rail_opposition' => 'Opoziție',
-    'nav_rail_witnesses' => 'Hărți vechi',
+    'nav_rail_witnesses' => 'Hărți antice',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'Insulele Paracel – Insulele Spratly',
     'nav_sound_off' => 'Pornește muzica de fundal',

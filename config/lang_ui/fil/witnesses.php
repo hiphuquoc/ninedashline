@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => 'Mga Sinaunang Mapa',
-    'witnesses_label' => 'Tahimik na mga Saksi',
-    'witnesses_title' => 'Mga sinaunang mapa ng',
-    'witnesses_title_accent' => 'kanila mismo',
-    'witnesses_lead' => 'Sa loob ng maraming siglo, ang mga opisyal na mapa ng Tsina ay laging nagtatala na <em>ang Hainan ang pinakatimog na punto</em> ng teritoryo — walang U-shaped na linya na sumasaklaw sa buong Dagat Timog Tsina. Gamitin ang magnifying glass upang suriin ang hangganang timog.',
+    'witnesses_label' => 'Mga Sinaunang Mapa ng Tsina',
+    'witnesses_title' => 'Ang pinakatimog na hangganan ay umaabot lamang sa',
+    'witnesses_title_accent' => 'Pulo ng Hainan',
+    'witnesses_lead' => 'Ang mga sinaunang mapang iginuhit ng mga may-akdang Tsino — inayos ayon sa panahon — ay pawang nagpapakita na ang <em>Pulo ng Hainan ang pinakatimog na hangganan</em> ng Tsina, at walang Kapuluang Paracel o Kapuluang Spratly. Ang mga sanggunian ay pinagsama mula sa akdang <em>Pambansang Soberanya ng Biyetnam sa Kapuluang Paracel at Kapuluang Spratly</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Gamitin ang magnifying glass',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— pinakatimog na bahagi ng teritoryo —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Imperyal na atlas ng mga lalawigan · 1904',
     'witnesses_map3_title' => 'Kumpletong atlas ng mga lalawigan ng imperyal na hukuman',
     'witnesses_map3_body' => 'Inilimbag ng Dinastiyang Qing — malinaw na itinatala na ang pinakatimog na bahagi ng teritoryo ng Tsina ay ang pulo ng Hainan.',
-    'witnesses_quote' => 'Maging ang mga dokumento ng kanilang mga ninuno ay hindi naglalarawan ng Linya ng Siyam na Guhit.',
+    'witnesses_quote' => 'Maging ang mga mapang inilathala mismo ng Tsina noon ay hindi isinama ang Kapuluang Paracel at Kapuluang Spratly sa kanilang teritoryo.',
+    'witnesses_timeline_aria' => 'Timeline ng mga sinaunang mapa ng Tsina',
+    'witnesses_year_aria' => 'Panahon',
+    'lightbox_aria' => 'Tingnan ang pinalaking larawan',
+    'lightbox_close' => 'Isara',
+    'lightbox_prev' => 'Nakaraang larawan',
+    'lightbox_next' => 'Susunod na larawan',
 ];

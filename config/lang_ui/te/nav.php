@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'ఉద్భవం',
     'nav_rail_dispute' => 'వివాదం',
     'nav_rail_opposition' => 'వ్యతిరేకత',
-    'nav_rail_witnesses' => 'ప్రాచీన పటాలు',
+    'nav_rail_witnesses' => 'పురాతన పటాలు',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'పారాసెల్ దీవులు – స్ప్రాట్లీ దీవులు',
     'nav_sound_off' => 'నేపథ్య సంగీతాన్ని ఆన్ చేయండి',

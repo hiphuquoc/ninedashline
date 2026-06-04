@@ -1,6 +1,20 @@
 <?php
 
 return [
+    'ancient_maps_index' => 'Bản đồ cổ',
+    'ancient_maps_label' => 'Bản đồ cổ Trung Quốc',
+    'ancient_maps_title' => 'Cực nam chỉ đến',
+    'ancient_maps_title_accent' => 'đảo Hải Nam',
+    'ancient_maps_lead' => 'Các bản đồ cổ do tác giả Trung Quốc vẽ — sắp xếp theo thời gian — đều thể hiện <em>đảo Hải Nam là cực nam</em> của Trung Quốc, không có Hoàng Sa hay Trường Sa. Tư liệu tổng hợp theo <em>Chủ quyền quốc gia Việt Nam tại hai quần đảo Hoàng Sa và Trường Sa</em> (Trương Minh Dục, 2015).',
+    'ancient_maps_timeline_aria' => 'Dòng thời gian bản đồ cổ Trung Quốc',
+    'ancient_maps_year_aria' => 'Niên đại',
+    'lightbox_aria' => 'Xem ảnh phóng to',
+    'lightbox_close' => 'Đóng',
+    'lightbox_prev' => 'Ảnh trước',
+    'lightbox_next' => 'Ảnh sau',
+    'ancient_maps_source' => 'Ảnh minh họa: thoidai.com.vn · tổng hợp Hải Vân',
+    'ancient_maps_quote' => 'Chính bản đồ Trung Quốc từng công bố đã không vẽ Hoàng Sa — Trường Sa vào lãnh thổ của họ.',
+
     'ancient_map_jiuyu_title' => 'Cửu vực thú lệnh đồ',
     'ancient_map_jiuyu_year' => '1121',
     'ancient_map_jiuyu_body' => '<p>Địa đồ thể hiện cương vực quốc gia hoàn chỉnh sớm nhất của nhà Tống, xuất hiện năm <strong>1121</strong> (Tuyên Hòa thứ 3). Khắc trên đá, phát hiện năm 1960 tại huyện Vinh, tỉnh Tứ Xuyên.</p><p>Giới hạn phía Nam của nhà Tống trong bản đồ này đến <strong>Quỳnh Châu (Hải Nam)</strong>. Hình thể đảo Hải Nam được vẽ khá chuẩn xác, gần với bản đồ hiện đại.</p>',

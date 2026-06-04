@@ -21,14 +21,33 @@ Trên server:
 cd /www/wwwroot/ninedashline.net   # đổi đúng path
 git pull
 ls -la public/build/manifest.json   # phải tồn tại
-php artisan storage:link
+php artisan storage:link --force
 php artisan optimize:clear
 ```
 
+## Ảnh / file `/storage/...` (Git)
+
+| Đường dẫn | Git | Ghi chú |
+|-----------|-----|---------|
+| `storage/app/public/**` | **Có** commit | Ảnh, âm thanh |
+| `public/storage` | **Không** commit | Symlink — không push/pull |
+
+```bash
+# Thêm ảnh (máy dev)
+git add storage/app/public
+git commit -m "Cập nhật ảnh public"
+git push
+
+# Repo cũ từng track public/storage (một lần)
+bash scripts/git-untrack-public-storage.sh
+```
+
+`composer install` tự `storage:link`. Sau mỗi `git pull` trên server: `php artisan storage:link --force`.
+
 ## Quy trình deploy thường ngày
 
-1. **Máy dev:** sửa code → `npm run build` nếu đổi CSS/JS/SCSS → commit `public/build` + code.
-2. **Server:** `git pull` — **không** chạy `npm run build`.
+1. **Máy dev:** sửa code → `npm run build` nếu đổi CSS/JS → commit `public/build` + `storage/app/public` (ảnh mới) + code.
+2. **Server:** `git pull` → `php artisan storage:link --force` — **không** chạy `npm run build`.
 
 ## Cache Laravel
 
@@ -65,6 +84,7 @@ Kỳ vọng: `contentLocales` ≈ 50, `hero_title_line1` của `en`/`ja` khác t
 ## Quyền thư mục (aaPanel, user `www`)
 
 ```bash
+php artisan storage:link --force
 chown -R www:www storage/app/public
 find storage/app/public -type d -exec chmod 755 {} \;
 find storage/app/public -type f -exec chmod 644 {} \;

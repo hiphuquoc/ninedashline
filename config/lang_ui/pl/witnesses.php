@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'witnesses_index' => 'Stare mapy',
-    'witnesses_label' => 'Milczący świadkowie',
-    'witnesses_title' => 'Stare mapy',
-    'witnesses_title_accent' => 'samych siebie',
-    'witnesses_lead' => 'Przez wiele stuleci oficjalne mapy Chin wskazywały <em>wyspę Hajnan jako najbardziej wysunięty na południe punkt</em> terytorium — bez żadnej linii w kształcie litery U obejmującej Morze Południowochińskie. Przyjrzyj się południowej granicy przez lupę.',
+    'witnesses_index' => 'Mapy historyczne',
+    'witnesses_label' => 'Chińskie mapy historyczne',
+    'witnesses_title' => 'Najdalej na południe sięga',
+    'witnesses_title_accent' => 'wyspa Hajnan',
+    'witnesses_lead' => 'Chińscy autorzy sporządzali historyczne mapy — ułożone chronologicznie — które konsekwentnie przedstawiają <em>wyspę Hajnan jako najbardziej wysunięty na południe</em> obszar Chin, bez Wysp Paracelskich ani Wysp Spratly. Materiały zestawiono na podstawie <em>Suwerenność państwa Wietnamu nad dwiema archipelagami Wysp Paracelskich i Wysp Spratly</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Użyj lupy',
     'witnesses_map1_svg_hainan' => 'Hajnan 海南',
     'witnesses_map1_svg_south' => '— najbardziej na południe wysunięty punkt terytorium —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Mapa cesarskich prowincji · 1904',
     'witnesses_map3_title' => 'Kompletna mapa geograficzna cesarskich prowincji',
     'witnesses_map3_body' => 'Wydana przez dynastię Qing — wyraźnie wskazuje, że najbardziej na południe wysuniętym punktem terytorium Chin jest wyspa Hajnan.',
-    'witnesses_quote' => 'Same dokumenty ich przodków nie przedstawiały Linii dziewięciu kresek.',
+    'witnesses_quote' => 'Same opublikowane niegdyś chińskie mapy nie przedstawiały Wysp Paracelskich ani Wysp Spratly jako części ich terytorium.',
+    'witnesses_timeline_aria' => 'Oś czasu chińskich map historycznych',
+    'witnesses_year_aria' => 'Data',
+    'lightbox_aria' => 'Zobacz obraz w powiększeniu',
+    'lightbox_close' => 'Zamknij',
+    'lightbox_prev' => 'Poprzedni obraz',
+    'lightbox_next' => 'Następny obraz',
 ];

@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => 'Oude kaarten',
-    'witnesses_label' => 'Stille getuigen',
-    'witnesses_title' => 'Oude kaarten van',
-    'witnesses_title_accent' => 'henzelf',
-    'witnesses_lead' => 'Eeuwenlang vermeldden de officiële kaarten van China consequent <em>het eiland Hainan als het zuidelijkste punt</em> van het grondgebied — zonder enige U-vormige lijn die de Zuid-Chinese Zee omspande. Gebruik een vergrootglas om de zuidelijke grens te bekijken.',
+    'witnesses_label' => 'Oude kaarten van China',
+    'witnesses_title' => 'Reikt alleen tot het uiterste zuiden',
+    'witnesses_title_accent' => 'het eiland Hainan',
+    'witnesses_lead' => 'Oude kaarten getekend door Chinese auteurs — chronologisch gerangschikt — tonen allemaal dat <em>het eiland Hainan het uiterste zuiden</em> van China is, zonder Paraceleilanden of Spratly-eilanden. Samengestelde bronnen volgens <em>Nationale soevereiniteit van Vietnam over de twee archipels Paraceleilanden en Spratly-eilanden</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Vergrootglas bekijken',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— zuidelijkste punt van het grondgebied —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Groot Qing-geïllustreerd geografisch atlas · 1904',
     'witnesses_map3_title' => 'Groot Qing-geïllustreerd geografisch atlas',
     'witnesses_map3_body' => 'Gedrukt door de Qing-dynastie — vermeldt duidelijk dat het zuidelijkste punt van het grondgebied van China het eiland Hainan is.',
-    'witnesses_quote' => 'Hun eigen voorouderlijke documenten tekenden de Negenstreepjeslijn niet.',
+    'witnesses_quote' => 'De door China zelf gepubliceerde kaarten tekenden Paraceleilanden — Spratly-eilanden niet in hun grondgebied.',
+    'witnesses_timeline_aria' => 'Tijdlijn van oude Chinese kaarten',
+    'witnesses_year_aria' => 'Datering',
+    'lightbox_aria' => 'Vergrote afbeelding bekijken',
+    'lightbox_close' => 'Sluiten',
+    'lightbox_prev' => 'Vorige afbeelding',
+    'lightbox_next' => 'Volgende afbeelding',
 ];

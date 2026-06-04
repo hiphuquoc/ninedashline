@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'witnesses_index' => 'Mapas antigos',
-    'witnesses_label' => 'Testemunhas silenciosas',
-    'witnesses_title' => 'Mapas antigos de',
-    'witnesses_title_accent' => 'eles próprios',
-    'witnesses_lead' => 'Durante séculos, os mapas oficiais de China registraram <em>a ilha de Hainan como o ponto mais ao sul</em> do território — sem qualquer linha em U que envolvesse o Mar do Sul da China. Use a lupa para examinar a fronteira meridional.',
+    'witnesses_index' => 'Mapa antigo',
+    'witnesses_label' => 'Mapa antigo da China',
+    'witnesses_title' => 'O ponto mais ao sul chega apenas até',
+    'witnesses_title_accent' => 'a ilha de Hainan',
+    'witnesses_lead' => 'Os mapas antigos desenhados por autores chineses — organizados em ordem cronológica — mostram todos <em>a ilha de Hainan como o ponto mais ao sul</em> da China, sem Hoàng Sa nem Trường Sa. Documentação compilada segundo <em>Soberania nacional do Vietname nas duas arquipélagos Hoàng Sa e Trường Sa</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Lupa',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— extremo sul do território —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Império Qing · 1904',
     'witnesses_map3_title' => 'Mapa geográfico completo das províncias sob a administração direta imperial',
     'witnesses_map3_body' => 'Impresso pela dinastia Qing — indica claramente que o extremo sul do território de China era a ilha de Hainan.',
-    'witnesses_quote' => 'Os próprios documentos de seus ancestrais não desenhavam a Linha dos Nove Traços.',
+    'witnesses_quote' => 'Os próprios mapas chineses já publicados nunca desenharam Hoàng Sa — Trường Sa como parte do seu território.',
+    'witnesses_timeline_aria' => 'Linha do tempo dos mapas antigos da China',
+    'witnesses_year_aria' => 'Data',
+    'lightbox_aria' => 'Ver imagem ampliada',
+    'lightbox_close' => 'Fechar',
+    'lightbox_prev' => 'Imagem anterior',
+    'lightbox_next' => 'Próxima imagem',
 ];

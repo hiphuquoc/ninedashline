@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'தோற்றம்',
     'nav_rail_dispute' => 'சர்ச்சை',
     'nav_rail_opposition' => 'எதிர்ப்பு',
-    'nav_rail_witnesses' => 'பழைய வரைபடங்கள்',
+    'nav_rail_witnesses' => 'பண்டைய வரைபடங்கள்',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'பராசல் தீவுகள் - ஸ்ப்ராட்லி தீவுகள்',
     'nav_sound_off' => 'பின்னணி இசையை இயக்கு',

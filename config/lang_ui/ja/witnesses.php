@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => '古地図',
-    'witnesses_label' => '静かな証人',
-    'witnesses_title' => '古地図が語る',
-    'witnesses_title_accent' => '彼ら自身の',
-    'witnesses_lead' => '何世紀にもわたり、中国の正統地図はいずれも<em>海南島を領土の最南端</em>として示しており、南シナ海を囲い込むU字線は存在しません。虫眼鏡で南側の境界を見てみましょう。',
+    'witnesses_label' => '中国の古地図',
+    'witnesses_title' => '最南端は',
+    'witnesses_title_accent' => '海南島まで',
+    'witnesses_lead' => '中国人の作成した古地図は、時系列に並べても、いずれも<em>海南島を中国の最南端</em>として示しており、西沙諸島や南沙諸島は含まれていません。資料は<em>『ベトナムの西沙諸島・南沙諸島における国家主権』</em>（Trương Minh Dục、2015年）に基づいて整理しています。',
     'witnesses_hint' => '⌖ 虫眼鏡で見る',
     'witnesses_map1_svg_hainan' => '海南 海南',
     'witnesses_map1_svg_south' => '— 領土の最南端 —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => '清朝直隷全図・1904年',
     'witnesses_map3_title' => '清朝直隷全図',
     'witnesses_map3_body' => '清朝によって印刷された地図であり、中国領土の最南端が海南島であることを明記している。',
-    'witnesses_quote' => '彼らの祖先自身の文書には、九段線は描かれていなかった。',
+    'witnesses_quote' => '中国が公表してきた地図そのものに、西沙諸島・南沙諸島を自国領土として描いたものはありませんでした。',
+    'witnesses_timeline_aria' => '中国の古地図の年表',
+    'witnesses_year_aria' => '年代',
+    'lightbox_aria' => '拡大画像を見る',
+    'lightbox_close' => '閉じる',
+    'lightbox_prev' => '前の画像',
+    'lightbox_next' => '次の画像',
 ];

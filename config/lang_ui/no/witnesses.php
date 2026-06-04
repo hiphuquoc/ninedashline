@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => 'Gamle kart',
-    'witnesses_label' => 'Stumme vitner',
-    'witnesses_title' => 'Gamle kart av',
-    'witnesses_title_accent' => 'dem selv',
-    'witnesses_lead' => 'I mange århundrer har offisielle kart fra Kina konsekvent angitt <em>øya Hainan som det sørligste punktet</em> i territoriet — uten noen U-formet linje som omkranser Sør-Kinahavet. Bruk lupe for å se nærmere på den sørlige grensen.',
+    'witnesses_label' => 'Gamle kinesiske kart',
+    'witnesses_title' => 'Den sørligste grensen når bare til',
+    'witnesses_title_accent' => 'Hainanøya',
+    'witnesses_lead' => 'De gamle kartene tegnet av kinesiske forfattere — ordnet kronologisk — viser alle at <em>Hainanøya er Kinas sørligste punkt</em>, uten Paraceløyene eller Spratlyøyene. Materialet er samlet fra <em>Vietnams nasjonale suverenitet over Paraceløyene og Spratlyøyene</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Se med lupe',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— territoriets sørligste punkt —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Keiserlig prefekturkart · 1904',
     'witnesses_map3_title' => 'Keiserlig prefekturkart over rikets geografi',
     'witnesses_map3_body' => 'Trykt av Qing-dynastiet — viser tydelig at Kinas sørligste territorium er øya Hainan.',
-    'witnesses_quote' => 'Selv deres egne forfedres dokumenter tegnet ikke opp Ni-streklinjen.',
+    'witnesses_quote' => 'Selv kart som Kina tidligere publiserte, tegnet ikke inn Paraceløyene eller Spratlyøyene som en del av deres territorium.',
+    'witnesses_timeline_aria' => 'Tidslinje for gamle kinesiske kart',
+    'witnesses_year_aria' => 'Datering',
+    'lightbox_aria' => 'Vis forstørret bilde',
+    'lightbox_close' => 'Lukk',
+    'lightbox_prev' => 'Forrige bilde',
+    'lightbox_next' => 'Neste bilde',
 ];

@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => 'Peta kuna',
-    'witnesses_label' => 'Saksi meneng',
-    'witnesses_title' => 'Peta kuna saka',
-    'witnesses_title_accent' => 'dhéwé-dhéwé',
-    'witnesses_lead' => 'Sajroning pirang-pirang abad, peta resmi Tiongkok mesthi nyathet <em>pulo Hainan minangka titik paling kidul</em> ing tlatahé — ora ana garis U sing ngubengi Segara Tiongkok Kidul. Ayo gunakna kaca pembesar kanggo nyemak wates sisih kidul.',
+    'witnesses_label' => 'Peta kuna Tiongkok',
+    'witnesses_title' => 'Wates kidul mung tekan',
+    'witnesses_title_accent' => 'Pulo Hainan',
+    'witnesses_lead' => 'Peta kuna sing digambar déning panulis Tiongkok — disusun miturut wektu — kabeh nuduhaké <em>Pulo Hainan minangka titik paling kidul</em> Tiongkok, tanpa ana Kapuloan Paracel utawa Kapuloan Spratly. Bahan dirangkum saka <em>Kedaulatan negara Vietnam ing rong kapuloan Hoàng Sa lan Trường Sa</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Semak nganggo kaca pembesar',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— titik paling kidul tlatah —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Qing triwulan provinsi · 1904',
     'witnesses_map3_title' => 'Qing triwulan provinsi atlas géografi lengkap',
     'witnesses_map3_body' => 'Dicithak déning Dinasti Qing — kanthi cetha nyathet yèn titik paling kidul tlatah Tiongkok yaiku pulo Hainan.',
-    'witnesses_quote' => 'Malah dokumèn para leluhuré dhéwé ora nggambarake Garis Sembilan Garis Putus.',
+    'witnesses_quote' => 'Peta Tiongkok sing tau diumumaké dhéwé uga ora nggambaraké Hoàng Sa — Trường Sa ing tlatah negarane.',
+    'witnesses_timeline_aria' => 'Garis wektu peta kuna Tiongkok',
+    'witnesses_year_aria' => 'Taun',
+    'lightbox_aria' => 'Deleng gambar kanthi gedhé',
+    'lightbox_close' => 'Tutup',
+    'lightbox_prev' => 'Gambar sadurungé',
+    'lightbox_next' => 'Gambar sabanjuré',
 ];

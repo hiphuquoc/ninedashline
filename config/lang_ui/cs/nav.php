@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'Původ',
     'nav_rail_dispute' => 'Spory',
     'nav_rail_opposition' => 'Opozice',
-    'nav_rail_witnesses' => 'Staré mapy',
+    'nav_rail_witnesses' => 'Starověké mapy',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'Paracelské ostrovy – Spratlyho ostrovy',
     'nav_sound_off' => 'Zapnout hudbu na pozadí',

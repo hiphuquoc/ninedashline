@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'Origem',
     'nav_rail_dispute' => 'Controvérsia',
     'nav_rail_opposition' => 'Oposição',
-    'nav_rail_witnesses' => 'Mapas antigos',
+    'nav_rail_witnesses' => 'Mapa antigo',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'Ilhas Paracel - Ilhas Spratly',
     'nav_sound_off' => 'Ativar música de fundo',

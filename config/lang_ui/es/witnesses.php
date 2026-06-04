@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => 'Mapas antiguos',
-    'witnesses_label' => 'Testigos silenciosos',
-    'witnesses_title' => 'Mapas antiguos de',
-    'witnesses_title_accent' => 'ellos mismos',
-    'witnesses_lead' => 'Durante muchos siglos, los mapas oficiales de China registraron <em>la isla de Hainan como el punto más meridional</em> de su territorio, sin ninguna línea en forma de U que abarcara todo el Mar de China Meridional. Utilice la lupa para examinar la frontera sur.',
+    'witnesses_label' => 'Mapas antiguos de China',
+    'witnesses_title' => 'Solo llega hasta el extremo sur',
+    'witnesses_title_accent' => 'la isla de Hainan',
+    'witnesses_lead' => 'Los mapas antiguos dibujados por autores chinos — ordenados cronológicamente — muestran todos que <em>la isla de Hainan es el extremo sur</em> de China, sin Islas Paracel ni Islas Spratly. Material recopilado según <em>Soberanía nacional de Vietnam en las dos archipiélagos de las Islas Paracel y las Islas Spratly</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Examinar con lupa',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— extremo sur del territorio —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Provincias del Imperio Qing · 1904',
     'witnesses_map3_title' => 'Mapa geográfico completo de las provincias del Imperio Qing',
     'witnesses_map3_body' => 'Impreso por la dinastía Qing; indicaba claramente que el punto más meridional del territorio chino era la isla de Hainan.',
-    'witnesses_quote' => 'Los propios documentos de sus antepasados no trazaban la Línea de nueve guiones.',
+    'witnesses_quote' => 'Los propios mapas publicados por China no incluían las Islas Paracel ni las Islas Spratly en su territorio.',
+    'witnesses_timeline_aria' => 'Cronología de mapas antiguos de China',
+    'witnesses_year_aria' => 'Fecha',
+    'lightbox_aria' => 'Ver imagen ampliada',
+    'lightbox_close' => 'Cerrar',
+    'lightbox_prev' => 'Imagen anterior',
+    'lightbox_next' => 'Imagen siguiente',
 ];

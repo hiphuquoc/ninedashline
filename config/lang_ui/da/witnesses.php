@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => 'Gamle kort',
-    'witnesses_label' => 'Stille vidner',
-    'witnesses_title' => 'De gamle kort af',
-    'witnesses_title_accent' => 'dem selv',
-    'witnesses_lead' => 'I århundreder har Kinas officielle kort angivet <em>Hainan-øen som det sydligste punkt</em> i territoriet — uden nogen U-formet linje, der omslutter Det Sydkinesiske Hav. Brug lupen til at se nærmere på den sydlige grænse.',
+    'witnesses_label' => 'Gamle kinesiske kort',
+    'witnesses_title' => 'Det sydligste punkt når kun til',
+    'witnesses_title_accent' => 'Hainan-øen',
+    'witnesses_lead' => 'Gamle kort tegnet af kinesiske forfattere — ordnet kronologisk — viser alle, at <em>Hainan-øen er Kinas sydligste punkt</em>, uden Paraceløerne eller Spratlyøerne. Materialet er samlet fra <em>Vietnams nationale suverænitet over øgrupperne Paraceløerne og Spratlyøerne</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Brug lupen',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— territoriets sydligste punkt —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Kejserligt atlas over de direkte administrerede provinser · 1904',
     'witnesses_map3_title' => 'Kejserligt atlas over de direkte administrerede provinser',
     'witnesses_map3_body' => 'Trykt af Qing-dynastiet — angiver klart, at Kinas sydligste punkt er Hainan-øen.',
-    'witnesses_quote' => 'Selv deres forfædres egne dokumenter tegnede ikke Ni-streglinjen.',
+    'witnesses_quote' => 'Selv de kort, som Kina offentliggjorde, viste ikke Paraceløerne og Spratlyøerne som en del af deres territorium.',
+    'witnesses_timeline_aria' => 'Tidslinje over gamle kinesiske kort',
+    'witnesses_year_aria' => 'Datering',
+    'lightbox_aria' => 'Se billede i forstørrelse',
+    'lightbox_close' => 'Luk',
+    'lightbox_prev' => 'Forrige billede',
+    'lightbox_next' => 'Næste billede',
 ];

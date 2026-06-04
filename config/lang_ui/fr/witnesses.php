@@ -2,10 +2,10 @@
 
 return [
     'witnesses_index' => 'Cartes anciennes',
-    'witnesses_label' => 'Témoins silencieux',
-    'witnesses_title' => 'Les cartes anciennes de',
-    'witnesses_title_accent' => 'leur propre main',
-    'witnesses_lead' => 'Pendant des siècles, les cartes officielles de la Chine indiquaient toutes que <em>l’île de Hainan constituait l’extrémité sud</em> du territoire — sans aucune ligne en U englobant la mer de Chine méridionale. Prenons une loupe pour examiner la frontière méridionale.',
+    'witnesses_label' => 'Cartes anciennes de Chine',
+    'witnesses_title' => 'Ne s’étend qu’au sud jusqu’à',
+    'witnesses_title_accent' => 'l’île de Hainan',
+    'witnesses_lead' => 'Les cartes anciennes dessinées par des auteurs chinois — classées chronologiquement — montrent toutes <em>l’île de Hainan comme l’extrême sud</em> de la Chine, sans les Îles Paracels ni les Îles Spratleys. Documentation synthétisée d’après <em>La souveraineté nationale du Viêt Nam sur les deux archipels des Îles Paracels et des Îles Spratleys</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Examiner à la loupe',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— extrémité sud du territoire —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Atlas géographique complet des provinces sous la dynastie impériale · 1904',
     'witnesses_map3_title' => 'Atlas géographique complet des provinces sous la dynastie impériale',
     'witnesses_map3_body' => 'Imprimé sous les Qing — il indique clairement que l’extrémité sud du territoire de la Chine est l’île de Hainan.',
-    'witnesses_quote' => 'Les documents mêmes de leurs ancêtres n’ont pas tracé la Ligne en neuf traits.',
+    'witnesses_quote' => 'Les propres cartes publiées par la Chine n’ont jamais placé les Îles Paracels — Îles Spratleys dans leur territoire.',
+    'witnesses_timeline_aria' => 'Chronologie des cartes anciennes chinoises',
+    'witnesses_year_aria' => 'Date',
+    'lightbox_aria' => 'Voir l’image en grand',
+    'lightbox_close' => 'Fermer',
+    'lightbox_prev' => 'Image précédente',
+    'lightbox_next' => 'Image suivante',
 ];

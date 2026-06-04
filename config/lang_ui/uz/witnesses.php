@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'witnesses_index' => 'Qadimgi xaritalar',
-    'witnesses_label' => 'Jim guvohlar',
-    'witnesses_title' => 'Qadimgi xaritalari',
-    'witnesses_title_accent' => 'o‘zlarining',
-    'witnesses_lead' => 'Asrlar davomida Xitoyning rasmiy xaritalarida <em>Hainan oroli hududning eng janubiy nuqtasi</em> sifatida qayd etilgan — Janubiy Xitoy dengizini to‘liq qamrab olgan U shaklidagi chiziq umuman yo‘q. Janubiy chegaraga lupa bilan nazar tashlang.',
+    'witnesses_index' => 'Qadimiy xaritalar',
+    'witnesses_label' => 'Xitoyning qadimiy xaritalari',
+    'witnesses_title' => 'Eng janubiy chegara faqat',
+    'witnesses_title_accent' => 'Xaynan oroligacha',
+    'witnesses_lead' => 'Xitoy mualliflari chizgan qadimiy xaritalar — xronologik tartibda joylashtirilgan — barchasi <em>Xaynan oroli Xitoyning eng janubiy nuqtasi</em> ekanini ko‘rsatadi, Parasel orollari yoki Spratli orollari yo‘q. Materiallar <em>Vyetnamning Parasel orollari va Spratli orollaridagi milliy suvereniteti</em> (Truong Minh Duk, 2015) asariga tayangan holda jamlangan.',
     'witnesses_hint' => '⌖ Lupani tekshiring',
     'witnesses_map1_svg_hainan' => 'Hainan 海南',
     'witnesses_map1_svg_south' => '— hududning eng janubiy nuqtasi —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Imperatorlik saroyi provinsiyalari geodezik to‘liq xaritasi · 1904',
     'witnesses_map3_title' => 'Imperatorlik saroyi provinsiyalari geodezik to‘liq xaritasi',
     'witnesses_map3_body' => 'Sin sulolasi tomonidan chop etilgan — Xitoy hududining eng janubiy nuqtasi aniq Hainan oroli ekani ko‘rsatilgan.',
-    'witnesses_quote' => 'Aynan ularning ajdodlari hujjatlari To\'qqiz chiziqli chegarani chizmagan.',
+    'witnesses_quote' => 'Xitoy tomonidan e’lon qilingan xaritalarning o‘zida ham Parasel orollari - Spratli orollari ularning hududi sifatida chizilmagan.',
+    'witnesses_timeline_aria' => 'Xitoyning qadimiy xaritalari vaqt jadvali',
+    'witnesses_year_aria' => 'Sana',
+    'lightbox_aria' => 'Kattalashtirilgan rasmni ko‘rish',
+    'lightbox_close' => 'Yopish',
+    'lightbox_prev' => 'Oldingi rasm',
+    'lightbox_next' => 'Keyingi rasm',
 ];

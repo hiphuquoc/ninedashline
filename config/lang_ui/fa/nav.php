@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'خاستگاه',
     'nav_rail_dispute' => 'مجادله',
     'nav_rail_opposition' => 'مخالفت',
-    'nav_rail_witnesses' => 'نقشه‌های قدیمی',
+    'nav_rail_witnesses' => 'نقشه‌های باستانی',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'جزایر پاراسل - جزایر اسپراتلی',
     'nav_sound_off' => 'موسیقی پس‌زمینه را روشن کنید',

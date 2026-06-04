@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'witnesses_index' => 'Staré mapy',
-    'witnesses_label' => 'Tichí svědkové',
-    'witnesses_title' => 'Staré mapy',
-    'witnesses_title_accent' => 'samy o sobě',
-    'witnesses_lead' => 'Po mnoho staletí oficiální mapy Číny uváděly <em>ostrov Chaj-nan jako nejjižnější bod</em> území — žádná U‑čára, která by obepínala Jihočínské moře, neexistovala. Podívejme se lupou na jižní hranici.',
+    'witnesses_index' => 'Starověké mapy',
+    'witnesses_label' => 'Starověké mapy Číny',
+    'witnesses_title' => 'Nejjižněji až k',
+    'witnesses_title_accent' => 'ostrovu Chaj-nan',
+    'witnesses_lead' => 'Starověké mapy vytvořené čínskými autory — seřazené chronologicky — všechny ukazují <em>ostrov Chaj-nan jako nejjižnější</em> část Číny, bez Paracelských ostrovů ani Spratlyho ostrovů. Podklady jsou zpracovány podle díla <em>Státní svrchovanost Vietnamu nad dvěma souostrovími Hoàng Sa a Trường Sa</em> (Trương Minh Dục, 2015).',
     'witnesses_hint' => '⌖ Přiblížit lupou',
     'witnesses_map1_svg_hainan' => 'Chaj-nan 海南',
     'witnesses_map1_svg_south' => '— nejjižnější bod území —',
@@ -22,5 +22,11 @@ return [
     'witnesses_map3_svg_era' => 'Císařská geografická mapa provincií · 1904',
     'witnesses_map3_title' => 'Kompletní geografická mapa provincií císařské dynastie Čching',
     'witnesses_map3_body' => 'Tištěno dynastií Čching — výslovně uvádí, že nejjižnějším bodem území Číny je ostrov Chaj-nan.',
-    'witnesses_quote' => 'Sama jejich předci tyto dokumenty Čáru devíti čárek nezakreslili.',
+    'witnesses_quote' => 'Právě čínské mapy zveřejněné samotnou Čínou nikdy nezobrazovaly Paracelské ostrovy ani Spratlyho ostrovy jako součást jejího území.',
+    'witnesses_timeline_aria' => 'Časová osa starověkých map Číny',
+    'witnesses_year_aria' => 'Datace',
+    'lightbox_aria' => 'Zobrazit zvětšený obrázek',
+    'lightbox_close' => 'Zavřít',
+    'lightbox_prev' => 'Předchozí obrázek',
+    'lightbox_next' => 'Další obrázek',
 ];

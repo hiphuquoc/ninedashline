@@ -1,6 +1,7 @@
-# Chỉ bỏ qua runtime / dev — phần còn lại của public/ (kể cả build/) commit lên git.
+# Runtime / dev — không commit. Ảnh/audio: git add storage/app/public (không phải public/storage).
 /hot
 /storage
+/storage/**
 /fonts-manifest.dev.json
 .DS_Store
 Thumbs.db

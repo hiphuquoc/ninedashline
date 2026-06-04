@@ -23,6 +23,7 @@ function lang_ui_sync_keys(?string $root = null): array
         'dispute.php',
         'opposition.php',
         'witnesses.php',
+        'ancient_maps.php',
         'verdict.php',
         'sovereignty.php',
         'footer.php',

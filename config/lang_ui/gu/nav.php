@@ -9,7 +9,7 @@ return [
     'nav_rail_origin' => 'ઉદ્ભવ',
     'nav_rail_dispute' => 'વિવાદ',
     'nav_rail_opposition' => 'વિરોધ',
-    'nav_rail_witnesses' => 'પ્રાચીન નકશા',
+    'nav_rail_witnesses' => 'પ્રાચીન નકશાઓ',
     'nav_rail_verdict' => 'PCA 2016',
     'nav_rail_sovereignty' => 'પેરાસેલ ટાપુઓ – સ્પ્રેટલી ટાપુઓ',
     'nav_sound_off' => 'પૃષ્ઠભૂમિ સંગીત ચાલુ કરો',
