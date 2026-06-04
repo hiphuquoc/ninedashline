@@ -1,0 +1,40 @@
+{
+  "resources/css/landing-fab.css": {
+    "file": "assets/landing-fab-B9hVjWtc.css",
+    "src": "resources/css/landing-fab.css",
+    "isEntry": true
+  },
+  "resources/css/landing-lang-switcher.css": {
+    "file": "assets/landing-lang-switcher-D5raqQ_w.css",
+    "src": "resources/css/landing-lang-switcher.css",
+    "isEntry": true
+  },
+  "resources/css/landing.css": {
+    "file": "assets/landing-thAMeR5I.css",
+    "src": "resources/css/landing.css",
+    "isEntry": true
+  },
+  "resources/js/ancient-map-lightbox.js": {
+    "file": "assets/ancient-map-lightbox-D7AlOr6l.js",
+    "name": "ancient-map-lightbox",
+    "src": "resources/js/ancient-map-lightbox.js",
+    "isEntry": true
+  },
+  "resources/js/landing-i18n.js": {
+    "file": "assets/landing-i18n-wLHmv6tr.js",
+    "name": "landing-i18n",
+    "src": "resources/js/landing-i18n.js",
+    "isEntry": true
+  },
+  "resources/js/landing.js": {
+    "file": "assets/landing-CDVc-jiQ.js",
+    "name": "landing",
+    "src": "resources/js/landing.js",
+    "isEntry": true
+  },
+  "resources/sources/style.scss": {
+    "file": "assets/style-ClAC-cPI.css",
+    "src": "resources/sources/style.scss",
+    "isEntry": true
+  }
+}

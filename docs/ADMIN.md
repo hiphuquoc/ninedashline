@@ -7,7 +7,8 @@ Hệ thống giống **hoangsa.dev**: bản dịch file `config/lang_ui/{locale}
 ```bash
 cd /var/www/html/ninedashline.dev
 bash scripts/install-admin-from-hoangsa.sh   # SCSS → resources/sources/*.scss
-npm install && npm run build
+npm install && npm run build                 # bắt buộc trước khi push — server không build
+git add public/build                         # commit manifest + assets (xem docs/DEPLOY.md)
 composer dump-autoload
 php artisan migrate --force
 php artisan ninedashline:admin-user --email=admin@example.com --password='Mat-khau-manh'
@@ -31,6 +32,29 @@ php artisan view:clear
 ## AI dịch (tùy chọn)
 
 Trong `.env`: `AI_ENABLED=true`, khóa API theo `config/ai.php` và `config/lang_ui_ai.php`.
+
+## Vite (`public/build`)
+
+Production dùng file đã build sẵn — **commit** `public/build/` (manifest + `assets/*`).
+
+- Mỗi lần đổi `resources/css`, `resources/js`, `resources/sources/style.scss` → chạy `npm run build` rồi commit `public/build`.
+- Server **không** cần Node/npm.
+- Lỗi manifest: `docs/DEPLOY.md`.
+
+## Asset public (`storage/app/public`)
+
+Ảnh và file tĩnh **được phép commit** lên GitHub (không giống `storage/framework` hay `storage/logs`).
+
+- Đặt file vào `storage/app/public/images/`, `storage/app/public/sounds/`, …
+- URL: `https://ninedashline.dev/storage/images/...` (cần `php artisan storage:link` trên server)
+- Chi tiết: `storage/app/public/README.md`
+
+```bash
+git add storage/app/public
+git status   # kiểm tra file ảnh/mp3 xuất hiện
+git commit -m "Cập nhật asset storage public"
+git push
+```
 
 ## Lưu ý
 

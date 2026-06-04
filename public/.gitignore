@@ -1,0 +1,6 @@
+# Chỉ bỏ qua runtime / dev — phần còn lại của public/ (kể cả build/) commit lên git.
+/hot
+/storage
+/fonts-manifest.dev.json
+.DS_Store
+Thumbs.db

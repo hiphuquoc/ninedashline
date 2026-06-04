@@ -1,2 +1,5 @@
-*
-!.gitignore
+# File public (ảnh, âm thanh, favicon…) — được commit lên git.
+.DS_Store
+Thumbs.db
+*.tmp
+*.cache

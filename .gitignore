@@ -14,10 +14,8 @@
 /.zed
 /auth.json
 /node_modules
-/public/build
-/public/fonts-manifest.dev.json
-/public/hot
-/public/storage
+# public: build Vite + static commit lên git — xem public/.gitignore (bỏ qua hot, storage symlink)
+# storage: asset upload → storage/app/public (xem storage/app/public/.gitignore)
 /storage/*.key
 /storage/pail
 /vendor
