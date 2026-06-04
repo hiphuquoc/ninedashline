@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Mapas antigos',
+    'witnesses_label' => 'Testemunhas silenciosas',
+    'witnesses_title' => 'Mapas antigos de',
+    'witnesses_title_accent' => 'eles próprios',
+    'witnesses_lead' => 'Durante séculos, os mapas oficiais de China registraram <em>a ilha de Hainan como o ponto mais ao sul</em> do território — sem qualquer linha em U que envolvesse o Mar do Sul da China. Use a lupa para examinar a fronteira meridional.',
+    'witnesses_hint' => '⌖ Lupa',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— extremo sul do território —',
+    'witnesses_map1_svg_era' => 'Dinastia Song · 1136',
+    'witnesses_map1_title' => 'Mapa da dinastia Song, 1136',
+    'witnesses_map1_body' => 'O território de China termina na ilha de Hainan — as Ilhas Paracel e as Ilhas Spratly ficam fora dos limites.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'limite de d\'Anville',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'Mapa de d\'Anville, 1735',
+    'witnesses_map2_body' => 'Desenhado por J.-B. B. d\'Anville; a cópia de 1740 foi oferecida pelo chanceler alemão ao líder de China. O território da dinastia Qing terminava em Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"extremo sul de China"',
+    'witnesses_map3_svg_era' => 'Império Qing · 1904',
+    'witnesses_map3_title' => 'Mapa geográfico completo das províncias sob a administração direta imperial',
+    'witnesses_map3_body' => 'Impresso pela dinastia Qing — indica claramente que o extremo sul do território de China era a ilha de Hainan.',
+    'witnesses_quote' => 'Os próprios documentos de seus ancestrais não desenhavam a Linha dos Nove Traços.',
+];

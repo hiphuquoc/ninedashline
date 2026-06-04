@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Oude kaarten',
+    'witnesses_label' => 'Stille getuigen',
+    'witnesses_title' => 'Oude kaarten van',
+    'witnesses_title_accent' => 'henzelf',
+    'witnesses_lead' => 'Eeuwenlang vermeldden de officiële kaarten van China consequent <em>het eiland Hainan als het zuidelijkste punt</em> van het grondgebied — zonder enige U-vormige lijn die de Zuid-Chinese Zee omspande. Gebruik een vergrootglas om de zuidelijke grens te bekijken.',
+    'witnesses_hint' => '⌖ Vergrootglas bekijken',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— zuidelijkste punt van het grondgebied —',
+    'witnesses_map1_svg_era' => 'Song-dynastie · 1136',
+    'witnesses_map1_title' => 'Kaart van de Song-dynastie, 1136',
+    'witnesses_map1_body' => 'Het grondgebied van China eindigde bij het eiland Hainan — de Paraceleilanden en de Spratly-eilanden lagen buiten het territorium.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'd\'Anville-grens',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'Kaart van d\'Anville, 1735',
+    'witnesses_map2_body' => 'Getekend door J.-B. B. d\'Anville; de kopie uit 1740 werd ooit door de Duitse bondskanselier aan een Chinese leider geschonken. Het grondgebied van de Qing-dynastie eindigde bij Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"zuidelijkste punt van China"',
+    'witnesses_map3_svg_era' => 'Groot Qing-geïllustreerd geografisch atlas · 1904',
+    'witnesses_map3_title' => 'Groot Qing-geïllustreerd geografisch atlas',
+    'witnesses_map3_body' => 'Gedrukt door de Qing-dynastie — vermeldt duidelijk dat het zuidelijkste punt van het grondgebied van China het eiland Hainan is.',
+    'witnesses_quote' => 'Hun eigen voorouderlijke documenten tekenden de Negenstreepjeslijn niet.',
+];

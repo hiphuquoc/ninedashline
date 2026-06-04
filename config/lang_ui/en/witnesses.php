@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Historic Maps',
+    'witnesses_label' => 'Silent Witnesses',
+    'witnesses_title' => 'Historic Maps of',
+    'witnesses_title_accent' => 'Their Own Making',
+    'witnesses_lead' => 'For centuries, official Chinese maps consistently identified <em>Hainan Island as the southernmost point</em> of the country\'s territory — with no U-shaped line enclosing the South China Sea. Click any map to view it full size.',
+    'witnesses_hint' => '⌖ Examine with Magnifier',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— southernmost territorial limit —',
+    'witnesses_map1_svg_era' => 'Song Dynasty · 1136',
+    'witnesses_map1_title' => 'Song Dynasty Map, 1136',
+    'witnesses_map1_body' => 'China\'s territory ended at Hainan Island — the Paracel Islands and Spratly Islands lay beyond its borders.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'd\'Anville boundary',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'd\'Anville Map, 1735',
+    'witnesses_map2_body' => 'Drawn by J.-B. B. d\'Anville; a 1740 copy was later presented by a German Chancellor to Chinese leaders. The territory of the Qing Dynasty ended at Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"southernmost point of China"',
+    'witnesses_map3_svg_era' => 'Imperial Provinces Atlas · 1904',
+    'witnesses_map3_title' => 'Complete Geographic Map of the Imperial Provinces',
+    'witnesses_map3_body' => 'Printed by the Qing Dynasty — clearly identifying Hainan Island as the southernmost point of Chinese territory.',
+    'witnesses_quote' => 'The records of their own predecessors did not depict the Nine-Dash Line.',
+];

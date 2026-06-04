@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'מפות עתיקות',
+    'witnesses_label' => 'עדים שקטים',
+    'witnesses_title' => 'המפות העתיקות של',
+    'witnesses_title_accent' => 'עצמם',
+    'witnesses_lead' => 'במשך מאות שנים, המפות הרשמיות של סין ציינו את <em>אי היינאן כנקודה הדרומית ביותר</em> של השטח — ללא שום קו בצורת U המקיף את ים סין הדרומי. השתמשו בזכוכית מגדלת כדי לבחון את הגבול הדרומי.',
+    'witnesses_hint' => '⌖ בחינת זכוכית מגדלת',
+    'witnesses_map1_svg_hainan' => 'היינאן 海南',
+    'witnesses_map1_svg_south' => '— הקצה הדרומי של השטח —',
+    'witnesses_map1_svg_era' => 'שושלת סונג · 1136',
+    'witnesses_map1_title' => 'מפת שושלת סונג, 1136',
+    'witnesses_map1_body' => 'שטחה של סין נעצר באי היינאן — איי פארסל ואיי ספרטלי נמצאים מחוץ לתחום הריבוני.',
+    'witnesses_map2_svg_hainan' => 'היינאן',
+    'witnesses_map2_svg_south' => 'גבול ד\'אןויל',
+    'witnesses_map2_svg_era' => 'ד\'אןויל · 1735',
+    'witnesses_map2_title' => 'מפת ד\'אןויל, 1735',
+    'witnesses_map2_body' => 'צוירה בידי J.-B. B. d\'Anville; העתק מ-1740 הוענק פעם על ידי קנצלר גרמניה למנהיג סין. שטח שושלת צ\'ינג נעצר בהיינאן.',
+    'witnesses_map3_svg_hainan' => '海南 היינאן',
+    'witnesses_map3_svg_south' => '"הקצה הדרומי של סין"',
+    'witnesses_map3_svg_era' => 'העידן הקיסרי · 1904',
+    'witnesses_map3_title' => 'אטלס הגאוגרפיה של מחוזות קיסריים',
+    'witnesses_map3_body' => 'הודפס בידי שושלת צ\'ינג — מציין בבירור כי הקצה הדרומי של שטח סין הוא אי היינאן.',
+    'witnesses_quote' => 'המסמכים של אבותיהם עצמם לא ציירו את קו תשע המקפים.',
+];

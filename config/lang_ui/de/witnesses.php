@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Alte Karten',
+    'witnesses_label' => 'Stumme Zeugen',
+    'witnesses_title' => 'Die alten Karten von',
+    'witnesses_title_accent' => 'ihnen selbst',
+    'witnesses_lead' => 'Über viele Jahrhunderte hinweg vermerkten die amtlichen Karten Chinas <em>die Insel Hainan als südlichsten Punkt</em> des Staatsgebiets — ohne eine U-förmige Linie, die das Südchinesische Meer umschließt. Verwenden Sie die Lupe, um die südliche Grenze zu betrachten.',
+    'witnesses_hint' => '⌖ Lupe einsetzen',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— südlichster Punkt des Staatsgebiets —',
+    'witnesses_map1_svg_era' => 'Song-Dynastie · 1136',
+    'witnesses_map1_title' => 'Karte der Song-Dynastie, 1136',
+    'witnesses_map1_body' => 'Das Staatsgebiet Chinas endete auf der Insel Hainan — die Paracel-Inseln und die Spratly-Inseln lagen außerhalb des Herrschaftsgebiets.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'd\'Anvilles Grenze',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'Karte von d\'Anville, 1735',
+    'witnesses_map2_body' => 'Von J.-B. B. d\'Anville gezeichnet; eine Kopie von 1740 wurde einst vom deutschen Bundeskanzler an den chinesischen Staatschef verschenkt. Das Territorium der Qing-Dynastie endete in Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"südlichster Punkt Chinas"',
+    'witnesses_map3_svg_era' => 'Großes Qing-Atlas · 1904',
+    'witnesses_map3_title' => 'Geographischer Gesamtatlas der Großen Qing-Dynastie',
+    'witnesses_map3_body' => 'Von der Qing-Dynastie gedruckt — er vermerkt ausdrücklich die Insel Hainan als südlichsten Punkt des Staatsgebiets Chinas.',
+    'witnesses_quote' => 'Die eigenen historischen Quellen haben die Neun-Striche-Linie nicht eingezeichnet.',
+];

@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'قدیم نقشے',
+    'witnesses_label' => 'خاموش گواہ',
+    'witnesses_title' => 'کے قدیم نقشے',
+    'witnesses_title_accent' => 'خود ان کے',
+    'witnesses_lead' => 'صدیوں تک، چین کے سرکاری نقشوں میں <em>جزیرہ ہائنان کو علاقے کا انتہائی جنوبی نقطہ</em> دکھایا جاتا رہا — جنوبی بحیرۂ چین کو گھیرتی ہوئی کوئی U-شکل لکیر موجود نہ تھی۔ آئیے میگنفائنگ گلاس سے جنوبی حد بندی کو دیکھیں۔',
+    'witnesses_hint' => '⌖ میگنفائنگ گلاس سے دیکھیں',
+    'witnesses_map1_svg_hainan' => 'ہائنان 海南',
+    'witnesses_map1_svg_south' => '— علاقے کی انتہائی جنوبی حد —',
+    'witnesses_map1_svg_era' => 'سونگ خاندان · 1136',
+    'witnesses_map1_title' => 'سونگ خاندان کا نقشہ، 1136',
+    'witnesses_map1_body' => 'چین کا علاقہ جزیرہ ہائنان پر ختم ہوتا تھا — پیراسل جزائر اور اسپراٹلی جزائر دائرۂ اختیار سے باہر تھے۔',
+    'witnesses_map2_svg_hainan' => 'ہائنان',
+    'witnesses_map2_svg_south' => 'd\'Anville کی حد',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'd\'Anville کا نقشہ، 1735',
+    'witnesses_map2_body' => 'J.-B. B. d\'Anville نے بنایا؛ 1740 کی نقل جرمنی کے وزیرِاعظم نے ایک چینی رہنما کو تحفے میں دی تھی۔ چنگ سلطنت کا علاقہ ہائنان پر ختم ہوتا تھا۔',
+    'witnesses_map3_svg_hainan' => '海南 ہائنان',
+    'witnesses_map3_svg_south' => '"چین کا انتہائی جنوبی"',
+    'witnesses_map3_svg_era' => 'امپیریل اٹلس آف چائنا · 1904',
+    'witnesses_map3_title' => 'امپیریل اٹلس آف چائنا',
+    'witnesses_map3_body' => 'چنگ سلطنت کی اشاعت — واضح طور پر درج ہے کہ چین کی جنوبی ترین حد جزیرہ ہائنان ہے۔',
+    'witnesses_quote' => 'ان کے اپنے آباؤ اجداد کی دستاویزات نے نو خطوط والی لکیر کو خود نہیں کھینچا تھا۔',
+];

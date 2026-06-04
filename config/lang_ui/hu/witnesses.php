@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Régi térképek',
+    'witnesses_label' => 'Néma tanúk',
+    'witnesses_title' => '<PRIVATE_PERSON>',
+    'witnesses_title_accent' => 'saját régi térképei',
+    'witnesses_lead' => 'Századokon át Kína hivatalos térképei az <em>Hainan-szigetet jelölték meg a terület legdélibb pontjaként</em> — a Dél-kínai-tengert körbezáró U-alakú vonal nélkül. Vegyük elő a nagyítót, és nézzük meg a déli határt.',
+    'witnesses_hint' => '⌖ Nagyítóval vizsgálni',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— a terület legdélibb pontja —',
+    'witnesses_map1_svg_era' => 'Song-dinasztia · 1136',
+    'witnesses_map1_title' => 'A Song-dinasztia térképe, 1136',
+    'witnesses_map1_body' => 'Kína területe Hainan szigeténél véget ér — a Paracel-szigetek és a Spratly-szigetek a határain kívül vannak.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'd\'Anville határa',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'd\'Anville térképe, 1735',
+    'witnesses_map2_body' => 'J.-B. B. d\'Anville készítette; egy 1740-es másolatot a német kancellár ajándékozott a kínai vezetésnek. A Csing-dinasztia területe Hainannál ért véget.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"Kína legdélibb pontja"',
+    'witnesses_map3_svg_era' => 'Konghvang cseng-tu csih-tuj · 1904',
+    'witnesses_map3_title' => 'A Konghvang cseng-tu csih-tuj teljes földrajzi térképe',
+    'witnesses_map3_body' => 'A Csing-dinasztia adta ki — világosan jelzi, hogy Kína területének legdélibb pontja Hainan szigete.',
+    'witnesses_quote' => 'Már az őseik saját dokumentumai sem rajzolták rá a Kilenc vonásos vonalat.',
+];

@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Gamle kort',
+    'witnesses_label' => 'Stille vidner',
+    'witnesses_title' => 'De gamle kort af',
+    'witnesses_title_accent' => 'dem selv',
+    'witnesses_lead' => 'I århundreder har Kinas officielle kort angivet <em>Hainan-øen som det sydligste punkt</em> i territoriet — uden nogen U-formet linje, der omslutter Det Sydkinesiske Hav. Brug lupen til at se nærmere på den sydlige grænse.',
+    'witnesses_hint' => '⌖ Brug lupen',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— territoriets sydligste punkt —',
+    'witnesses_map1_svg_era' => 'Song-dynastiet · 1136',
+    'witnesses_map1_title' => 'Kort fra Song-dynastiet, 1136',
+    'witnesses_map1_body' => 'Kinas territorium stopper ved Hainan-øen — Paraceløerne og Spratlyøerne ligger uden for rigets grænser.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'd\'Anvilles grænse',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'd\'Anville-kortet, 1735',
+    'witnesses_map2_body' => 'Tegnet af J.-B. B. d\'Anville; en kopi fra 1740 blev engang foræret til Kinas ledere af den tyske kansler. Qing-dynastiets territorium stoppede ved Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"Kinas sydligste punkt"',
+    'witnesses_map3_svg_era' => 'Kejserligt atlas over de direkte administrerede provinser · 1904',
+    'witnesses_map3_title' => 'Kejserligt atlas over de direkte administrerede provinser',
+    'witnesses_map3_body' => 'Trykt af Qing-dynastiet — angiver klart, at Kinas sydligste punkt er Hainan-øen.',
+    'witnesses_quote' => 'Selv deres forfædres egne dokumenter tegnede ikke Ni-streglinjen.',
+];

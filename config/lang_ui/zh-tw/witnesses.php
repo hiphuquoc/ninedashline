@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => '古地圖',
+    'witnesses_label' => '沉默的見證',
+    'witnesses_title' => '他們自己的',
+    'witnesses_title_accent' => '古地圖',
+    'witnesses_lead' => '數個世紀以來，中國的正統地圖都記載<em>海南島是領土的最南端</em>——完全沒有包圍南海的 U 形線。請用放大鏡細看南界。',
+    'witnesses_hint' => '⌖ 放大鏡檢視',
+    'witnesses_map1_svg_hainan' => '海南 海南',
+    'witnesses_map1_svg_south' => '— 領土最南端 —',
+    'witnesses_map1_svg_era' => '宋朝 · 1136',
+    'witnesses_map1_title' => '宋朝地圖，1136',
+    'witnesses_map1_body' => '中國領土止於海南島——西沙群島和南沙群島位於疆域之外。',
+    'witnesses_map2_svg_hainan' => '海南',
+    'witnesses_map2_svg_south' => 'd\'Anville 的界線',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'd\'Anville 地圖，1735',
+    'witnesses_map2_body' => '由 J.-B. B. d\'Anville 繪製；1740 年的副本曾由德國總理贈予中國領導人。清朝疆域止於海南。',
+    'witnesses_map3_svg_hainan' => '海南 海南',
+    'witnesses_map3_svg_south' => '「中國最南端」',
+    'witnesses_map3_svg_era' => '清朝直省輿地全圖 · 1904',
+    'witnesses_map3_title' => '清朝直省地理全圖',
+    'witnesses_map3_body' => '由清朝印製——明確標示中國領土最南端是海南島。',
+    'witnesses_quote' => '連他們祖先自己的文獻，也沒有畫出十一段線。',
+];

@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Vanhat kartat',
+    'witnesses_label' => 'Hiljaiset todistajat',
+    'witnesses_title' => 'Heidän omat',
+    'witnesses_title_accent' => 'vanhat karttansa',
+    'witnesses_lead' => 'Vuosisatojen ajan Kiinan viralliset kartat ovat osoittaneet <em>Hainanin saaren eteläisimmäksi pisteeksi</em> alueella — niissä ei ole ollut U:n muotoista viivaa, joka kiertäisi Etelä-Kiinan meren. Käytä suurennuslasia ja tarkastele etelärajaa.',
+    'witnesses_hint' => '⌖ Käytä suurennuslasia',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— alueen eteläisin piste —',
+    'witnesses_map1_svg_era' => 'Song-dynastia · 1136',
+    'witnesses_map1_title' => 'Song-dynastian kartta, 1136',
+    'witnesses_map1_body' => 'Kiinan alue päättyi Hainanin saareen — Paracelsaaret ja Spratlysaaret jäivät valtapiirin ulkopuolelle.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'd\'Anvillen raja',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'd\'Anvillen kartta, 1735',
+    'witnesses_map2_body' => 'J.-B. B. d\'Anvillen laatima; vuoden 1740 kopion Saksan liittokansleri lahjoitti aikoinaan Kiinan johtajalle. Qing-dynastian alue päättyi Hainaniin.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"Kiinan eteläisin piste"',
+    'witnesses_map3_svg_era' => 'Qingin keisarillinen maakuntakartta · 1904',
+    'witnesses_map3_title' => 'Qingin keisarillinen maakuntakartta',
+    'witnesses_map3_body' => 'Qing-dynastian painama — siinä Kiinan alueen eteläisimmäksi pisteeksi on selvästi merkitty Hainanin saari.',
+    'witnesses_quote' => 'Heidän omat esi-isiensä asiakirjat eivät piirtäneet Yhdeksän viivan linjaa.',
+];

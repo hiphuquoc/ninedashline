@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Staré mapy',
+    'witnesses_label' => 'Tichí svedkovia',
+    'witnesses_title' => 'Staré mapy',
+    'witnesses_title_accent' => 'samé hovoria',
+    'witnesses_lead' => 'Po celé stáročia oficiálne mapy Číny uvádzali <em>ostrov Hainan ako najjužnejší bod</em> územia — bez akéhokoľvek U‑tvaru obklopujúceho Juhočínske more. Priblížte si južnú hranicu lupou.',
+    'witnesses_hint' => '⌖ Použiť lupu',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— najjužnejší bod územia —',
+    'witnesses_map1_svg_era' => 'Dynastia Song · 1136',
+    'witnesses_map1_title' => 'Mapa dynastie Song, 1136',
+    'witnesses_map1_body' => 'Územie Číny sa končilo na ostrove Hainan — Paracelské ostrovy a Spratlyho ostrovy ležali mimo hraníc.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'hranica d\'Anville',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'Mapa d\'Anville, 1735',
+    'witnesses_map2_body' => 'Nakreslil ju J.-B. B. d\'Anville; kópia z roku 1740 bola kedysi darovaná nemeckým kancelárom čínskemu vedeniu. Územie dynastie Čching sa končilo pri Hainane.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"najjužnejšia Čína"',
+    'witnesses_map3_svg_era' => 'Celková mapa zemepisu cisárskeho pravosprávneho systému · 1904',
+    'witnesses_map3_title' => 'Celková mapa zemepisu cisárskeho pravosprávneho systému',
+    'witnesses_map3_body' => 'Vydaná dynastiou Čching — jasne uvádza, že najjužnejším územím Číny je ostrov Hainan.',
+    'witnesses_quote' => 'Práve mapy ich predkov nevykresľovali Čiara deviatich čiarok.',
+];

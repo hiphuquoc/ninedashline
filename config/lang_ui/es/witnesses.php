@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Mapas antiguos',
+    'witnesses_label' => 'Testigos silenciosos',
+    'witnesses_title' => 'Mapas antiguos de',
+    'witnesses_title_accent' => 'ellos mismos',
+    'witnesses_lead' => 'Durante muchos siglos, los mapas oficiales de China registraron <em>la isla de Hainan como el punto más meridional</em> de su territorio, sin ninguna línea en forma de U que abarcara todo el Mar de China Meridional. Utilice la lupa para examinar la frontera sur.',
+    'witnesses_hint' => '⌖ Examinar con lupa',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— extremo sur del territorio —',
+    'witnesses_map1_svg_era' => 'Dinastía Song · 1136',
+    'witnesses_map1_title' => 'Mapa de la dinastía Song, 1136',
+    'witnesses_map1_body' => 'El territorio de China terminaba en la isla de Hainan; las Islas Paracel y las Islas Spratly quedaban fuera de sus fronteras.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'límite de d\'Anville',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'Mapa de d\'Anville, 1735',
+    'witnesses_map2_body' => 'Dibujado por J.-B. B. d\'Anville; una copia de 1740 fue obsequiada por un canciller alemán a un dirigente chino. El territorio de la dinastía Qing terminaba en Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"extremo sur de China"',
+    'witnesses_map3_svg_era' => 'Provincias del Imperio Qing · 1904',
+    'witnesses_map3_title' => 'Mapa geográfico completo de las provincias del Imperio Qing',
+    'witnesses_map3_body' => 'Impreso por la dinastía Qing; indicaba claramente que el punto más meridional del territorio chino era la isla de Hainan.',
+    'witnesses_quote' => 'Los propios documentos de sus antepasados no trazaban la Línea de nueve guiones.',
+];

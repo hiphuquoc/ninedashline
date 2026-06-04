@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Antik Haritalar',
+    'witnesses_label' => 'Sessiz Tanıklar',
+    'witnesses_title' => 'Antik Haritaları',
+    'witnesses_title_accent' => 'bizzat onların',
+    'witnesses_lead' => 'Yüzyıllar boyunca Çin’in resmî haritaları <em>Hainan Adası’nı topraklarının en güney noktası</em> olarak kaydetmiştir — Güney Çin Denizi’ni bütünüyle saran U şeklinde bir çizgi yoktur. Gelin, güney sınırına büyüteçle bakalım.',
+    'witnesses_hint' => '⌖ Büyüteçle incele',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— toprakların en güney noktası —',
+    'witnesses_map1_svg_era' => 'Song Hanedanı · 1136',
+    'witnesses_map1_title' => 'Song Hanedanı Haritası, 1136',
+    'witnesses_map1_body' => 'Çin toprakları Hainan Adası’nda sona erer — Paracel Adaları ve Spratly Adaları sınırların dışındadır.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'd\'Anville sınırı',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'd\'Anville Haritası, 1735',
+    'witnesses_map2_body' => 'J.-B. B. d\'Anville tarafından çizildi; 1740 tarihli kopyası bir zamanlar Almanya Başbakanı tarafından Çin liderine hediye edilmiştir. Qing Hanedanı’nın toprakları Hainan’da sona erer.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"Çin\'in en güney noktası"',
+    'witnesses_map3_svg_era' => 'İmparatorluk Doğrudan Eyaletler Haritası · 1904',
+    'witnesses_map3_title' => 'İmparatorluk Doğrudan Eyaletler Coğrafya Tam Haritası',
+    'witnesses_map3_body' => 'Qing Hanedanı tarafından basılmıştır — Çin topraklarının en güney noktası olarak Hainan Adası’nı açıkça gösterir.',
+    'witnesses_quote' => 'Atalarının kendi belgeleri Dokuz Çizgi Hattı’nı hiç çizmiyordu.',
+];

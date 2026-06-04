@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Gamle kart',
+    'witnesses_label' => 'Stumme vitner',
+    'witnesses_title' => 'Gamle kart av',
+    'witnesses_title_accent' => 'dem selv',
+    'witnesses_lead' => 'I mange århundrer har offisielle kart fra Kina konsekvent angitt <em>øya Hainan som det sørligste punktet</em> i territoriet — uten noen U-formet linje som omkranser Sør-Kinahavet. Bruk lupe for å se nærmere på den sørlige grensen.',
+    'witnesses_hint' => '⌖ Se med lupe',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— territoriets sørligste punkt —',
+    'witnesses_map1_svg_era' => 'Song-dynastiet · 1136',
+    'witnesses_map1_title' => 'Kart fra Song-dynastiet, 1136',
+    'witnesses_map1_body' => 'Kinas territorium stopper ved øya Hainan — Paraceløyene og Spratlyøyene ligger utenfor riket.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'd\'Anvilles grense',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'd\'Anville-kartet, 1735',
+    'witnesses_map2_body' => 'Tegnet av J.-B. B. d\'Anville; en kopi fra 1740 ble senere gitt som gave fra Tysklands statsminister til Kinas leder. Qing-dynastiets territorium ender ved Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"Kinas sørligste punkt"',
+    'witnesses_map3_svg_era' => 'Keiserlig prefekturkart · 1904',
+    'witnesses_map3_title' => 'Keiserlig prefekturkart over rikets geografi',
+    'witnesses_map3_body' => 'Trykt av Qing-dynastiet — viser tydelig at Kinas sørligste territorium er øya Hainan.',
+    'witnesses_quote' => 'Selv deres egne forfedres dokumenter tegnet ikke opp Ni-streklinjen.',
+];

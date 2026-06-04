@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Stare mapy',
+    'witnesses_label' => 'Milczący świadkowie',
+    'witnesses_title' => 'Stare mapy',
+    'witnesses_title_accent' => 'samych siebie',
+    'witnesses_lead' => 'Przez wiele stuleci oficjalne mapy Chin wskazywały <em>wyspę Hajnan jako najbardziej wysunięty na południe punkt</em> terytorium — bez żadnej linii w kształcie litery U obejmującej Morze Południowochińskie. Przyjrzyj się południowej granicy przez lupę.',
+    'witnesses_hint' => '⌖ Użyj lupy',
+    'witnesses_map1_svg_hainan' => 'Hajnan 海南',
+    'witnesses_map1_svg_south' => '— najbardziej na południe wysunięty punkt terytorium —',
+    'witnesses_map1_svg_era' => 'Dynastia Song · 1136',
+    'witnesses_map1_title' => 'Mapa z dynastii Song, 1136',
+    'witnesses_map1_body' => 'Terytorium Chin kończyło się na wyspie Hajnan — Wyspy Paracelskie i Wyspy Spratly znajdowały się poza granicami państwa.',
+    'witnesses_map2_svg_hainan' => 'Hajnan',
+    'witnesses_map2_svg_south' => 'granica d\'Anville’a',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'Mapa d\'Anville’a, 1735',
+    'witnesses_map2_body' => 'Narysowana przez J.-B. B. d\'Anville’a; kopia z 1740 roku została podarowana przywódcy Chin przez niemieckiego kanclerza. Terytorium dynastii Qing kończyło się na Hajnan.',
+    'witnesses_map3_svg_hainan' => '海南 Hajnan',
+    'witnesses_map3_svg_south' => '"najbardziej na południe wysunięty punkt Chin"',
+    'witnesses_map3_svg_era' => 'Mapa cesarskich prowincji · 1904',
+    'witnesses_map3_title' => 'Kompletna mapa geograficzna cesarskich prowincji',
+    'witnesses_map3_body' => 'Wydana przez dynastię Qing — wyraźnie wskazuje, że najbardziej na południe wysuniętym punktem terytorium Chin jest wyspa Hajnan.',
+    'witnesses_quote' => 'Same dokumenty ich przodków nie przedstawiały Linii dziewięciu kresek.',
+];

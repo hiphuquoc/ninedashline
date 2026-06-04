@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Gamla kartor',
+    'witnesses_label' => 'Tysta vittnen',
+    'witnesses_title' => 'De gamla kartorna av',
+    'witnesses_title_accent' => 'dem själva',
+    'witnesses_lead' => 'I århundraden angav Kinas officiella kartor <em>Hainanön som den sydligaste punkten</em> i territoriet — utan någon U-formad linje som omsluter Sydkinesiska havet. Använd förstoringsglaset för att granska den södra gränsen.',
+    'witnesses_hint' => '⌖ Använd förstoringsglas',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— territoriets sydligaste punkt —',
+    'witnesses_map1_svg_era' => 'Songdynastin · 1136',
+    'witnesses_map1_title' => 'Karta från Songdynastin, 1136',
+    'witnesses_map1_body' => 'Kinas territorium slutar vid Hainanön — Paracelöarna och Spratlyöarna låg utanför dess område.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'd\'Anvilles gräns',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'd\'Anvilles karta, 1735',
+    'witnesses_map2_body' => 'Ritad av J.-B. B. d\'Anville; en kopia från 1740 överlämnades en gång av Tysklands förbundskansler till Kinas ledare. Qingdynastins territorium slutade vid Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"Kinas sydligaste punkt"',
+    'witnesses_map3_svg_era' => 'Kejsardömets provinskarta · 1904',
+    'witnesses_map3_title' => 'Kejsardömets provinskarta över geografi i sin helhet',
+    'witnesses_map3_body' => 'Tryckt av Qingdynastin — anger tydligt att Kinas territoriums sydligaste punkt är Hainanön.',
+    'witnesses_quote' => 'Själva deras förfäders dokument ritade inte ut Niostrecksgränsen.',
+];

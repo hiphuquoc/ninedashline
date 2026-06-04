@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => '古地図',
+    'witnesses_label' => '静かな証人',
+    'witnesses_title' => '古地図が語る',
+    'witnesses_title_accent' => '彼ら自身の',
+    'witnesses_lead' => '何世紀にもわたり、中国の正統地図はいずれも<em>海南島を領土の最南端</em>として示しており、南シナ海を囲い込むU字線は存在しません。虫眼鏡で南側の境界を見てみましょう。',
+    'witnesses_hint' => '⌖ 虫眼鏡で見る',
+    'witnesses_map1_svg_hainan' => '海南 海南',
+    'witnesses_map1_svg_south' => '— 領土の最南端 —',
+    'witnesses_map1_svg_era' => '宋朝・1136年',
+    'witnesses_map1_title' => '宋代の地図、1136年',
+    'witnesses_map1_body' => '中国の領土は海南島で終わっており、西沙諸島と南沙諸島は版図の外にある。',
+    'witnesses_map2_svg_hainan' => '海南',
+    'witnesses_map2_svg_south' => 'ダンヴィルの境界',
+    'witnesses_map2_svg_era' => 'ダンヴィル・1735年',
+    'witnesses_map2_title' => 'ダンヴィルの地図、1735年',
+    'witnesses_map2_body' => 'J.-B. B. ダンヴィルによって作成され、1740年の複製はかつてドイツの首相が中国の指導者に贈呈したものだった。清朝の領土は海南で終わっている。',
+    'witnesses_map3_svg_hainan' => '海南島 海南',
+    'witnesses_map3_svg_south' => '"中国の最南端"',
+    'witnesses_map3_svg_era' => '清朝直隷全図・1904年',
+    'witnesses_map3_title' => '清朝直隷全図',
+    'witnesses_map3_body' => '清朝によって印刷された地図であり、中国領土の最南端が海南島であることを明記している。',
+    'witnesses_quote' => '彼らの祖先自身の文書には、九段線は描かれていなかった。',
+];

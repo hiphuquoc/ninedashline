@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Peta kuna',
+    'witnesses_label' => 'Saksi meneng',
+    'witnesses_title' => 'Peta kuna saka',
+    'witnesses_title_accent' => 'dhéwé-dhéwé',
+    'witnesses_lead' => 'Sajroning pirang-pirang abad, peta resmi Tiongkok mesthi nyathet <em>pulo Hainan minangka titik paling kidul</em> ing tlatahé — ora ana garis U sing ngubengi Segara Tiongkok Kidul. Ayo gunakna kaca pembesar kanggo nyemak wates sisih kidul.',
+    'witnesses_hint' => '⌖ Semak nganggo kaca pembesar',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— titik paling kidul tlatah —',
+    'witnesses_map1_svg_era' => 'Dinasti Song · 1136',
+    'witnesses_map1_title' => 'Peta Dinasti Song, 1136',
+    'witnesses_map1_body' => 'Tlatah Tiongkok mandheg ing pulo Hainan — Kapuloan Paracel lan Kapuloan Spratly ana ing njaba tlatah kasebut.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'wates d\'Anville',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'Peta d\'Anville, 1735',
+    'witnesses_map2_body' => 'Digambar déning J.-B. B. d\'Anville; salinan taun 1740 tau diwènèhaké déning Kanselir Jerman marang pimpinan Tiongkok. Tlatah Dinasti Qing mandheg ing Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"titik paling kidul Tiongkok"',
+    'witnesses_map3_svg_era' => 'Qing triwulan provinsi · 1904',
+    'witnesses_map3_title' => 'Qing triwulan provinsi atlas géografi lengkap',
+    'witnesses_map3_body' => 'Dicithak déning Dinasti Qing — kanthi cetha nyathet yèn titik paling kidul tlatah Tiongkok yaiku pulo Hainan.',
+    'witnesses_quote' => 'Malah dokumèn para leluhuré dhéwé ora nggambarake Garis Sembilan Garis Putus.',
+];

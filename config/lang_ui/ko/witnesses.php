@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => '고지도',
+    'witnesses_label' => '조용한 증인',
+    'witnesses_title' => '고지도의',
+    'witnesses_title_accent' => '그들 스스로',
+    'witnesses_lead' => '수세기 동안 중국의 정통 지도들은 모두 <em>하이난섬을 영토의 최남단</em>으로 기록해 왔습니다. 남중국해를 둘러싸는 U자선은 전혀 없었습니다. 확대경으로 남쪽 경계를 살펴보십시오.',
+    'witnesses_hint' => '⌖ 확대경으로 보기',
+    'witnesses_map1_svg_hainan' => '하이난 海南',
+    'witnesses_map1_svg_south' => '— 영토의 최남단 —',
+    'witnesses_map1_svg_era' => '송나라 · 1136',
+    'witnesses_map1_title' => '송나라 지도, 1136년',
+    'witnesses_map1_body' => '중국의 영토는 하이난섬에서 끝나며 — 파라셀 제도와 스프래틀리 제도는 영토 밖에 있었습니다.',
+    'witnesses_map2_svg_hainan' => '하이난',
+    'witnesses_map2_svg_south' => 'd\'Anville의 경계',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'd\'Anville 지도, 1735년',
+    'witnesses_map2_body' => 'J.-B. B. d\'Anville이 제작했으며, 1740년 사본은 독일 총리가 중국 지도자에게 증정한 바 있습니다. 청나라의 영토는 하이난에서 끝났습니다.',
+    'witnesses_map3_svg_hainan' => '海南 하이난',
+    'witnesses_map3_svg_south' => '"중국의 최남단"',
+    'witnesses_map3_svg_era' => '황조직성도 · 1904',
+    'witnesses_map3_title' => '황조직성도지리전도',
+    'witnesses_map3_body' => '청나라가 인쇄한 지도 — 중국 영토의 최남단이 하이난섬임을 분명히 표시하고 있습니다.',
+    'witnesses_quote' => '그들 조상의 문헌 자체에도 남중국해 9단선은 그려져 있지 않았습니다.',
+];

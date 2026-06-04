@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Peta Kuno',
+    'witnesses_label' => 'Saksi Diam',
+    'witnesses_title' => 'Peta kuno dari',
+    'witnesses_title_accent' => 'mereka sendiri',
+    'witnesses_lead' => 'Selama berabad-abad, peta resmi Tiongkok selalu mencatat <em>pulau Hainan sebagai titik paling selatan</em> wilayahnya — tanpa garis berbentuk U yang melingkupi Laut Cina Selatan. Gunakan kaca pembesar untuk menelaah batas selatan.',
+    'witnesses_hint' => '⌖ Perbesar dengan kaca pembesar',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— titik paling selatan wilayah —',
+    'witnesses_map1_svg_era' => 'Dinasti Song · 1136',
+    'witnesses_map1_title' => 'Peta Dinasti Song, 1136',
+    'witnesses_map1_body' => 'Wilayah Tiongkok berhenti di pulau Hainan — Kepulauan Paracel dan Kepulauan Spratly berada di luar wilayahnya.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'batas d\'Anville',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'Peta d\'Anville, 1735',
+    'witnesses_map2_body' => 'Digambar oleh J.-B. B. d\'Anville; salinan tahun 1740 pernah dihadiahkan oleh Kanselir Jerman kepada pemimpin Tiongkok. Wilayah Dinasti Qing berhenti di Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"titik paling selatan Tiongkok"',
+    'witnesses_map3_svg_era' => 'Huangchao zhixian ditu · 1904',
+    'witnesses_map3_title' => 'Huangchao zhixian ditu',
+    'witnesses_map3_body' => 'Dicetak oleh Dinasti Qing — dengan jelas menyebut titik paling selatan wilayah Tiongkok adalah pulau Hainan.',
+    'witnesses_quote' => 'Dokumen leluhur mereka sendiri tidak pernah menggambar Garis Sembilan Titik.',
+];

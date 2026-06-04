@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Senieji žemėlapiai',
+    'witnesses_label' => 'Tylieji liudytojai',
+    'witnesses_title' => 'Senieji žemėlapiai',
+    'witnesses_title_accent' => 'pačių jų',
+    'witnesses_lead' => 'Per daugelį šimtmečių oficialiuose Kinijos žemėlapiuose buvo nurodyta, kad <em>Hainano sala yra piečiausias</em> teritorijos taškas — jokios U formos linijos, apimančios Pietų Kinijos jūrą, nebuvo. Pasinaudokite didinamuoju stiklu ir įsižiūrėkite į pietinę ribą.',
+    'witnesses_hint' => '⌖ Naudoti didinamąjį stiklą',
+    'witnesses_map1_svg_hainan' => 'Hainanas 海南',
+    'witnesses_map1_svg_south' => '— piečiausias teritorijos taškas —',
+    'witnesses_map1_svg_era' => 'Songų dinastija · 1136',
+    'witnesses_map1_title' => 'Songų dinastijos žemėlapis, 1136',
+    'witnesses_map1_body' => 'Kinijos teritorija baigiasi prie Hainano salos — Paracelio ir Spratlio salos yra už valstybės ribų.',
+    'witnesses_map2_svg_hainan' => 'Hainanas',
+    'witnesses_map2_svg_south' => 'd\'Anville riba',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'd\'Anville žemėlapis, 1735',
+    'witnesses_map2_body' => 'Nubraižė J.-B. B. d\'Anville; 1740 m. kopiją Vokietijos kancleris padovanojo Kinijos vadovybei. Čingų dinastijos teritorija baigėsi ties Hainanu.',
+    'witnesses_map3_svg_hainan' => '海南 Hainanas',
+    'witnesses_map3_svg_south' => '„piečiausias Kinijos taškas“',
+    'witnesses_map3_svg_era' => 'Imperatoriškosios dinastijos provincijų atlasas · 1904',
+    'witnesses_map3_title' => 'Imperatoriškosios dinastijos provincijų geografijos išsamus atlasas',
+    'witnesses_map3_body' => 'Išleistas Čingų dinastijos — aiškiai nurodo, kad piečiausias Kinijos teritorijos taškas yra Hainano sala.',
+    'witnesses_quote' => 'Būtent jų pačių protėvių dokumentuose Devynių brūkšnių linija nebuvo nubraižyta.',
+];

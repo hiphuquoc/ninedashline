@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Senās kartes',
+    'witnesses_label' => 'Klusie liecinieki',
+    'witnesses_title' => 'Senās kartes no',
+    'witnesses_title_accent' => 'pašiem viņiem',
+    'witnesses_lead' => 'Gadsimtiem ilgi Ķīnas oficiālajās kartēs kā <em>teritorijas dienvidu galējais punkts</em> tika norādīta Hainaņas sala — nekādas U veida līnijas, kas aptvertu Dienvidķīnas jūru, nebija. Pielieciet palielināmo stiklu pie dienvidu robežas.',
+    'witnesses_hint' => '⌖ Pielikt palielināmo stiklu',
+    'witnesses_map1_svg_hainan' => 'Hainaņa 海南',
+    'witnesses_map1_svg_south' => '— teritorijas dienvidu galējais punkts —',
+    'witnesses_map1_svg_era' => 'Sunu dinastija · 1136',
+    'witnesses_map1_title' => 'Sunu dinastijas karte, 1136',
+    'witnesses_map1_body' => 'Ķīnas teritorija beidzas pie Hainaņas salas — Paraselu salas un Spratlija salas atrodas ārpus robežām.',
+    'witnesses_map2_svg_hainan' => 'Hainaņa',
+    'witnesses_map2_svg_south' => 'd\'Anville robeža',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'd\'Anville karte, 1735',
+    'witnesses_map2_body' => 'Zīmējis J.-B. B. d\'Anville; 1740. gada kopiju kādreiz Vācijas kanclers uzdāvināja Ķīnas vadībai. Cjinu dinastijas teritorija beidzas pie Hainaņas.',
+    'witnesses_map3_svg_hainan' => '海南 Hainaņa',
+    'witnesses_map3_svg_south' => '"Ķīnas dienvidu galējais punkts"',
+    'witnesses_map3_svg_era' => 'Imperiālā tiešo provincu ģeogrāfiskā karte · 1904',
+    'witnesses_map3_title' => 'Imperiālā tiešo provincu ģeogrāfiskā pilna karte',
+    'witnesses_map3_body' => 'Izdota Cjinu dinastijas laikā — skaidri norāda, ka Ķīnas teritorijas dienvidu galējais punkts ir Hainaņas sala.',
+    'witnesses_quote' => 'Pašu senču dokumenti neattēloja Deviņu svītru līniju.',
+];

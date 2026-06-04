@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Staré mapy',
+    'witnesses_label' => 'Tichí svědkové',
+    'witnesses_title' => 'Staré mapy',
+    'witnesses_title_accent' => 'samy o sobě',
+    'witnesses_lead' => 'Po mnoho staletí oficiální mapy Číny uváděly <em>ostrov Chaj-nan jako nejjižnější bod</em> území — žádná U‑čára, která by obepínala Jihočínské moře, neexistovala. Podívejme se lupou na jižní hranici.',
+    'witnesses_hint' => '⌖ Přiblížit lupou',
+    'witnesses_map1_svg_hainan' => 'Chaj-nan 海南',
+    'witnesses_map1_svg_south' => '— nejjižnější bod území —',
+    'witnesses_map1_svg_era' => 'Dynastie Sung · 1136',
+    'witnesses_map1_title' => 'Mapa z období dynastie Sung, 1136',
+    'witnesses_map1_body' => 'Území Číny končilo na ostrově Chaj-nan — Paracelské ostrovy a Spratlyho ostrovy ležely mimo jeho hranice.',
+    'witnesses_map2_svg_hainan' => 'Chaj-nan',
+    'witnesses_map2_svg_south' => 'd\'Anvilleovo vymezení',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'Mapa d\'Anville, 1735',
+    'witnesses_map2_body' => 'Nakreslil ji J.-B. B. d\'Anville; kopii z roku 1740 kdysi daroval německý kancléř čínskému vůdci. Území dynastie Čching končilo na Chaj-nanu.',
+    'witnesses_map3_svg_hainan' => '海南 Chaj-nan',
+    'witnesses_map3_svg_south' => '"nejjižnější bod Číny"',
+    'witnesses_map3_svg_era' => 'Císařská geografická mapa provincií · 1904',
+    'witnesses_map3_title' => 'Kompletní geografická mapa provincií císařské dynastie Čching',
+    'witnesses_map3_body' => 'Tištěno dynastií Čching — výslovně uvádí, že nejjižnějším bodem území Číny je ostrov Chaj-nan.',
+    'witnesses_quote' => 'Sama jejich předci tyto dokumenty Čáru devíti čárek nezakreslili.',
+];

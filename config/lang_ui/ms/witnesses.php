@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Peta Kuno',
+    'witnesses_label' => 'Saksi Senyap',
+    'witnesses_title' => 'Peta kuno',
+    'witnesses_title_accent' => 'milik mereka sendiri',
+    'witnesses_lead' => 'Selama berabad-abad, peta rasmi China sentiasa mencatatkan <em>pulau Hainan sebagai titik paling selatan</em> wilayahnya — tanpa sebarang garisan berbentuk U yang merangkumi seluruh Laut China Selatan. Gunakan kanta pembesar untuk meneliti sempadan selatan.',
+    'witnesses_hint' => '⌖ Kanta pembesar',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— titik paling selatan wilayah —',
+    'witnesses_map1_svg_era' => 'Dinasti Song · 1136',
+    'witnesses_map1_title' => 'Peta Dinasti Song, 1136',
+    'witnesses_map1_body' => 'Wilayah China berakhir di Pulau Hainan — Kepulauan Paracel dan Kepulauan Spratly berada di luar kawasan kedaulatan.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'had d\'Anville',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'Peta d\'Anville, 1735',
+    'witnesses_map2_body' => 'Dibuat oleh J.-B. B. d\'Anville; salinan 1740 pernah dihadiahkan oleh Canselor Jerman kepada pemimpin China. Wilayah Dinasti Qing berakhir di Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"titik paling selatan China"',
+    'witnesses_map3_svg_era' => 'Qing dinasti langsung di bawah wilayah · 1904',
+    'witnesses_map3_title' => 'Atlas geografi wilayah langsung di bawah Dinasti Qing',
+    'witnesses_map3_body' => 'Dicetak oleh Dinasti Qing — dengan jelas menyatakan bahawa titik paling selatan wilayah China ialah Pulau Hainan.',
+    'witnesses_quote' => 'Dokumen daripada nenek moyang mereka sendiri tidak pernah melukis Garisan Sembilan Titik.',
+];

@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'แผนที่โบราณ',
+    'witnesses_label' => 'พยานเงียบงัน',
+    'witnesses_title' => 'แผนที่โบราณของ',
+    'witnesses_title_accent' => 'พวกเขาเอง',
+    'witnesses_lead' => 'ตลอดหลายศตวรรษ แผนที่ทางการของจีนระบุว่า <em>เกาะไห่หนานเป็นจุดใต้สุด</em> ของดินแดนของตนมาโดยตลอด — ไม่มีเส้นรูปตัว U ที่โอบล้อมทะเลจีนใต้แต่อย่างใด ลองใช้แว่นขยายส่องดูแนวเขตแดนด้านใต้',
+    'witnesses_hint' => '⌖ ส่องด้วยแว่นขยาย',
+    'witnesses_map1_svg_hainan' => 'ไห่หนาน 海南',
+    'witnesses_map1_svg_south' => '— จุดใต้สุดของดินแดน —',
+    'witnesses_map1_svg_era' => 'ราชวงศ์ซ่ง · 1136',
+    'witnesses_map1_title' => 'แผนที่ราชวงศ์ซ่ง, 1136',
+    'witnesses_map1_body' => 'ดินแดนจีนสิ้นสุดที่เกาะไห่หนาน — หมู่เกาะพาราเซลและหมู่เกาะสแปรตลีอยู่นอกอาณาเขต',
+    'witnesses_map2_svg_hainan' => 'ไห่หนาน',
+    'witnesses_map2_svg_south' => 'ขอบเขตของ d\'Anville',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'แผนที่ของ d\'Anville, 1735',
+    'witnesses_map2_body' => 'จัดทำโดย J.-B. B. d\'Anville; สำเนาปี 1740 เคยมอบให้ผู้นำจีนโดยนายกรัฐมนตรีเยอรมนี ดินแดนราชวงศ์ชิงสิ้นสุดที่ไห่หนาน',
+    'witnesses_map3_svg_hainan' => '海南 ไห่หนาน',
+    'witnesses_map3_svg_south' => '"จุดใต้สุดของจีน"',
+    'witnesses_map3_svg_era' => 'แผนที่บูรพาแห่งราชสำนัก · 1904',
+    'witnesses_map3_title' => 'แผนที่ภูมิศาสตร์ครบถ้วนของมณฑลในราชสำนัก',
+    'witnesses_map3_body' => 'พิมพ์โดยราชวงศ์ชิง — ระบุชัดว่าจุดใต้สุดของดินแดนจีนคือเกาะไห่หนาน',
+    'witnesses_quote' => 'เอกสารของบรรพบุรุษของพวกเขาเองไม่ได้วาดเส้นประเก้าเส้น',
+];

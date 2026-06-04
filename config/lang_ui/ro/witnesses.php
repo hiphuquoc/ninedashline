@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Hărți vechi',
+    'witnesses_label' => 'Martori tăcuți',
+    'witnesses_title' => 'Hărțile vechi ale',
+    'witnesses_title_accent' => 'lor înșiși',
+    'witnesses_lead' => 'De secole, hărțile oficiale ale Chinei au consemnat <em>insula Hainan ca punctul cel mai sudic</em> al teritoriului — fără nicio linie în formă de U care să cuprindă Marea Chinei de Sud. Să folosim lupa pentru a examina granița sudică.',
+    'witnesses_hint' => '⌖ Folosește lupa',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— punctul cel mai sudic al teritoriului —',
+    'witnesses_map1_svg_era' => 'Dinastia Song · 1136',
+    'witnesses_map1_title' => 'Hartă din dinastia Song, 1136',
+    'witnesses_map1_body' => 'Teritoriul Chinei se oprea la insula Hainan — Insulele Paracel și Insulele Spratly se află în afara granițelor sale.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'limita lui d\'Anville',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'Hartă d\'Anville, 1735',
+    'witnesses_map2_body' => 'Desenată de J.-B. B. d\'Anville; copia din 1740 a fost oferită de prim-ministrul Germaniei liderilor chinezi. Teritoriul dinastiei Qing se oprea la Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"cel mai sudic punct al Chinei"',
+    'witnesses_map3_svg_era' => 'Atlas geografic complet al prefecturilor sub administrație imperială · 1904',
+    'witnesses_map3_title' => 'Atlas geografic complet al prefecturilor sub administrație imperială',
+    'witnesses_map3_body' => 'Tipărit de dinastia Qing — indică în mod clar că punctul cel mai sudic al teritoriului Chinei este insula Hainan.',
+    'witnesses_quote' => 'Chiar documentele strămoșilor lor nu au desenat Linia celor nouă liniuțe.',
+];

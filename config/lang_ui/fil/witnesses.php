@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Mga Sinaunang Mapa',
+    'witnesses_label' => 'Tahimik na mga Saksi',
+    'witnesses_title' => 'Mga sinaunang mapa ng',
+    'witnesses_title_accent' => 'kanila mismo',
+    'witnesses_lead' => 'Sa loob ng maraming siglo, ang mga opisyal na mapa ng Tsina ay laging nagtatala na <em>ang Hainan ang pinakatimog na punto</em> ng teritoryo — walang U-shaped na linya na sumasaklaw sa buong Dagat Timog Tsina. Gamitin ang magnifying glass upang suriin ang hangganang timog.',
+    'witnesses_hint' => '⌖ Gamitin ang magnifying glass',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— pinakatimog na bahagi ng teritoryo —',
+    'witnesses_map1_svg_era' => 'Dinastiyang Song · 1136',
+    'witnesses_map1_title' => 'Mapa ng Dinastiyang Song, 1136',
+    'witnesses_map1_body' => 'Ang teritoryo ng Tsina ay nagtatapos sa pulo ng Hainan — ang Kapuluang Paracel at ang Kapuluang Spratly ay nasa labas ng saklaw ng teritoryo.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'hangganan ng d\'Anville',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'Mapa ni d\'Anville, 1735',
+    'witnesses_map2_body' => 'Ginuhit ni J.-B. B. d\'Anville; ang kopyang ginawa noong 1740 ay minsang ibinigay ng Punong Ministro ng Alemanya sa isang pinuno ng Tsina. Ang teritoryo ng Dinastiyang Qing ay nagtatapos sa Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"pinakatimog ng Tsina"',
+    'witnesses_map3_svg_era' => 'Imperyal na atlas ng mga lalawigan · 1904',
+    'witnesses_map3_title' => 'Kumpletong atlas ng mga lalawigan ng imperyal na hukuman',
+    'witnesses_map3_body' => 'Inilimbag ng Dinastiyang Qing — malinaw na itinatala na ang pinakatimog na bahagi ng teritoryo ng Tsina ay ang pulo ng Hainan.',
+    'witnesses_quote' => 'Maging ang mga dokumento ng kanilang mga ninuno ay hindi naglalarawan ng Linya ng Siyam na Guhit.',
+];

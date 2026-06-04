@@ -1,0 +1,30 @@
+/* Admin shell — SCSS gốc liendoan + lang-ui editor */
+@import 'admin-variables';
+
+.content-wrapper {
+    padding: 1.5rem;
+}
+
+.titlePage {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.fullLoading {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.85);
+    align-items: center;
+    justify-content: center;
+
+    &.is-active {
+        display: flex;
+    }
+}
+
+@import 'order.scss';
+@import 'admin-layout-redesign.scss';
+@import 'lang-ui-editor.scss';

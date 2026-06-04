@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Cartes anciennes',
+    'witnesses_label' => 'Témoins silencieux',
+    'witnesses_title' => 'Les cartes anciennes de',
+    'witnesses_title_accent' => 'leur propre main',
+    'witnesses_lead' => 'Pendant des siècles, les cartes officielles de la Chine indiquaient toutes que <em>l’île de Hainan constituait l’extrémité sud</em> du territoire — sans aucune ligne en U englobant la mer de Chine méridionale. Prenons une loupe pour examiner la frontière méridionale.',
+    'witnesses_hint' => '⌖ Examiner à la loupe',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— extrémité sud du territoire —',
+    'witnesses_map1_svg_era' => 'Dynastie Song · 1136',
+    'witnesses_map1_title' => 'Carte de la dynastie Song, 1136',
+    'witnesses_map1_body' => 'Le territoire de la Chine s’arrêtait à l’île de Hainan — les Îles Paracels et les Îles Spratleys se trouvaient hors de ses limites.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'limite d’Anville',
+    'witnesses_map2_svg_era' => 'd’Anville · 1735',
+    'witnesses_map2_title' => 'Carte de d’Anville, 1735',
+    'witnesses_map2_body' => 'Dressée par J.-B. B. d’Anville ; une copie de 1740 fut offerte au dirigeant chinois par le chancelier allemand. Le territoire des Qing s’arrêtait à Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"extrémité sud de la Chine"',
+    'witnesses_map3_svg_era' => 'Atlas géographique complet des provinces sous la dynastie impériale · 1904',
+    'witnesses_map3_title' => 'Atlas géographique complet des provinces sous la dynastie impériale',
+    'witnesses_map3_body' => 'Imprimé sous les Qing — il indique clairement que l’extrémité sud du territoire de la Chine est l’île de Hainan.',
+    'witnesses_quote' => 'Les documents mêmes de leurs ancêtres n’ont pas tracé la Ligne en neuf traits.',
+];

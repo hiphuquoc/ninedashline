@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Qadimgi xaritalar',
+    'witnesses_label' => 'Jim guvohlar',
+    'witnesses_title' => 'Qadimgi xaritalari',
+    'witnesses_title_accent' => 'o‘zlarining',
+    'witnesses_lead' => 'Asrlar davomida Xitoyning rasmiy xaritalarida <em>Hainan oroli hududning eng janubiy nuqtasi</em> sifatida qayd etilgan — Janubiy Xitoy dengizini to‘liq qamrab olgan U shaklidagi chiziq umuman yo‘q. Janubiy chegaraga lupa bilan nazar tashlang.',
+    'witnesses_hint' => '⌖ Lupani tekshiring',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— hududning eng janubiy nuqtasi —',
+    'witnesses_map1_svg_era' => 'Sung sulolasi · 1136',
+    'witnesses_map1_title' => 'Sung sulolasi xaritasi, 1136',
+    'witnesses_map1_body' => 'Xitoy hududi Hainan orolida tugaydi — Parasel orollari va Spratli orollari uning hududidan tashqarida.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'd\'Anville chegarasi',
+    'witnesses_map2_svg_era' => 'd\'Anville · 1735',
+    'witnesses_map2_title' => 'd\'Anville xaritasi, 1735',
+    'witnesses_map2_body' => 'J.-B. B. d\'Anville tomonidan chizilgan; 1740 yilgi nusxasi bir vaqtlar Germaniya bosh vaziri tomonidan Xitoy rahbariga sovg‘a qilingan. Sin sulolasi hududi Hainan bilan yakunlanadi.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"Xitoyning eng janubiy nuqtasi"',
+    'witnesses_map3_svg_era' => 'Imperatorlik saroyi provinsiyalari geodezik to‘liq xaritasi · 1904',
+    'witnesses_map3_title' => 'Imperatorlik saroyi provinsiyalari geodezik to‘liq xaritasi',
+    'witnesses_map3_body' => 'Sin sulolasi tomonidan chop etilgan — Xitoy hududining eng janubiy nuqtasi aniq Hainan oroli ekani ko‘rsatilgan.',
+    'witnesses_quote' => 'Aynan ularning ajdodlari hujjatlari To\'qqiz chiziqli chegarani chizmagan.',
+];

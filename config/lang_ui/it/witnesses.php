@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'witnesses_index' => 'Mappe antiche',
+    'witnesses_label' => 'Testimoni silenziosi',
+    'witnesses_title' => 'Le mappe antiche di',
+    'witnesses_title_accent' => 'loro stessi',
+    'witnesses_lead' => 'Per secoli, le mappe ufficiali della Cina hanno sempre indicato <em>l’isola di Hainan come punto più meridionale</em> del territorio — senza alcuna linea a U che circondi il Mar Cinese Meridionale. Usiamo una lente d’ingrandimento per osservare il confine meridionale.',
+    'witnesses_hint' => '⌖ Lente d’ingrandimento',
+    'witnesses_map1_svg_hainan' => 'Hainan 海南',
+    'witnesses_map1_svg_south' => '— limite meridionale del territorio —',
+    'witnesses_map1_svg_era' => 'Dinastia Song · 1136',
+    'witnesses_map1_title' => 'Mappa della dinastia Song, 1136',
+    'witnesses_map1_body' => 'Il territorio della Cina si fermava all’isola di Hainan — le Isole Paracel e le Isole Spratly erano al di fuori dei suoi confini.',
+    'witnesses_map2_svg_hainan' => 'Hainan',
+    'witnesses_map2_svg_south' => 'confine di d’Anville',
+    'witnesses_map2_svg_era' => 'd’Anville · 1735',
+    'witnesses_map2_title' => 'Mappa di d’Anville, 1735',
+    'witnesses_map2_body' => 'Disegnata da J.-B. B. d’Anville; la copia del 1740 fu donata dal Cancelliere tedesco a un leader cinese. Il territorio della dinastia Qing si fermava a Hainan.',
+    'witnesses_map3_svg_hainan' => '海南 Hainan',
+    'witnesses_map3_svg_south' => '"estremo sud della Cina"',
+    'witnesses_map3_svg_era' => 'Atlante geografico delle province sotto il dominio imperiale · 1904',
+    'witnesses_map3_title' => 'Atlante geografico delle province sotto il dominio imperiale',
+    'witnesses_map3_body' => 'Stampato sotto la dinastia Qing — indica chiaramente che il punto più meridionale del territorio cinese era l’isola di Hainan.',
+    'witnesses_quote' => 'Sono stati i documenti dei loro stessi antenati a non tracciare la Linea dei nove trattini.',
+];
