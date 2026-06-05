@@ -26,6 +26,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('he-thong')->group(function ()
     Route::post('/ngon-ngu-chung-suc/{locale}/save', [ContributeLangUiController::class, 'save'])->name('admin.lang-ui.contribute.save');
 
     Route::get('/lang-ui/ai/config', [LangUiAiController::class, 'config'])->name('admin.lang-ui.ai.config');
+    Route::post('/lang-ui/ai/translate-section-horizontal', [LangUiAiController::class, 'translateSectionHorizontal'])->name('admin.lang-ui.ai.translate-section-horizontal');
 
     Route::post('/ngon-ngu/{locale}/ai/translate-field', [LangUiAiController::class, 'translateField'])->name('admin.lang-ui.ai.translate-field');
     Route::post('/ngon-ngu/{locale}/ai/translate-section', [LangUiAiController::class, 'translateSection'])->name('admin.lang-ui.ai.translate-section');

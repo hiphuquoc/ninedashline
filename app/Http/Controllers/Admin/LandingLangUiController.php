@@ -45,6 +45,7 @@ class LandingLangUiController extends Controller
                 'locale' => $locale,
                 'saveUrl' => route('admin.lang-ui.save', ['locale' => $locale]),
                 'localeEditRoute' => 'admin.lang-ui.edit',
+                'horizontalTargetLocales' => $this->langUiHorizontalTargetLocales($this->files),
                 'publicPreviewUrl' => $locale === $payload['masterLocale']
                     ? route('home')
                     : route('home.locale', ['locale' => $locale]),

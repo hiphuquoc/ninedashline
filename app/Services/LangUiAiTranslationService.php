@@ -165,6 +165,74 @@ final class LangUiAiTranslationService
     }
 
     /**
+     * Dịch section sang một locale đích và ghi thẳng vào config/lang_ui/{locale}/.
+     *
+     * @return array{
+     *   locale: string,
+     *   section_id: string,
+     *   translated: array<string, string>,
+     *   warnings: list<string>,
+     *   imported: int,
+     *   key_count: int,
+     *   saved: bool,
+     *   debug?: array<string, mixed>
+     * }
+     */
+    public function translateSectionAndPersist(
+        string $scope,
+        string $targetLocale,
+        string $sectionId,
+        string $model,
+        ?string $customFieldPromptVi = null,
+        bool $debug = false,
+    ): array {
+        $targetLocale = strtolower($targetLocale);
+        $out = $this->translateSectionByExportPrompt(
+            $scope,
+            $targetLocale,
+            $sectionId,
+            $model,
+            $customFieldPromptVi,
+            $debug,
+        );
+
+        $this->persistSectionMap($scope, $targetLocale, $sectionId, $out['translated']);
+
+        return array_merge($out, [
+            'locale' => $targetLocale,
+            'section_id' => $sectionId,
+            'saved' => true,
+        ]);
+    }
+
+    /**
+     * @param array<string, string> $map
+     */
+    public function persistSectionMap(string $scope, string $locale, string $sectionId, array $map): void
+    {
+        if ($map === []) {
+            return;
+        }
+
+        $filter = $this->sectionKeyFilter($scope, $sectionId);
+        foreach ($this->sectionBundleStems($scope, $sectionId) as $stem) {
+            $master = $this->files->readBundle(LangUi::MASTER_LOCALE, $stem, $scope);
+            $payload = [];
+            foreach ($master as $key => $_vi) {
+                if ($filter !== null && ! $filter($key)) {
+                    continue;
+                }
+                if (array_key_exists($key, $map)) {
+                    $payload[$key] = $map[$key];
+                }
+            }
+            if ($payload !== []) {
+                $this->files->writeBundle($locale, $stem, $payload, $scope);
+            }
+        }
+    }
+
+    /**
      * @param list<string>|null $keys
      * @return array<string, string> key => vi source
      */

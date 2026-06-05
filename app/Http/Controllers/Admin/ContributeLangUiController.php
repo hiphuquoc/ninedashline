@@ -46,6 +46,7 @@ class ContributeLangUiController extends Controller
                 'locale' => $locale,
                 'saveUrl' => route('admin.lang-ui.contribute.save', ['locale' => $locale]),
                 'localeEditRoute' => 'admin.lang-ui.contribute.edit',
+                'horizontalTargetLocales' => $this->langUiHorizontalTargetLocales($this->files),
                 'publicPreviewUrl' => ContributeUrl::path($locale),
             ],
         ));

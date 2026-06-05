@@ -3,7 +3,13 @@
     id="langUiEditor"
     data-save-url="{{ $saveUrl }}"
     data-locale="{{ $locale }}"
-    @unless ($isMaster)
+    @if ($isMaster)
+        data-ai-scope="{{ $scope }}"
+        data-ai-config-url="{{ $aiConfigUrl }}"
+        data-ai-enabled="{{ ($aiEnabled ?? false) ? '1' : '0' }}"
+        data-ai-horizontal-url="{{ $aiTranslateHorizontalUrl ?? '' }}"
+        data-horizontal-targets="{{ json_encode($horizontalTargetLocales ?? [], JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE) }}"
+    @else
         data-ai-scope="{{ $scope }}"
         data-ai-config-url="{{ $aiConfigUrl }}"
         data-ai-enabled="{{ ($aiEnabled ?? false) ? '1' : '0' }}"
@@ -12,7 +18,7 @@
         data-google-translate-url="{{ $googleTranslateUrl }}"
         data-export-prompt-url="{{ $exportPromptUrl }}"
         data-import-url="{{ $importUrl }}"
-    @endunless
+    @endif
 >
     @foreach ($sections as $section)
         @foreach ($section['bundles'] as $bundle)
@@ -50,7 +56,22 @@
                         </div>
                     </div>
                     <div class="langUiSection_header_actions">
-                        @unless ($isMaster)
+                        @if ($isMaster)
+                            <div class="langUiSection_toolbar" data-lang-ui-horizontal-toolbar role="group" aria-label="Dịch ngang section sang mọi locale">
+                                <button
+                                    type="button"
+                                    class="langUiSection_toolBtn langUiSection_toolBtn--horizontal {{ ($aiEnabled ?? false) ? '' : 'langUiSection_toolBtn--off' }}"
+                                    data-action="horizontal-ai"
+                                    title="{{ ($aiEnabled ?? false) ? 'AI: dịch section này sang mọi locale (tự lưu)' : 'AI chưa bật — cấu hình AI_ENABLED trong .env' }}"
+                                    aria-label="Dịch ngang section bằng AI"
+                                    @if (! ($aiEnabled ?? false)) disabled @endif
+                                >
+                                    <i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i>
+                                    <span class="langUiSection_toolBtn_text">Dịch ngang</span>
+                                </button>
+                            </div>
+                            <span class="langUiSection_toolbar_divider" aria-hidden="true"></span>
+                        @else
                             <div class="langUiSection_toolbar" data-lang-ui-translate-toolbar role="group" aria-label="Thao tác dịch section">
                                 <button
                                     type="button"
@@ -95,7 +116,7 @@
                                 </button>
                             </div>
                             <span class="langUiSection_toolbar_divider" aria-hidden="true"></span>
-                        @endunless
+                        @endif
                         <button
                             type="button"
                             class="adminButton adminButton--primary langUiSection_saveBtn"

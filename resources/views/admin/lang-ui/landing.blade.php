@@ -29,14 +29,21 @@
     'aiEnabled',
     'aiTranslateUrl',
     'aiTranslateSectionUrl',
+    'aiTranslateHorizontalUrl',
     'aiConfigUrl',
     'googleTranslateUrl',
     'exportPromptUrl',
     'importUrl',
-    'scope'
+    'scope',
+    'horizontalTargetLocales'
 ))
 
-@if (! $isMaster)
+@if ($isMaster)
+    @unless ($aiEnabled ?? false)
+        @include('admin.lang-ui.partials.ai-disabled-notice')
+    @endunless
+    @include('admin.lang-ui.partials.horizontal-translate-modals')
+@else
     @unless ($aiEnabled ?? false)
         @include('admin.lang-ui.partials.ai-disabled-notice')
     @endunless
@@ -44,7 +51,9 @@
 @endif
 
 @include('admin.lang-ui.partials.scripts', compact('isMaster'))
-@if (! $isMaster)
+@if ($isMaster)
+    @include('admin.lang-ui.partials.horizontal-translate-scripts')
+@else
     @include('admin.lang-ui.partials.translate-scripts')
 @endif
 @endsection

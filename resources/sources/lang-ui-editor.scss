@@ -691,6 +691,12 @@ $lang-ui-header-tool-h: 40px;
         color: #d97706;
         background: #fffbeb;
     }
+
+    &--horizontal:hover:not(:disabled) {
+        border-color: #ec4899;
+        color: #db2777;
+        background: #fdf2f8;
+    }
 }
 
 .langUiSection_toolBtn_text {
@@ -913,6 +919,96 @@ body.langUiModal-open { overflow: hidden; }
     gap: 0.5rem;
     padding: 0.875rem 1.25rem;
     border-top: 1px solid #e5e7eb;
+}
+
+.langUiHorizontal_progress {
+    margin: 1rem 0;
+}
+
+.langUiHorizontal_progressBar {
+    height: 8px;
+    border-radius: 999px;
+    background: #e5e7eb;
+    overflow: hidden;
+}
+
+.langUiHorizontal_progressFill {
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #8b5cf6, #ec4899);
+    transition: width 0.35s ease;
+}
+
+.langUiHorizontal_status {
+    margin-top: 0.65rem;
+    font-size: 0.8125rem;
+    color: #4b5563;
+}
+
+.langUiHorizontal_summary {
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    color: #111827;
+}
+
+.langUiHorizontal_tableWrap {
+    max-height: min(52vh, 420px);
+    overflow: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.langUiHorizontal_table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8125rem;
+
+    th,
+    td {
+        padding: 0.5rem 0.65rem;
+        text-align: left;
+        border-bottom: 1px solid #f3f4f6;
+        vertical-align: top;
+    }
+
+    th {
+        position: sticky;
+        top: 0;
+        background: #f9fafb;
+        font-weight: 600;
+        color: #374151;
+        z-index: 1;
+    }
+}
+
+.langUiHorizontal_note {
+    color: #6b7280;
+    max-width: 28rem;
+    word-break: break-word;
+}
+
+.langUiHorizontal_badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+
+    &--ok {
+        background: #dcfce7;
+        color: #166534;
+    }
+
+    &--err {
+        background: #fee2e2;
+        color: #991b1b;
+    }
+}
+
+.langUiHorizontal_row--err td {
+    background: #fffafb;
 }
 
 @media (max-width: 900px) {

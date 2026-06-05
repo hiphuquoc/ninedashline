@@ -113,10 +113,34 @@ trait BuildsLangUiEditor
             'aiConfigUrl' => route('admin.lang-ui.ai.config', ['scope' => $scope]),
             'aiTranslateUrl' => route($prefix . '.ai.translate-field', $routeParams),
             'aiTranslateSectionUrl' => route($prefix . '.ai.translate-section', $routeParams),
+            'aiTranslateHorizontalUrl' => route('admin.lang-ui.ai.translate-section-horizontal'),
             'googleTranslateUrl' => route($prefix . '.google.translate-field', $routeParams),
             'exportPromptUrl' => route($prefix . '.export-prompt', $routeParams),
             'importUrl' => route($prefix . '.import', $routeParams),
         ];
+    }
+
+    /**
+     * @return list<array{code: string, name: string, name_vi: string, flag: string}>
+     */
+    protected function langUiHorizontalTargetLocales(LangUiFileService $files): array
+    {
+        $master = $files->masterLocale();
+        $out = [];
+
+        foreach ($this->languagesForSwitcher($files) as $code => $lang) {
+            if ($code === $master) {
+                continue;
+            }
+            $out[] = [
+                'code' => $code,
+                'name' => (string) ($lang['name_native'] ?? $code),
+                'name_vi' => (string) ($lang['name_vi'] ?? ''),
+                'flag' => (string) ($lang['flag'] ?? ''),
+            ];
+        }
+
+        return $out;
     }
 
     protected function langUiFieldIsHtml(string $key, string $viText): bool

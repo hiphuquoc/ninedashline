@@ -13,6 +13,7 @@ use App\Support\LangUiAiPrompts;
 use App\Support\LangUiTranslationImport;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 
 class LangUiAiController extends Controller
 {
@@ -40,6 +41,61 @@ class LangUiAiController extends Controller
         return $this->wrapFieldTranslate($request, $locale, function (string $scope, string $sectionId, string $key, string $model, ?string $prompt) use ($request, $locale) {
             return $this->ai->translateField($scope, $locale, $sectionId, $key, $model, $prompt, $request->boolean('debug'));
         });
+    }
+
+    public function translateSectionHorizontal(Request $request): JsonResponse
+    {
+        if ($request->boolean('config_only')) {
+            try {
+                Artisan::call('config:clear');
+            } catch (\Throwable) {
+            }
+
+            return response()->json(['success' => true, 'data' => ['config_cleared' => true]]);
+        }
+
+        if (! LangUiAiPrompts::isEnabled()) {
+            return $this->aiDisabled();
+        }
+
+        $scope = $this->normalizeScope((string) $request->input('scope', LangUiAdminScope::LANDING));
+        $sectionId = trim((string) $request->input('section_id', ''));
+        $targetLocale = strtolower(trim((string) $request->input('target_locale', '')));
+
+        if ($sectionId === '' || $targetLocale === '') {
+            return response()->json(['success' => false, 'message' => 'Thiếu section_id hoặc target_locale.'], 422);
+        }
+
+        if ($targetLocale === LangUi::MASTER_LOCALE) {
+            return response()->json(['success' => false, 'message' => 'Không dịch ngang cho locale master (vi).'], 422);
+        }
+
+        $model = trim((string) $request->input('model', ''));
+        if ($model === '') {
+            $model = LangUiAiPrompts::defaultModel();
+        }
+
+        try {
+            $out = $this->ai->translateSectionAndPersist(
+                $scope,
+                $targetLocale,
+                $sectionId,
+                $model,
+                $this->promptFromRequest($request),
+                $request->boolean('debug'),
+            );
+
+            if ($request->boolean('clear_config', false)) {
+                try {
+                    Artisan::call('config:clear');
+                } catch (\Throwable) {
+                }
+            }
+
+            return response()->json(['success' => true, 'data' => $out]);
+        } catch (\Throwable $e) {
+            return response()->json(['success' => false, 'message' => $e->getMessage()], 400);
+        }
     }
 
     public function translateSection(Request $request, string $locale): JsonResponse
