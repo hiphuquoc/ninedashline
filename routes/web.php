@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\ContributeLangUiController;
 use App\Http\Controllers\Admin\LangUiAiController;
+use App\Http\Controllers\Admin\LangUiWriteTestController;
 use App\Http\Controllers\Admin\LandingLangUiController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
@@ -24,6 +25,9 @@ Route::middleware(['auth', 'role:admin'])->prefix('he-thong')->group(function ()
     Route::get('/ngon-ngu-chung-suc', [ContributeLangUiController::class, 'redirectToDefault'])->name('admin.lang-ui.contribute.index');
     Route::get('/ngon-ngu-chung-suc/{locale}', [ContributeLangUiController::class, 'edit'])->name('admin.lang-ui.contribute.edit');
     Route::post('/ngon-ngu-chung-suc/{locale}/save', [ContributeLangUiController::class, 'save'])->name('admin.lang-ui.contribute.save');
+
+    Route::get('/kiem-tra-dich', [LangUiWriteTestController::class, 'show'])->name('admin.lang-ui.write-test');
+    Route::post('/lang-ui/write-test', [LangUiWriteTestController::class, 'run'])->name('admin.lang-ui.write-test.run');
 
     Route::get('/lang-ui/ai/config', [LangUiAiController::class, 'config'])->name('admin.lang-ui.ai.config');
     Route::post('/lang-ui/ai/translate-section-horizontal', [LangUiAiController::class, 'translateSectionHorizontal'])->name('admin.lang-ui.ai.translate-section-horizontal');
