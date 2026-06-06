@@ -35,6 +35,7 @@ class LandingPageData
             'navRailSteps' => self::navRailStepsResolved(),
             'ancientChineseMaps' => AncientChineseMaps::resolved(),
             'navRootUrl' => LocaleUrl::home($urlLocale),
+            'ecosystemParacelUrl' => EcosystemSites::paracel($urlLocale),
             'landingScriptConfig' => self::landingScriptConfig($urlLocale, $navLanguages, $navLangUi, $landing),
             ...SeoMeta::landing($urlLocale),
         ];

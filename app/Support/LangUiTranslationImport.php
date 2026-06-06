@@ -63,7 +63,7 @@ final class LangUiTranslationImport
 
         if (isset($map['footer_legal'])) {
             $legal = $map['footer_legal'];
-            foreach ([':hoangsa', ':truongsa', ':paracel', ':spratly'] as $placeholder) {
+            foreach ([':hoangsa', ':truongsa', ':paracel', ':spratly', ':ninedashline'] as $placeholder) {
                 if (! str_contains($legal, $placeholder)) {
                     $out[] = 'footer_legal thiếu ' . $placeholder
                         . ' — có thể bị cắt do dấu " trong JSON (href="...").';

@@ -2721,7 +2721,7 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
         <h3 id="sov-next-title" class="section-subtitle">{!! t('sovereignty_next_title') !!}</h3>
         <p class="prose-body">{!! t('sovereignty_next_body') !!}</p>
       </div>
-      <a class="sov-next__cta" href="https://paracelislands.net" data-cursor rel="noopener">
+      <a class="sov-next__cta" href="{{ $ecosystemParacelUrl }}" data-cursor rel="noopener">
         <span>{!! t('sovereignty_next_cta') !!}</span>
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h12M13 7l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
@@ -2765,7 +2765,7 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span>{!! t('footer_btn_verdict') !!}</span>
       </a>
-      <a href="https://paracelislands.net" class="foot-btn foot-btn--sea" data-cursor rel="noopener">
+      <a href="{{ $ecosystemParacelUrl }}" class="foot-btn foot-btn--sea" data-cursor rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h12M13 7l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span>{!! t('footer_btn_paracel') !!}</span>
       </a>

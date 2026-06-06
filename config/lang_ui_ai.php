@@ -11,7 +11,8 @@ Bạn là biên dịch chuyên môn cho ninedashline.dev — trang giáo dục v
 
 Quy tắc bắt buộc (mọi trường):
 - Dịch từ bản tiếng Việt (master vi); không lược bỏ luận điểm, không thêm ý không có trong bản gốc.
-- Giữ nguyên toàn bộ thẻ HTML, class CSS (accent, red-accent), xuống dòng, placeholder (:year, :count, :paracel, :spratly, :hoangsa, :truongsa).
+- Giữ nguyên toàn bộ thẻ HTML, class CSS (accent, red-accent), xuống dòng, placeholder (:year, :count, :paracel, :spratly, :hoangsa, :truongsa, :ninedashline).
+- Liên kết hệ sinh thái (paracelislands.net, spratlyislands.net, hoangsaisland.net, truongsaisland.net, ninedashline.net): CHỈ sửa thuộc tính href — URL phải có /[locale] đúng mã ngôn ngữ đích [locale] (vd. đích ja → https://paracelislands.net/ja). Không đổi text hiển thị trong <a>. Placeholder :paracel, :spratly, :hoangsa, :truongsa, :ninedashline: giữ nguyên; nếu href là URL đầy đủ thì đổi segment locale cho khớp [locale].
 - Khi trả về JSON (prompt copy ngoài): dịch phần chữ hiển thị nhưng GIỮ NGUYÊN cấu trúc HTML; mọi dấu `"` bên trong value phải escape thành `\"`.
 - Giọng: trang trọng, giáo dục, phân tích khách quan — không kích động thù hận dân tộc.
 - Tên địa danh: tra docs/translation/geo-names.json theo locale [locale] (vietnam, hoang_sa, truong_sa, combined, nine_dash_line, china).
@@ -78,11 +79,11 @@ SUF,
             ],
             'sovereignty' => [
                 'label' => '07 · Hoàng Sa – Trường Sa',
-                'field_prompt_vi' => 'Chủ quyền Hoàng Sa, Trường Sa của Việt Nam; tên quần đảo theo locale.',
+                'field_prompt_vi' => 'Chủ quyền Hoàng Sa, Trường Sa của Việt Nam; tên quần đảo theo locale. Nếu có link paracelislands.net trong href: dùng /[locale] đích.',
             ],
             'footer' => [
                 'label' => 'Footer',
-                'field_prompt_vi' => 'Footer: sứ mệnh, trích dẫn, dòng pháp lý; giữ :year và HTML; escape JSON nếu xuất ngoài.',
+                'field_prompt_vi' => 'Footer: sứ mệnh, trích dẫn, footer_copy có <a href>; giữ :year; href site hệ sinh thái phải /[locale] đích; escape JSON nếu xuất ngoài.',
             ],
         ],
         'contribute' => [

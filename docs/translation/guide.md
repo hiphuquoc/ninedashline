@@ -57,7 +57,8 @@ return [
 | Key pattern | Giữ nguyên |
 |-------------|------------|
 | `:year`, `:hoangsa`, `:truongsa`, `:count` | Tên biến |
-| URL trong `footer_legal`, `action_bridge` | href đầy đủ |
+| URL trong `footer_legal`, `footer_copy`, `action_bridge` | href đầy đủ; site hệ sinh thái: `https://{domain}/[locale]` — segment locale khớp ngôn ngữ đích (chỉ sửa href, không đổi text trong `<a>`) |
+| `:paracel`, `:spratly`, `:hoangsa`, `:truongsa`, `:ninedashline` | Giữ placeholder; runtime PHP gắn URL có `/locale` |
 
 ### 4.4 Độ dài & UI
 
