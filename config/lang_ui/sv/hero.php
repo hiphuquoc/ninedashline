@@ -6,8 +6,8 @@ return [
     'hero_label' => 'Objektiva fakta · Internationell rätt',
     'hero_title_line1' => 'Vad är',
     'hero_title_line2' => 'Niostrecksgränsen?',
-    'hero_sub' => 'Låt oss söka svaret tillsammans: var den kommer ifrån, varför den är omstridd och varför internationell rätt förkastar den.',
-    'hero_cta_primary' => 'Börja lära dig',
+    'hero_sub' => 'Låt oss tillsammans hitta svaret: var den kommer ifrån, varför den är omstridd och varför den förkastas av internationell rätt.',
+    'hero_cta_primary' => 'Börja utforska',
     'hero_cta_secondary' => 'Paracelöarna – Spratlyöarna',
-    'hero_scroll' => 'Scrolla ner',
+    'hero_scroll' => 'Rulla ned',
 ];

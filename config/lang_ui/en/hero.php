@@ -7,7 +7,7 @@ return [
     'hero_title_line1' => 'What is the',
     'hero_title_line2' => 'Nine-Dash Line?',
     'hero_sub' => 'Let’s find the answer together: where it came from, why it is controversial, and why international law rejects it.',
-    'hero_cta_primary' => 'Start learning',
+    'hero_cta_primary' => 'Start exploring',
     'hero_cta_secondary' => 'Paracel Islands – Spratly Islands',
     'hero_scroll' => 'Scroll down',
 ];

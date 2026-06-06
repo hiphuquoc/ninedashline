@@ -2,7 +2,7 @@
 
 return [
     'hero_index' => '开篇',
-    'hero_fact' => '一条1948年手绘的线——没有经度，没有纬度',
+    'hero_fact' => '一条1948年的手绘线条——没有经度，没有纬度',
     'hero_label' => '客观事实 · 国际法',
     'hero_title_line1' => '断续线',
     'hero_title_line2' => '是什么？',
