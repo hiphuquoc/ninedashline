@@ -276,7 +276,6 @@
         ai: document.getElementById('langUiModal_ai'),
         google: document.getElementById('langUiModal_google'),
         export: document.getElementById('langUiModal_export'),
-        import: document.getElementById('langUiModal_import'),
     };
 
     function openModal(which) {
@@ -307,7 +306,6 @@
             if (action === 'ai-bulk') await openAiBulk(activeSectionId);
             else if (action === 'google-bulk') await openGoogleBulk(activeSectionId);
             else if (action === 'export') await openExport(activeSectionId);
-            else if (action === 'import') await openImport(activeSectionId);
         });
     });
 
@@ -392,37 +390,6 @@
             t.select();
             document.execCommand('copy');
             showToast('Đã sao chép', true);
-        }
-    });
-
-    async function openImport(sectionId) {
-        await loadAiConfig();
-        activeSectionId = sectionId;
-        document.getElementById('langUiModal_import_context').textContent =
-            'Nhập JSON cho section: ' + sectionLabel(sectionId);
-        document.getElementById('langUiModal_import_text').value = '';
-        openModal('import');
-    }
-
-    document.getElementById('langUiModal_import_run')?.addEventListener('click', async () => {
-        if (!activeSectionId) return;
-        const pasted = document.getElementById('langUiModal_import_text').value;
-        const { map: localMap, raw } = parseImportPayload(pasted);
-        const requestBody = { section_id: activeSectionId };
-        if (localMap) requestBody.payload_map = localMap;
-        else requestBody.payload = raw;
-        try {
-            const json = await postJson(urls.import, requestBody);
-            const n = applyImportMap(json.data?.translated || {});
-            closeAllModals();
-            const warnings = json.data?.warnings || [];
-            if (warnings.length) {
-                showToast(warnings[0] + ' Kiểm tra footer_legal trước khi lưu.', false);
-            } else {
-                showToast('Đã nhập ' + n + ' trường. Kiểm tra và lưu.', true);
-            }
-        } catch (e) {
-            showToast(e.message, false);
         }
     });
 

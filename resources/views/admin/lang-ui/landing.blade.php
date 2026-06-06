@@ -38,6 +38,8 @@
     'horizontalTargetLocales'
 ))
 
+@include('admin.lang-ui.partials.import-modal')
+
 @if ($isMaster)
     @unless ($aiEnabled ?? false)
         @include('admin.lang-ui.partials.ai-disabled-notice')
@@ -56,4 +58,5 @@
 @else
     @include('admin.lang-ui.partials.translate-scripts')
 @endif
+@include('admin.lang-ui.partials.import-scripts')
 @endsection

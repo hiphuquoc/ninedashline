@@ -8,6 +8,7 @@
         data-ai-config-url="{{ $aiConfigUrl }}"
         data-ai-enabled="{{ ($aiEnabled ?? false) ? '1' : '0' }}"
         data-ai-horizontal-url="{{ $aiTranslateHorizontalUrl ?? '' }}"
+        data-import-url="{{ $importUrl }}"
         data-horizontal-targets="{{ json_encode($horizontalTargetLocales ?? [], JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE) }}"
     @else
         data-ai-scope="{{ $scope }}"
@@ -57,7 +58,7 @@
                     </div>
                     <div class="langUiSection_header_actions">
                         @if ($isMaster)
-                            <div class="langUiSection_toolbar" data-lang-ui-horizontal-toolbar role="group" aria-label="Dịch ngang section sang mọi locale">
+                            <div class="langUiSection_toolbar" data-lang-ui-horizontal-toolbar role="group" aria-label="Thao tác bản gốc section">
                                 <button
                                     type="button"
                                     class="langUiSection_toolBtn langUiSection_toolBtn--horizontal {{ ($aiEnabled ?? false) ? '' : 'langUiSection_toolBtn--off' }}"
@@ -68,6 +69,16 @@
                                 >
                                     <i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i>
                                     <span class="langUiSection_toolBtn_text">Dịch ngang</span>
+                                </button>
+                                <button
+                                    type="button"
+                                    class="langUiSection_toolBtn langUiSection_toolBtn--import"
+                                    data-action="import"
+                                    title="Nhập JSON vào form (cải thiện nội dung nhanh)"
+                                    aria-label="Nhập JSON section"
+                                >
+                                    <i class="fa-solid fa-file-import" aria-hidden="true"></i>
+                                    <span class="langUiSection_toolBtn_text">Nhập</span>
                                 </button>
                             </div>
                             <span class="langUiSection_toolbar_divider" aria-hidden="true"></span>
