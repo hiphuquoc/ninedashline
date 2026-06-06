@@ -9,5 +9,5 @@ return [
     'hero_sub' => 'Cherchons ensemble la réponse : d’où vient-elle, pourquoi suscite-t-elle la controverse et pourquoi le droit international la rejette.',
     'hero_cta_primary' => 'Commencer à s’informer',
     'hero_cta_secondary' => 'Îles Paracels - Îles Spratleys',
-    'hero_scroll' => 'Faites défiler vers le bas',
+    'hero_scroll' => 'Faire défiler vers le bas',
 ];
