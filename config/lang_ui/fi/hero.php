@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'hero_index' => 'Alku',
-    'hero_fact' => 'Vuonna 1948 käsin piirretty viiva — ei pituus- eikä leveysastetta',
-    'hero_label' => 'Objektiivinen totuus · Kansainvälinen oikeus',
-    'hero_title_line1' => 'Mikä on',
-    'hero_title_line2' => 'Yhdeksän viivan linja?',
-    'hero_sub' => 'Lähdetään yhdessä etsimään vastausta: mistä se on peräisin, miksi se herättää विवाद?',
+    'hero_index' => 'Johdanto',
+    'hero_fact' => 'Vuodelta 1948 peräisin oleva käsin piirretty viiva — ei pituusasteita, ei leveysasteita',
+    'hero_label' => 'Objektiiviset tosiasiat · kansainvälinen oikeus',
+    'hero_title_line1' => 'Yhdeksän viivan linja',
+    'hero_title_line2' => 'mikä se on?',
+    'hero_sub' => 'Etsitään yhdessä vastausta: mistä se on peräisin, miksi se herättää kiistaa ja miksi kansainvälinen oikeus torjuu sen.',
     'hero_cta_primary' => 'Aloita tutustuminen',
-    'hero_cta_secondary' => 'Paracelsaaret – Spratlysaaret',
+    'hero_cta_secondary' => 'Paracelsaaret - Spratlysaaret',
     'hero_scroll' => 'Vieritä alas',
 ];
