@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://flagcdn.com" crossorigin>
 <link href="{{ $googleFontsUrl }}" rel="stylesheet">
-@vite(['resources/css/landing-fab.css', 'resources/css/landing-lang-switcher.css', 'resources/js/landing-i18n.js', 'resources/js/ancient-map-lightbox.js'])
+@vite(['resources/css/landing-fab.css', 'resources/css/landing-lang-switcher.css', 'resources/js/landing-i18n.js', 'resources/js/ancient-map-lightbox.js', 'resources/js/welcome-reveal.js'])
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
@@ -1402,13 +1402,14 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
     radial-gradient(70% 50% at 92% 80%,rgba(218,37,29,.06) 0%,transparent 45%),
     linear-gradient(180deg,#061428 0%,#04101f 38%,#020a14 72%,#000511 100%);
   border-top:1px solid rgba(108,174,255,.18);
-  padding:0 0 clamp(44px,5vw,56px);
+  padding:0 0 clamp(52px,6vw,72px);
 }
-.site-foot__inner{padding-top:clamp(72px,9vw,100px)!important;padding-bottom:0!important}
+.site-foot__inner{padding-top:clamp(72px,9vw,100px)!important;padding-bottom:clamp(12px,2vw,20px)!important}
 #footer .prose-caption{color:rgba(143,194,255,.55)}
 #footer .prose-body{color:rgba(200,225,255,.82);font-size:clamp(17px,1.05vw,19px);line-height:1.68}
 #footer .prose-body strong{color:var(--gold);font-weight:600}
 #footer a[data-cursor]{cursor:none}
+#footer .foot-trench__legal a[data-cursor]{cursor:none}
 
 .foot-waves{
   position:absolute;left:0;right:0;top:0;
@@ -1539,6 +1540,13 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
   color:rgba(143,194,255,.75);
   margin:0;
 }
+.foot-brand__eyebrow{
+  margin:0 0 12px;
+  font-family:var(--font-sans);
+  font-size:10px;font-weight:600;
+  letter-spacing:2.2px;text-transform:uppercase;
+  color:rgba(255,220,120,.82);
+}
 .foot-brand{
   font-family:var(--font-display);
   font-weight:700;
@@ -1552,7 +1560,38 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
 .foot-brand .dashes i{width:8px;height:2px;background:var(--red);display:block;transition:.3s}
 .foot-panel--brand:hover .foot-brand .dashes i{background:var(--gold)}
 .foot-brand .b-gold{color:var(--gold);text-shadow:0 0 14px rgba(255,204,0,.22)}
-.foot-panel--brand .prose-body{max-width:42ch;margin:0}
+.foot-panel--brand .prose-body{max-width:none;margin:0;line-height:1.68}
+.foot-panel--brand .prose-body strong{color:var(--gold);font-weight:600}
+.foot-brand__badges{
+  display:flex;flex-wrap:wrap;gap:8px 10px;
+  margin-top:clamp(18px,2.4vw,24px);
+  padding-top:clamp(16px,2vw,20px);
+  border-top:1px solid rgba(108,174,255,.14);
+}
+.foot-brand__chip{
+  font-family:var(--font-sans);
+  font-size:clamp(10px,.88vw,11.5px);
+  font-weight:600;
+  letter-spacing:.04em;
+  line-height:1.35;
+  text-transform:none;
+  padding:8px 14px;
+  border-radius:99px;
+  border:1px solid rgba(108,174,255,.34);
+  color:rgba(210,228,255,.88);
+  background:rgba(0,31,63,.52);
+}
+.foot-brand__chip--gold{
+  border-color:rgba(255,204,0,.44);
+  color:rgba(255,232,150,.96);
+  background:rgba(255,204,0,.1);
+}
+.foot-brand__chip--soft{
+  border-color:rgba(108,174,255,.22);
+  color:rgba(185,210,245,.78);
+  background:rgba(0,20,40,.35);
+  font-weight:500;
+}
 .foot-links{list-style:none;display:flex;flex-direction:column;gap:4px;margin:0;padding:0}
 .foot-links a{
   display:flex;align-items:center;gap:10px;
@@ -1590,33 +1629,37 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
 .foot-trench{
   position:relative;z-index:2;
   margin-top:clamp(40px,5vw,52px);
-  padding-top:clamp(24px,3vw,28px);
-  border-top:1px solid rgba(108,174,255,.12);
-  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
-  gap:16px 24px;
+  padding-top:clamp(22px,3vw,28px);
+  border-top:1px solid rgba(108,174,255,.16);
 }
-.foot-trench__copy{
+.foot-trench__bar{display:block}
+.foot-trench__legal{
+  flex:1 1 300px;
+  margin:0;
   font-family:var(--font-sans);
-  font-size:12px;
+  font-size:clamp(12px,1vw,13px);
   font-weight:300;
-  letter-spacing:.04em;
-  color:rgba(143,194,255,.45);
+  line-height:1.65;
+  letter-spacing:.02em;
+  color:rgba(200,225,255,.8);
+  max-width:780px;
+}
+.foot-trench__legal strong{color:rgba(235,244,255,.94);font-weight:500}
+.foot-trench__legal a{
+  color:var(--gold);
+  text-decoration:none;
+  border-bottom:1px solid rgba(255,204,0,.28);
+  transition:color .25s,border-color .25s;
+}
+.foot-trench__legal a:hover{color:#fff;border-bottom-color:var(--gold)}
+.foot-trench__note{
+  display:block;
+  margin-top:8px;
+  font-size:clamp(11px,.9vw,12px);
+  font-style:italic;
   line-height:1.55;
+  color:rgba(175,205,240,.72);
 }
-.foot-trench__copy strong{color:rgba(200,225,255,.65);font-weight:500}
-.foot-trench__badges{display:flex;flex-wrap:wrap;gap:8px}
-.foot-trench__chip{
-  font-family:var(--font-sans);
-  font-size:10px;font-weight:600;
-  letter-spacing:1.8px;text-transform:uppercase;
-  padding:7px 12px;
-  border-radius:99px;
-  border:1px solid rgba(108,174,255,.2);
-  color:rgba(143,194,255,.55);
-  background:rgba(0,31,63,.4);
-}
-.foot-trench__chip--gold{border-color:rgba(255,204,0,.28);color:rgba(255,220,120,.75);background:rgba(255,204,0,.06)}
-
 @media(prefers-reduced-motion:reduce){
   .foot-waves__layer{animation:none}
   .foot-panel:hover{transform:none}
@@ -1908,7 +1951,8 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
   .foot-crest__quote{font-size:clamp(20px,5.5vw,28px);max-width:none}
   .foot-navstrip{flex-direction:column;align-items:stretch;margin-bottom:var(--intra-gap)}
   .foot-btn{width:100%;justify-content:center;padding:12px 18px;font-size:11px;letter-spacing:1.5px}
-  .foot-trench{flex-direction:column;align-items:flex-start;gap:var(--gap-card)}
+  .foot-trench__legal{max-width:none}
+  .foot-brand__chip{flex:1 1 auto;max-width:100%}
   .foot-void svg{right:-20%;width:min(360px,95vw)}
   .divider-coast{height:56px;margin-top:-56px}
 }
@@ -2729,8 +2773,17 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
 
     <div class="foot-deck">
       <div class="foot-panel foot-panel--brand reveal" data-cursor>
+        <p class="foot-brand__eyebrow">{!! t('footer_brand_eyebrow') !!}</p>
         <div class="foot-brand"><span class="dashes" aria-hidden="true"><i></i><i></i><i></i></span><span class="b-gold">{!! t('footer_brand_gold') !!}</span></div>
         <p class="prose-body">{!! t('footer_brand_body') !!}</p>
+        <div class="foot-brand__badges" role="list" aria-label="{!! te('footer_badges_aria') !!}">
+          <span class="foot-brand__chip foot-brand__chip--gold" role="listitem">{!! t('footer_chip1') !!}</span>
+          <span class="foot-brand__chip foot-brand__chip--gold" role="listitem">{!! t('footer_chip2') !!}</span>
+          <span class="foot-brand__chip" role="listitem">{!! t('footer_chip3') !!}</span>
+          <span class="foot-brand__chip" role="listitem">{!! t('footer_chip4') !!}</span>
+          <span class="foot-brand__chip" role="listitem">{!! t('footer_chip5') !!}</span>
+          <span class="foot-brand__chip foot-brand__chip--soft" role="listitem">{!! t('footer_chip6') !!}</span>
+        </div>
       </div>
       <div class="foot-panel reveal reveal-delay-1">
         <div class="foot-panel__head">
@@ -2762,13 +2815,11 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
     </div>
 
     <div class="foot-trench reveal">
-      <p class="foot-trench__copy">
-        {!! t('footer_copy') !!}
-      </p>
-      <div class="foot-trench__badges" aria-hidden="true">
-        <span class="foot-trench__chip foot-trench__chip--gold">{!! t('footer_chip1') !!}</span>
-        <span class="foot-trench__chip">{!! t('footer_chip2') !!}</span>
-        <span class="foot-trench__chip">{!! t('footer_chip3') !!}</span>
+      <div class="foot-trench__bar">
+        <p class="foot-trench__legal">
+          {!! t('footer_copy', ['year' => date('Y')]) !!}
+          <span class="foot-trench__note">{!! t('footer_copy_disclaimer') !!}</span>
+        </p>
       </div>
     </div>
   </div>
@@ -2969,11 +3020,7 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
     });
   })();
 
-  /* Reveal */
-  var io=new IntersectionObserver(function(en){
-    en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
-  },{threshold:0.12, rootMargin:'0px 0px -8% 0px'});
-  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  /* Reveal — welcome-reveal.js (Vite) */
 
   /* Counters */
   var cio=new IntersectionObserver(function(en){

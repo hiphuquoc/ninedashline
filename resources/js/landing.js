@@ -195,13 +195,51 @@
   }
   addEventListener('scroll', onScroll, {passive:true}); onScroll();
 
-  /* Reveal */
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(en){
-      if(en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target); }
-    });
-  }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
-  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  /* Reveal — footer/copyright cuối trang (tránh rootMargin âm phía dưới) */
+  (function(){
+    var revealEls = document.querySelectorAll('.reveal');
+    if(!revealEls.length) return;
+    var markVisible = function(el){ el.classList.add('visible'); };
+    if(reduce || !('IntersectionObserver' in window)){
+      revealEls.forEach(markVisible);
+      return;
+    }
+    var revealInViewport = function(slackTop, slackBottom){
+      slackTop = slackTop || 100; slackBottom = slackBottom || 120;
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      revealEls.forEach(function(el){
+        if(el.classList.contains('visible')) return;
+        var rect = el.getBoundingClientRect();
+        if(rect.top < vh + slackBottom && rect.bottom > -slackTop) markVisible(el);
+      });
+    };
+    var revealIfPageBottom = function(){
+      var doc = document.documentElement;
+      if(window.scrollY + window.innerHeight < doc.scrollHeight - 32) return;
+      revealEls.forEach(markVisible);
+    };
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        markVisible(en.target);
+        io.unobserve(en.target);
+      });
+    }, {threshold:[0,0.06,0.12], rootMargin:'80px 0px 18% 0px'});
+    revealEls.forEach(function(el){ io.observe(el); });
+    revealInViewport();
+    requestAnimationFrame(function(){ revealInViewport(); revealIfPageBottom(); });
+    var scrollRaf = 0;
+    var onScrollReveal = function(){
+      if(scrollRaf) return;
+      scrollRaf = requestAnimationFrame(function(){
+        scrollRaf = 0;
+        revealInViewport();
+        revealIfPageBottom();
+      });
+    };
+    window.addEventListener('scroll', onScrollReveal, {passive:true});
+    window.addEventListener('resize', onScrollReveal, {passive:true});
+  })();
 
   /* Distance bars animate on reveal */
   var bio = new IntersectionObserver(function(entries){

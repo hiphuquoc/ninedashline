@@ -27,9 +27,15 @@
     "isEntry": true
   },
   "resources/js/landing.js": {
-    "file": "assets/landing-CDVc-jiQ.js",
+    "file": "assets/landing-BhriLc1q.js",
     "name": "landing",
     "src": "resources/js/landing.js",
+    "isEntry": true
+  },
+  "resources/js/welcome-reveal.js": {
+    "file": "assets/welcome-reveal-DPwkiUes.js",
+    "name": "welcome-reveal",
+    "src": "resources/js/welcome-reveal.js",
     "isEntry": true
   },
   "resources/sources/style.scss": {
