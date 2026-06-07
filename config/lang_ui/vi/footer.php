@@ -8,7 +8,7 @@ return [
     'footer_nav_aria' => 'Hành động cuối trang',
     'footer_btn_top' => 'Về đầu trang',
     'footer_btn_verdict' => 'Phán quyết PCA 2016',
-    'footer_btn_paracel' => 'paracelislands.net/vi',
+    'footer_btn_paracel' => 'paracelislands.net',
     'footer_brand_gold' => 'Yêu Sách Đường Lưỡi Bò',
     'footer_brand_eyebrow' => 'Trang chuyên đề · Chủ quyền Việt Nam',
     'footer_brand_body' => 'Giải thích về Đường Lưỡi Bò qua sự thật khách quan, luật pháp quốc tế, phán quyết PCA 2016 và tư liệu lịch sử — bổ sung cho các trang chuyên sâu về chủ quyền hai quần đảo <strong>"Hoàng Sa và Trường Sa"</strong>. Phủ định yêu sách vô lí của Trung Quốc bằng lịch sử và bằng chứng.',
