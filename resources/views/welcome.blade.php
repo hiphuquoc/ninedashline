@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 @include('partials.favicon')
+<link rel="preload" as="image" href="{{ $brandMark['logo_url'] }}" fetchpriority="high">
+<link rel="preload" as="image" href="{{ $heroBgUrl }}" fetchpriority="high">
 <meta name="description" content="{{ $metaDescription }}">
 @include('partials.seo-head')
 <title>{{ $metaTitle }}</title>
@@ -89,7 +91,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:none}
 #loader{position:fixed;inset:0;z-index:100000;background:var(--surface-deep);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;transition:opacity .9s ease,visibility .9s}
 #loader.done{opacity:0;visibility:hidden;pointer-events:none}
 #loader .brand-mark--loader{pointer-events:none;text-decoration:none;font-size:clamp(17px,4.2vw,22px)}
-#loader .brand-mark--loader .brand-mark__mark{height:4.8em;max-height:76px}
+#loader .brand-mark--loader .brand-mark__img{height:clamp(44px,11vw,68px);max-height:68px;width:auto}
 .loader-mark{font-family:var(--font-display);font-weight:600;letter-spacing:.32em;text-indent:.32em;font-size:12px;color:rgba(245,237,214,.45);text-transform:uppercase}
 
 /* (Scroll-progress bar & vertical index-rail removed — replaced by the header nav-rail à la hoangsa.dev) */
@@ -104,25 +106,12 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:none}
 nav{position:fixed;top:0;left:0;right:0;z-index:9995;padding:14px 48px 12px;display:flex;align-items:center;justify-content:space-between;gap:20px;background:linear-gradient(to bottom,rgba(5,10,20,.88),rgba(5,10,20,.55) 70%,transparent);transition:background .4s ease,padding .38s cubic-bezier(.32,.72,0,1),box-shadow .4s ease,gap .38s cubic-bezier(.32,.72,0,1)}
 nav.scrolled{background:rgba(5,10,20,.96);backdrop-filter:blur(16px);padding:10px 40px;box-shadow:0 8px 32px rgba(0,0,0,.35)}
 
-/* brand-mark — đường lưỡi bò (U) 9 nét, loader + nav */
+/* brand-mark — logo tĩnh + tên (nav + loader) */
 .brand-mark{display:inline-flex;align-items:center;flex-wrap:nowrap;white-space:nowrap;line-height:1;font-family:var(--font-display),'Arial Narrow',Arial,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;min-width:0}
 .brand-mark__inner{display:inline-flex;align-items:center;gap:.5em;min-width:0;max-width:100%}
-.brand-mark__mark{width:auto;aspect-ratio:60/50;height:1.55em;max-height:32px;flex-shrink:0;overflow:visible}
+.brand-mark__img{display:block;width:auto;height:1.55em;max-height:32px;flex-shrink:0;object-fit:contain;object-position:center;filter:drop-shadow(0 0 10px rgba(255,204,0,.12));pointer-events:none}
 .brand-mark__name{color:var(--gold);letter-spacing:.05em;text-shadow:0 0 12px rgba(255,204,0,.22);transition:color .25s,text-shadow .25s}
-.ndl-seg{fill:none;stroke:var(--gold);stroke-width:2.6;stroke-linecap:round;stroke-dasharray:6 5;opacity:.42;animation:ndlSegPulse 4.05s ease-in-out infinite}
-.ndl-seg--1{animation-delay:0s}
-.ndl-seg--2{animation-delay:.45s}
-.ndl-seg--3{animation-delay:.9s}
-.ndl-seg--4{animation-delay:1.35s}
-.ndl-seg--5{animation-delay:1.8s}
-.ndl-seg--6{animation-delay:2.25s}
-.ndl-seg--7{animation-delay:2.7s}
-.ndl-seg--8{animation-delay:3.15s}
-.ndl-seg--9{animation-delay:3.6s}
-@keyframes ndlSegPulse{
-  0%,72%,100%{stroke:#ffcc00;opacity:.4;filter:none}
-  6%,20%{stroke:#da251d;opacity:1;filter:drop-shadow(0 0 5px rgba(218,37,29,.7))}
-}
+.nav-logo.brand-mark .brand-mark__img{height:1.45em;max-height:30px}
 .nav-logo.brand-mark{flex-shrink:0;min-width:0;max-width:min(100%,22rem);font-size:clamp(15px,1.65vw,20px);text-decoration:none;transition:opacity .38s cubic-bezier(.32,.72,0,1),transform .38s cubic-bezier(.32,.72,0,1),max-height .38s cubic-bezier(.32,.72,0,1)}
 .nav-logo.brand-mark:hover .brand-mark__name,.nav-logo.brand-mark.is-active .brand-mark__name{color:#ffe566;text-shadow:0 0 16px rgba(255,204,0,.4)}
 .nav-logo,.nav-end{transition:opacity .38s cubic-bezier(.32,.72,0,1),transform .38s cubic-bezier(.32,.72,0,1),max-height .38s cubic-bezier(.32,.72,0,1),flex .38s cubic-bezier(.32,.72,0,1),width .38s cubic-bezier(.32,.72,0,1),margin .38s cubic-bezier(.32,.72,0,1),padding .38s cubic-bezier(.32,.72,0,1)}
@@ -209,7 +198,7 @@ nav.scrolled{background:rgba(5,10,20,.96);backdrop-filter:blur(16px);padding:10p
   nav{padding:10px 16px 8px}
   nav.scrolled{padding:8px 16px}
   .nav-logo.brand-mark{max-width:min(100%,16.5rem);font-size:clamp(14px,3.5vw,17px)}
-  .brand-mark__mark{max-height:28px}
+  .brand-mark__img{max-height:28px}
   .hero-fact{display:none !important}
   .nav-action--share .nav-action__label{display:none}
   .nav-action--share{padding:0 8px}
@@ -327,14 +316,29 @@ section{position:relative;overflow:hidden}
 /* ---------- HERO ---------- */
 #hero{height:100vh;height:100dvh;min-height:720px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;padding-top:var(--nav-offset);background:radial-gradient(130% 100% at 50% -10%,#08203c 0%,#04101f 38%,var(--surface-deep) 100%)}
 /* Back-most hero background image (Biển Đông night map) */
-.hero-bg{position:absolute;inset:0;z-index:0;background:url('/storage/images/background-slider-ban-do-duong-luoi-bo.png') center 44%/cover no-repeat;filter:brightness(1.1) saturate(1.08) contrast(1.02);transform:scale(1.06);animation:heroKen 28s ease-in-out infinite alternate;will-change:transform;isolation:isolate}
-/* colored light grade — screen-blended glows add vibrance + a focal accent */
+.hero-bg{position:absolute;inset:0;z-index:0;background:url('{{ $heroBgUrl }}') center 44%/cover no-repeat;filter:brightness(1.1) saturate(1.08) contrast(1.02);transform:scale(1.06);animation:heroKen 28s ease-in-out infinite alternate;contain:paint}
 .hero-bg::before{content:"";position:absolute;inset:0;mix-blend-mode:screen;pointer-events:none;background:radial-gradient(115% 78% at 76% 16%,rgba(46,132,196,.26),transparent 56%),radial-gradient(95% 72% at 14% 90%,rgba(218,37,29,.20),transparent 58%),radial-gradient(58% 44% at 50% 56%,rgba(255,204,0,.10),transparent 70%)}
-/* depth: soft cushion behind the headline, brighter map ring around it, dark vignette at edges */
 .hero-bg::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(5,10,20,.70) 0%,rgba(5,10,20,.20) 22%,rgba(5,10,20,.08) 46%,rgba(5,10,20,.52) 80%,rgba(5,10,20,.97) 100%),radial-gradient(64% 52% at 50% 53%,rgba(4,9,18,.58) 0%,rgba(4,9,18,.22) 42%,transparent 72%),radial-gradient(138% 116% at 50% 38%,transparent 54%,rgba(2,6,14,.78) 100%)}
-@keyframes heroKen{from{transform:scale(1.06)}to{transform:scale(1.13) translateY(-1.5%)}}
-.hero-stars{position:absolute;inset:0;background-image:radial-gradient(1.4px 1.4px at 18% 28%,rgba(255,255,255,.5),transparent),radial-gradient(1px 1px at 72% 18%,rgba(255,255,255,.4),transparent),radial-gradient(1.2px 1.2px at 40% 66%,rgba(255,255,255,.3),transparent),radial-gradient(1px 1px at 86% 56%,rgba(255,255,255,.42),transparent),radial-gradient(1px 1px at 56% 40%,rgba(255,255,255,.25),transparent),radial-gradient(1.3px 1.3px at 30% 80%,rgba(255,255,255,.3),transparent);opacity:.32}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(circle at 50% 45%,#000 0%,transparent 72%);-webkit-mask-image:radial-gradient(circle at 50% 45%,#000 0%,transparent 72%)}
+@keyframes heroKen{from{transform:scale(1.06)}to{transform:scale(1.1) translateY(-1%)}}
+#hero:not(.is-ready) .hero-bg,
+#hero:not(.is-ready) .wave{animation-play-state:paused}
+#hero.is-offscreen .hero-bg,
+#hero.is-offscreen .wave{animation-play-state:paused}
+#hero.is-anim-lite .hero-bg{animation:none;filter:none}
+#hero.is-anim-lite .wave{animation:none}
+#hero.is-anim-lite .wave2,
+#hero.is-anim-lite .wave3,
+#hero.is-anim-lite .light-leak,
+#hero.is-anim-lite .hero-grid{display:none}
+html.perf-lite .grain-fixed{display:none}
+html.perf-lite .vignette{box-shadow:inset 0 0 100px 24px rgba(0,0,0,.45)}
+@media(max-width:768px){
+  #hero .wave2,#hero .wave3,#hero .light-leak,#hero .hero-grid{display:none}
+  .grain-fixed{display:none}
+  .hero-bg{filter:none}
+}
+.hero-stars{position:absolute;inset:0;background-image:radial-gradient(1.4px 1.4px at 18% 28%,rgba(255,255,255,.5),transparent),radial-gradient(1px 1px at 72% 18%,rgba(255,255,255,.4),transparent),radial-gradient(1.2px 1.2px at 40% 66%,rgba(255,255,255,.3),transparent),radial-gradient(1px 1px at 86% 56%,rgba(255,255,255,.42),transparent),radial-gradient(1px 1px at 56% 40%,rgba(255,255,255,.25),transparent),radial-gradient(1.3px 1.3px at 30% 80%,rgba(255,255,255,.3),transparent);opacity:.32;pointer-events:none}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(circle at 50% 45%,#000 0%,transparent 72%);-webkit-mask-image:radial-gradient(circle at 50% 45%,#000 0%,transparent 72%);pointer-events:none}
 .wave-container{position:absolute;bottom:0;left:0;width:100%;height:42%;pointer-events:none}
 .wave{position:absolute;bottom:0;left:0;width:200%;height:100%}
 .wave svg{width:50%;height:100%;float:left}
@@ -1925,7 +1929,7 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
 <!-- Loader -->
 <div id="loader">
   <span class="brand-mark brand-mark--loader" aria-hidden="true">
-    @include('landing.partials.brand-mark')
+    @include('landing.partials.brand-mark', ['brandMark' => $brandMark, 'logoFetchPriority' => 'high'])
   </span>
   <div class="loader-mark">{!! t('loader_sub') !!}</div>
 </div>
@@ -2795,15 +2799,59 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* Loader */
-  setTimeout(function(){ var l=document.getElementById('loader'); if(l) l.classList.add('done'); }, 2400);
-  window.addEventListener('load', function(){ setTimeout(function(){ var l=document.getElementById('loader'); if(l) l.classList.add('done'); }, 600); });
+  function hideLoader(){
+    var l=document.getElementById('loader');
+    if(l && !l.classList.contains('done')) l.classList.add('done');
+  }
+  function startHeroMotion(){
+    var hero=document.getElementById('hero');
+    if(hero) hero.classList.add('is-ready');
+  }
+  setTimeout(hideLoader, 1200);
+  document.addEventListener('DOMContentLoaded', function(){
+    setTimeout(hideLoader, 350);
+    setTimeout(startHeroMotion, 420);
+  });
+  window.addEventListener('load', function(){
+    hideLoader();
+    startHeroMotion();
+  });
 
-  /* Cursor */
+  /* Hero — tạm dừng animation khi ra khỏi viewport / thiết bị yếu */
+  (function(){
+    var hero=document.getElementById('hero');
+    if(!hero || reduce){
+      startHeroMotion();
+      return;
+    }
+    if(window.matchMedia('(max-width: 768px)').matches || (navigator.hardwareConcurrency || 8) <= 4){
+      hero.classList.add('is-anim-lite');
+      document.documentElement.classList.add('perf-lite');
+    }
+    if('IntersectionObserver' in window){
+      var heroIo=new IntersectionObserver(function(entries){
+        hero.classList.toggle('is-offscreen', !entries[0].isIntersecting);
+      }, {threshold: 0, rootMargin: '0px 0px 0px 0px'});
+      heroIo.observe(hero);
+    }
+  })();
+
+  /* Cursor — chỉ chạy rAF khi tab đang hiển thị */
   if(!reduce){
     var cur=document.getElementById('cursor'), ring=document.getElementById('cursorRing');
-    var mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my;
+    var mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my, cursorActive=true, cursorRaf=null;
+    function cursorLoop(){
+      if(!cursorActive){ cursorRaf=null; return; }
+      rx+=(mx-rx)*.2;ry+=(my-ry)*.2;
+      ring.style.left=rx+'px';ring.style.top=ry+'px';
+      cursorRaf=requestAnimationFrame(cursorLoop);
+    }
+    document.addEventListener('visibilitychange', function(){
+      cursorActive = document.visibilityState === 'visible';
+      if(cursorActive && !cursorRaf) cursorRaf=requestAnimationFrame(cursorLoop);
+    });
     addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
-    (function loop(){rx+=(mx-rx)*.2;ry+=(my-ry)*.2;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop);})();
+    cursorRaf=requestAnimationFrame(cursorLoop);
     document.addEventListener('mouseover',function(e){
       var lens=e.target.closest('[data-lens]');
       ring.classList.toggle('lens', !!lens);
@@ -3062,14 +3110,18 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
     frame.addEventListener('mouseleave',function(){ lens.classList.remove('show'); });
   });
 
-  /* GSAP scrollytelling (progressive enhancement) */
-  window.addEventListener('load', function(){
+  /* GSAP scrollytelling (progressive enhancement — defer after first paint) */
+  function initHeroParallax(){
     if(reduce || typeof gsap==='undefined' || typeof ScrollTrigger==='undefined') return;
     gsap.registerPlugin(ScrollTrigger);
-    // hero parallax
     gsap.to('.hero-content',{yPercent:26,ease:'none',scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:true,invalidateOnRefresh:true}});
     gsap.to('.hero-stars',{yPercent:-12,ease:'none',scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:true,invalidateOnRefresh:true}});
-  });
+  }
+  if('requestIdleCallback' in window){
+    requestIdleCallback(initHeroParallax, {timeout: 2500});
+  } else {
+    window.addEventListener('load', function(){ setTimeout(initHeroParallax, 120); });
+  }
 })();
 </script>
 </body>

@@ -4,8 +4,8 @@
   $navRailSteps = $navRailSteps ?? \App\Support\LandingPageData::navRailStepsResolved();
 @endphp
 <nav id="mainNav" aria-label="{{ te('nav_rail_aria') }}">
-  <a href="{{ $navHref('#hero') }}" class="nav-logo brand-mark" id="navLogo" data-cursor aria-label="{{ te('nav_logo_name') }} — ninedashline.dev">
-    @include('landing.partials.brand-mark')
+  <a href="{{ $navHref('#hero') }}" class="nav-logo brand-mark" id="navLogo" data-cursor aria-label="{{ ($brandMark ?? \App\Support\BrandMark::data())['aria'] }}">
+    @include('landing.partials.brand-mark', ['brandMark' => $brandMark ?? null, 'logoFetchPriority' => 'high'])
   </a>
 
   <div class="nav-rail" id="navRail" role="navigation" aria-label="{{ te('nav_rail_aria') }}">

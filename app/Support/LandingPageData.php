@@ -37,6 +37,8 @@ class LandingPageData
             'navRootUrl' => LocaleUrl::home($urlLocale),
             'ecosystemParacelUrl' => EcosystemSites::paracel($urlLocale),
             'landingScriptConfig' => self::landingScriptConfig($urlLocale, $navLanguages, $navLangUi, $landing),
+            'brandMark' => BrandMark::data($urlLocale),
+            'heroBgUrl' => rtrim((string) $landing['images_base'], '/') . '/' . ltrim((string) ($landing['hero_bg'] ?? 'background-slider-ban-do-duong-luoi-bo.png'), '/'),
             ...SeoMeta::landing($urlLocale),
         ];
     }
