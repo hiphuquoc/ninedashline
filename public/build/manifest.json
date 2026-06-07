@@ -1,4 +1,9 @@
 {
+  "resources/css/landing-ancient-maps.css": {
+    "file": "assets/landing-ancient-maps--tjX5N-2.css",
+    "src": "resources/css/landing-ancient-maps.css",
+    "isEntry": true
+  },
   "resources/css/landing-fab.css": {
     "file": "assets/landing-fab-B9hVjWtc.css",
     "src": "resources/css/landing-fab.css",

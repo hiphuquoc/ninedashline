@@ -7,6 +7,7 @@ export default defineConfig({
             input: [
                 'resources/css/landing.css',
                 'resources/css/landing-fab.css',
+                'resources/css/landing-ancient-maps.css',
                 'resources/css/landing-lang-switcher.css',
                 'resources/js/landing.js',
                 'resources/js/welcome-reveal.js',

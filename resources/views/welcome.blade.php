@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://flagcdn.com" crossorigin>
 <link href="{{ $googleFontsUrl }}" rel="stylesheet">
-@vite(['resources/css/landing-fab.css', 'resources/css/landing-lang-switcher.css', 'resources/js/landing-i18n.js', 'resources/js/ancient-map-lightbox.js', 'resources/js/welcome-reveal.js'])
+@vite(['resources/css/landing-fab.css', 'resources/css/landing-ancient-maps.css', 'resources/css/landing-lang-switcher.css', 'resources/js/landing-i18n.js', 'resources/js/ancient-map-lightbox.js', 'resources/js/welcome-reveal.js'])
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
@@ -187,13 +187,14 @@ nav.scrolled{background:rgba(5,10,20,.96);backdrop-filter:blur(16px);padding:10p
   nav{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;grid-template-areas:"logo end" "rail rail";align-items:center;padding:10px 16px 8px;gap:8px 12px;transition:background .4s,padding .38s cubic-bezier(.32,.72,0,1),box-shadow .4s,gap .38s cubic-bezier(.32,.72,0,1),grid-template-rows .38s cubic-bezier(.32,.72,0,1)}
   .nav-logo{grid-area:logo;justify-self:start;align-self:center}
   .nav-end{grid-area:end;justify-self:end;align-self:center}
-  .nav-rail{grid-area:rail;flex:unset;width:100%;max-width:none;margin:0;padding:4px 2px 2px}
+  .nav-rail{grid-area:rail;flex:unset;width:100%;max-width:none;margin:0;padding:4px 0 2px}
   .nav-rail-steps{grid-template-columns:repeat(var(--nav-step-count),max-content)}
+  .nav-rail-steps>.nav-step:first-child{padding-inline-start:0}
   .nav-step{padding:0 clamp(6px,1.6vw,10px)}
   .nav-step-label{font-size:clamp(7px,1.8vw,9px);letter-spacing:.06em}
   nav.is-nav-compact{grid-template-rows:0 minmax(44px,auto);gap:0;padding-top:6px;padding-bottom:6px}
   nav.is-nav-compact.scrolled{background:rgba(5,10,20,.94)}
-  nav.is-nav-compact .nav-rail{flex:1 1 auto;max-width:100%;padding-top:4px}
+  nav.is-nav-compact .nav-rail{flex:1 1 auto;max-width:100%;padding:4px 0 2px}
   nav.is-nav-compact .nav-logo,nav.is-nav-compact .nav-end{opacity:0;transform:translateY(-10px) scale(.98);pointer-events:none;max-height:0;overflow:hidden;margin:0 !important;padding-top:0 !important;padding-bottom:0 !important;border:0}
   .nav-action--sound{width:32px;height:32px;min-width:32px}
   .nav-action--share{height:32px;gap:4px}
@@ -810,39 +811,6 @@ section{position:relative;overflow:hidden}
 .chip.red{border-color:rgba(218,37,29,.35);color:rgba(255,200,190,.95);background:rgba(218,37,29,.08)}
 .chip.blue{border-color:rgba(108,174,255,.35);color:rgba(200,225,255,.95);background:rgba(108,174,255,.08)}
 
-/* ---------- 05 Nhân chứng thầm lặng — bản đồ cổ ---------- */
-#witnesses{
-  background:linear-gradient(180deg,var(--surface-base),#0a0c10);
-  --am-lead:clamp(20px,2.1vw,25px);
-  --am-year:clamp(22px,2.5vw,34px);
-  --am-title:clamp(22px,2.8vw,30px);
-  --am-body:clamp(17px,1.28vw,19.5px);
-}
-#witnesses .prose-lead{max-width:62ch;font-size:var(--am-lead);line-height:1.68;color:rgba(245,237,214,.78)}
-#witnesses .prose-lead em{color:var(--gold);font-style:normal;font-weight:600}
-.ancient-maps-timeline{margin-top:var(--intra-gap);display:flex;flex-direction:column;gap:0;max-width:960px;margin-left:auto;margin-right:auto}
-.ancient-map-entry{display:grid;grid-template-columns:28px minmax(96px,132px) minmax(0,1fr);gap:0 clamp(16px,2.5vw,28px);padding:0 0 clamp(32px,4vw,44px);position:relative}
-.ancient-map-entry:last-child{padding-bottom:0}
-.ancient-map-entry__rail{grid-column:1;grid-row:1/-1;display:flex;flex-direction:column;align-items:center;padding-top:6px}
-.ancient-map-entry__dot{width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(255,204,0,.18);flex-shrink:0}
-.ancient-map-entry__line{flex:1;width:2px;margin-top:6px;background:linear-gradient(180deg,rgba(255,204,0,.45),rgba(255,204,0,.08));min-height:24px}
-.ancient-map-entry__year{grid-column:2;grid-row:1;font-family:var(--font-display);font-weight:700;font-size:var(--am-year);letter-spacing:.05em;color:var(--gold);line-height:1.2;padding-top:4px;align-self:start}
-.ancient-map-entry__content{grid-column:3;grid-row:1;min-width:0;border:1px solid rgba(212,175,55,.22);background:linear-gradient(165deg,rgba(12,19,34,.92),rgba(5,10,20,.96));border-radius:8px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.35)}
-.ancient-map-entry__figure{position:relative;margin:0;background:#0a1120;border-bottom:1px solid rgba(212,175,55,.15);min-height:200px}
-.ancient-map-entry__zoom{position:relative;display:block;width:100%;margin:0;padding:0;border:none;background:transparent;line-height:0;cursor:none;text-align:left}
-.ancient-map-entry__zoom:focus-visible{outline:2px solid rgba(255,204,0,.75);outline-offset:-3px}
-.ancient-map-entry__figure img{width:100%;height:auto;max-height:min(72vh,640px);object-fit:contain;object-position:center;background:#0c1018;pointer-events:none;transition:transform .55s cubic-bezier(.25,.46,.45,.94)}
-.ancient-map-entry__zoom:hover img,.ancient-map-entry__zoom:focus-visible img{transform:scale(1.02)}
-.ancient-map-entry__zoom-hint{position:absolute;top:14px;right:14px;z-index:1;display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,204,0,.38);background:rgba(5,10,20,.72);color:var(--gold);opacity:0;transform:scale(.92);transition:opacity .28s,transform .28s,background .25s;pointer-events:none}
-.ancient-map-entry__zoom:hover .ancient-map-entry__zoom-hint,.ancient-map-entry__zoom:focus-visible .ancient-map-entry__zoom-hint{opacity:1;transform:scale(1)}
-.ancient-map-entry__zoom:hover .ancient-map-entry__zoom-hint{background:rgba(218,37,29,.45);border-color:var(--gold)}
-.ancient-map-entry__title{font-family:var(--font-serif-title);font-weight:700;font-size:var(--am-title);color:var(--white);line-height:1.25;margin:0;padding:clamp(16px,2vw,20px) clamp(16px,2vw,20px) 8px}
-.ancient-map-entry__text{padding:0 clamp(16px,2vw,20px) clamp(16px,2vw,20px);max-width:none;font-size:var(--am-body);line-height:1.68;color:rgba(245,237,214,.88)}
-.ancient-map-entry__text p{margin:0 0 .65em}
-.ancient-map-entry__text p:last-child{margin-bottom:0}
-.ancient-map-entry__text strong{color:var(--cream);font-weight:600}
-.ancient-map-entry__text em{color:var(--gold);font-style:italic}
-.wit-quote{margin:clamp(28px,3.5vw,40px) auto 0;max-width:54ch;text-align:center;font-family:var(--font-serif-text);font-style:italic;font-weight:500;font-size:clamp(22px,2.4vw,28px);line-height:1.45;color:#e7d9a8}
 /* Lightbox bản đồ cổ (đồng bộ hoangsa timeline) */
 .timeline-lightbox{--lb-pad-y:clamp(14px,2.5vh,22px);--lb-pad-x:clamp(20px,4vw,32px);--lb-cap-h:48px;position:fixed;inset:0;z-index:1280;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:var(--lb-pad-y) var(--lb-pad-x);background:rgba(2,6,14,.94);backdrop-filter:blur(12px);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
 .timeline-lightbox.is-open{opacity:1;visibility:visible}
@@ -866,12 +834,6 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
   .timeline-lightbox{--lb-cap-h:96px}
   .timeline-lightbox-frame{width:calc(100vw - var(--lb-pad-x)*2);max-width:calc(100vw - var(--lb-pad-x)*2);max-height:calc(100dvh - var(--lb-pad-y)*2 - var(--lb-cap-h))}
   .timeline-lightbox-frame img{width:100%;max-width:100%;height:auto;max-height:calc(100dvh - var(--lb-pad-y)*2 - var(--lb-cap-h))}
-}
-@media(max-width:768px){
-  .ancient-map-entry{grid-template-columns:20px 1fr;grid-template-rows:auto auto}
-  .ancient-map-entry__rail{grid-column:1;grid-row:1/-1}
-  .ancient-map-entry__year{grid-column:2;grid-row:1;margin-bottom:8px;font-size:clamp(20px,5vw,28px)}
-  .ancient-map-entry__content{grid-column:1/-1;grid-row:2}
 }
 
 /* ---------- 06 Phán quyết PCA (typography đồng bộ) ---------- */
@@ -2539,13 +2501,13 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
 <section id="witnesses" data-index="{!! t('witnesses_index') !!}">
   <div class="light-leak leak-gold" style="top:10%;right:-4%"></div>
   <div class="section-inner">
-    <div class="section-label reveal"><span class="lnum">05</span>{!! t('witnesses_label') !!}</div>
-    <h2 class="section-title reveal reveal-delay-1">{!! t('witnesses_title') !!} <span class="accent">{!! t('witnesses_title_accent') !!}</span></h2>
-    <p class="prose-lead reveal reveal-delay-2">{!! t('witnesses_lead') !!}</p>
+    <div class="section-label reveal"><span class="lnum">05</span>{!! t('ancient_maps_label') !!}</div>
+    <h2 class="section-title reveal reveal-delay-1">{!! t('ancient_maps_title') !!} <span class="accent">{!! t('ancient_maps_title_accent') !!}</span></h2>
+    <p class="prose-lead reveal reveal-delay-2">{!! t('ancient_maps_lead') !!}</p>
 
-    @include('landing.partials.ancient-maps-timeline', ['ancientMapsLangPrefix' => 'witnesses'])
+    @include('landing.partials.ancient-maps-timeline', ['ancientMapsLangPrefix' => 'ancient_maps'])
 
-    <p class="wit-quote reveal">{!! t('witnesses_quote') !!}</p>
+    <blockquote class="ancient-maps-quote reveal reveal-delay-1">{!! t('ancient_maps_quote') !!}</blockquote>
   </div>
 </section>
 
@@ -3033,7 +2995,7 @@ body.is-lightboxOpen .site-fab,body.is-lightboxOpen #mainNav{pointer-events:none
       cio.unobserve(el);
     });
   },{threshold:0.5});
-  document.querySelectorAll('[data-count]').forEach(function(el){ cio.observe(el); });
+  document.querySelectorAll('.stat-num[data-count]').forEach(function(el){ cio.observe(el); });
 
   /* Distance bars */
   var bio=new IntersectionObserver(function(en){
